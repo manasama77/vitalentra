@@ -17,7 +17,7 @@
 <body class="bg-gradient-to-br from-gray-950 to-gray-800 text-white min-h-screen flex items-center justify-center px-4">
     <div class="flex flex-col items-center justify-center text-center">
         <div>
-            <img src="{{ asset('logo_white.png') }}" alt="Logo" class="mx-auto size-100" />
+            <img src="{{ asset('logo_white.png') }}" alt="Logo" class="mx-auto w-100" />
         </div>
         <div>
             <h1 class="text-4xl md:text-6xl font-extrabold mb-4">
