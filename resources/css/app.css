@@ -1,12 +1,56 @@
 @import "tailwindcss";
 @import "../../vendor/livewire/flux/dist/flux.css";
+<<<<<<< HEAD
+=======
+@import "flyonui/variants.css";
+
+@plugin "flyonui" {
+    themes: vitalentra --default;
+}
+
+@plugin "flyonui/theme" {
+    name: "vitalentra";
+    default: true;
+    prefersdark: false;
+    color-scheme: "light";
+    --color-base-100: oklch(100% 0 0);
+    --color-base-200: oklch(96% 0.01 240);
+    --color-base-300: oklch(92% 0.02 240);
+    --color-base-content: oklch(25% 0.08 255);
+    --color-primary: oklch(42% 0.15 250);
+    --color-primary-content: oklch(100% 0 0);
+    --color-secondary: oklch(50% 0.18 245);
+    --color-secondary-content: oklch(100% 0 0);
+    --color-accent: oklch(65% 0.2 245);
+    --color-accent-content: oklch(25% 0.05 255);
+    --color-neutral: oklch(25% 0.05 255);
+    --color-neutral-content: oklch(100% 0 0);
+    --color-info: oklch(70% 0.2 220);
+    --color-info-content: oklch(25% 0.05 255);
+    --color-success: oklch(65% 0.24 150);
+    --color-success-content: oklch(98% 0.003 247.858);
+    --color-warning: oklch(75% 0.2 80);
+    --color-warning-content: oklch(98% 0.003 247.858);
+    --color-error: oklch(60% 0.24 25);
+    --color-error-content: oklch(100% 0 0);
+    --radius-selector: 0.5rem;
+    --radius-field: 0.5rem;
+    --radius-box: 0.25rem;
+    --size-selector: 0.25rem;
+    --size-field: 0.25rem;
+    --border: 1px;
+    --depth: 1;
+    --noise: 0;
+}
+>>>>>>> stash
 
 @source '../views';
 @source '../../vendor/laravel/framework/src/Illuminate/Pagination/resources/views/*.blade.php';
 @source '../../vendor/livewire/flux-pro/stubs/**/*.blade.php';
 @source '../../vendor/livewire/flux/stubs/**/*.blade.php';
 
-@custom-variant dark (&:where(.dark, .dark *));
+/* @custom-variant dark (&:where(.dark, .dark *)); */
+@custom-variant dark (&:where([data-theme=vitalentra], [data-theme=vitalentra] *));
 
 @theme {
     --font-sans: "Instrument Sans", ui-sans-serif, system-ui, sans-serif,
@@ -28,6 +72,7 @@
     --color-accent: var(--color-neutral-800);
     --color-accent-content: var(--color-neutral-800);
     --color-accent-foreground: var(--color-white);
+    --color-test: #63a4ff;
 }
 
 @layer theme {
@@ -53,7 +98,11 @@
 }
 
 [data-flux-label] {
+<<<<<<< HEAD
     @apply mb-0! leading-tight!;
+=======
+    @apply !mb-0 !leading-tight;
+>>>>>>> stash
 }
 
 input:focus[data-flux-control],

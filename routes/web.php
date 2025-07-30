@@ -1,16 +1,16 @@
 <?php
 
+use App\Livewire\Settings\Profile;
+use App\Livewire\Settings\Password;
 use App\Http\Controllers\BerandaController;
 use App\Livewire\Settings\Appearance;
-use App\Livewire\Settings\Password;
-use App\Livewire\Settings\Profile;
 use Illuminate\Support\Facades\Route;
-
-// Route::get('/', function () {
-//     return view('coming');
-// })->name('home');
+use App\Http\Controllers\TestController;
+use App\Http\Controllers\BerandaController;
 
 Route::get('/', [BerandaController::class, 'index'])->name('home');
+
+Route::get('test_mail', [TestController::class, 'index']);
 
 Route::view('dashboard', 'dashboard')
     ->middleware(['auth', 'verified'])
