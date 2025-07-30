@@ -6,7 +6,6 @@ use App\Http\Controllers\BerandaController;
 use App\Livewire\Settings\Appearance;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\TestController;
-use App\Http\Controllers\BerandaController;
 
 Route::get('/', [BerandaController::class, 'index'])->name('home');
 

@@ -1,7 +1,7 @@
 @import "tailwindcss";
 @import "../../vendor/livewire/flux/dist/flux.css";
-<<<<<<< HEAD
-=======
+@import "tailwindcss";
+@import "../../vendor/livewire/flux/dist/flux.css";
 @import "flyonui/variants.css";
 
 @plugin "flyonui" {
@@ -42,7 +42,6 @@
     --depth: 1;
     --noise: 0;
 }
->>>>>>> stash
 
 @source '../views';
 @source '../../vendor/laravel/framework/src/Illuminate/Pagination/resources/views/*.blade.php';
@@ -53,6 +52,9 @@
 @custom-variant dark (&:where([data-theme=vitalentra], [data-theme=vitalentra] *));
 
 @theme {
+    --font-sans: "Instrument Sans", ui-sans-serif, system-ui, sans-serif,
+        "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol",
+        "Noto Color Emoji";
     --font-sans: "Instrument Sans", ui-sans-serif, system-ui, sans-serif,
         "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol",
         "Noto Color Emoji";
@@ -72,7 +74,6 @@
     --color-accent: var(--color-neutral-800);
     --color-accent-content: var(--color-neutral-800);
     --color-accent-foreground: var(--color-white);
-    --color-test: #63a4ff;
 }
 
 @layer theme {
@@ -98,11 +99,7 @@
 }
 
 [data-flux-label] {
-<<<<<<< HEAD
     @apply mb-0! leading-tight!;
-=======
-    @apply !mb-0 !leading-tight;
->>>>>>> stash
 }
 
 input:focus[data-flux-control],
