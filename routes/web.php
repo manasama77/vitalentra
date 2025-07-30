@@ -1,13 +1,16 @@
 <?php
 
+use App\Http\Controllers\BerandaController;
 use App\Livewire\Settings\Appearance;
 use App\Livewire\Settings\Password;
 use App\Livewire\Settings\Profile;
 use Illuminate\Support\Facades\Route;
 
-Route::get('/', function () {
-    return view('coming');
-})->name('home');
+// Route::get('/', function () {
+//     return view('coming');
+// })->name('home');
+
+Route::get('/', [BerandaController::class, 'index'])->name('home');
 
 Route::view('dashboard', 'dashboard')
     ->middleware(['auth', 'verified'])
