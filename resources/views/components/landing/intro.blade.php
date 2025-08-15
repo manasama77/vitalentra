@@ -2,14 +2,11 @@
      <div class="container">
          <div class="scroll-revealed mx-auto mb-12 max-w-[550px] text-center">
              <h6 class="text-primary mb-2 block text-lg font-semibold">
-                 Intro Video
+                 {{ __('intro.title') }}
              </h6>
-             <h2 class="text-base-content mb-6">Watch Our Intro Video</h2>
-             <p>
-                 There are many variations of passages of Lorem Ipsum available
-                 but
-                 the majority have suffered alteration in some form.
-             </p>
+             <h2 class="text-base-content mb-6">
+                 {{ __('intro.sub_title') }}
+             </h2>
          </div>
 
          <div class="scroll-revealed relative mx-auto md:max-w-[900px]">
