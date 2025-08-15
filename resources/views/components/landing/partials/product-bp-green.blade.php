@@ -50,17 +50,14 @@
         <!-- Product Description (Right) -->
         <div class="order-2 space-y-1">
             <div>
-                <h3 class="text-body-light-12 mb-4 text-3xl font-bold">British Propolis Green (Kids)</h3>
+                <h3 class="text-body-light-12 mb-4 text-3xl font-bold">
+                    {{ __('product_bp_green.title') }}
+                </h3>
                 <p class="text-body-light-11 text-md leading-relaxed">
-                    British Propolis Kids / Green adalah suplemen premium standar internasional untuk anak usia 1-12
-                    tahun. Terbuat dari campuran 50% propolis Inggris dan 50% propolis Trigona, produk ini mendukung
-                    perkembangan otak dan kesehatan anak lebih efektif dibanding minyak ikan biasa.
+                    {{ __('product_bp_green.description_1') }}
                 </p>
                 <p class="text-body-light-11 text-md leading-relaxed">
-                    Aman dan tanpa efek samping, British Propolis Green terbuat dari bahan alami, telah tersertifikasi
-                    halal (MUI & UK), dan terdaftar di BPOM. Rasanya disukai anak-anak, serta membantu meningkatkan
-                    nafsu makan, daya tahan tubuh, konsentrasi, dan daya ingat—dengan hasil nyata dalam 21 hari
-                    pemakaian rutin.
+                    {{ __('product_bp_green.description_2') }}
                 </p>
             </div>
 
@@ -72,21 +69,14 @@
                             aria-expanded="false">
                         <span
                               class="icon-[tabler--chevron-right] accordion-item-active:rotate-90 size-5 shrink-0 transition-transform duration-300 rtl:rotate-180"></span>
-                        Manfaat Utama:
+                        {{ __('product_bp_green.point.1.title') }}
                     </button>
                     <div id="bp-green-manfaat-collapse"
                          class="accordion-content hidden w-full overflow-hidden transition-[height] duration-300"
                          aria-labelledby="bp-green-manfaat"
                          role="region">
                         <div class="w-full pb-4">
-                            <ul
-                                class="text-base-content/80 list-disc space-y-1 break-words pl-6 text-sm font-normal sm:space-y-2 sm:pl-14 sm:text-base">
-                                <li>Mendukung perkembangan otak anak</li>
-                                <li>Meningkatkan daya tahan tubuh</li>
-                                <li>Meningkatkan nafsu makan</li>
-                                <li>Membantu konsentrasi dan daya ingat</li>
-                                <li>Melancarkan aliran darah ke otak</li>
-                            </ul>
+                            {!! __('product_bp_green.point.1.description') !!}
                         </div>
                     </div>
                 </div>
@@ -96,22 +86,14 @@
                             aria-expanded="false">
                         <span
                               class="icon-[tabler--chevron-right] accordion-item-active:rotate-90 size-5 shrink-0 transition-transform duration-300 rtl:rotate-180"></span>
-                        Informasi Produk:
+                        {{ __('product_bp_green.point.2.title') }}
                     </button>
                     <div id="bp-green-kelebihan-collapse"
                          class="accordion-content hidden w-full overflow-hidden transition-[height] duration-300"
                          aria-labelledby="bp-green-kelebihan"
                          role="region">
                         <div class="w-full pb-4">
-                            <ul
-                                class="text-base-content/80 list-disc space-y-1 break-words pl-6 text-sm font-normal sm:space-y-2 sm:pl-14 sm:text-base">
-                                <li>Isi bersih: 6 ml</li>
-                                <li>BPOM: TR193631981</li>
-                                <li>Sertifikat Halal MUI: 0013009335019</li>
-                                <li>Sertifikat Halal UK (HMC): 2018-196</li>
-                                <li>Sertifikat FDA</li>
-                                <li>Masa simpan: Hingga 3 tahun</li>
-                            </ul>
+                            {!! __('product_bp_green.point.2.description') !!}
                         </div>
                     </div>
                 </div>
@@ -121,7 +103,7 @@
             <div class="flex items-center justify-center pb-4 pt-3 sm:pt-4">
                 <a href="#"
                    class="btn btn-primary btn-sm sm:btn-lg w-full rounded-lg px-6 text-sm font-semibold shadow-lg transition-all duration-300 hover:shadow-xl sm:rounded-xl sm:px-8 sm:text-base">
-                    Pesan Sekarang
+                    {{ __('product_bp_green.cta') }}
                 </a>
             </div>
         </div>

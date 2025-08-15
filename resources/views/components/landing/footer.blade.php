@@ -44,34 +44,36 @@
                 <nav class="space-y-3">
                     <a href="{{ route('home') }}"
                        class="block text-sm text-gray-300 transition-colors duration-200 hover:text-white">
-                        Beranda
+                        {{ __('menu.home') }}
                     </a>
                     <a href="{{ route('home') }}#about"
                        class="block text-sm text-gray-300 transition-colors duration-200 hover:text-white">
-                        Tentang Kami
+                        {{ __('menu.about') }}
                     </a>
                     <a href="{{ route('home') }}#product"
                        class="block text-sm text-gray-300 transition-colors duration-200 hover:text-white">
-                        Produk
+                        {{ __('menu.product') }}
                     </a>
                     <a href="{{ route('home') }}#faq"
                        class="block text-sm text-gray-300 transition-colors duration-200 hover:text-white">
-                        FAQ
+                        {{ __('menu.faq') }}
                     </a>
                     <a href="{{ route('news.list') }}"
                        class="block text-sm text-gray-300 transition-colors duration-200 hover:text-white">
-                        Berita & Blog
+                        {{ __('menu.news') }}
                     </a>
                     <a href="{{ route('home') }}#contact"
                        class="block text-sm text-gray-300 transition-colors duration-200 hover:text-white">
-                        Kontak
+                        {{ __('menu.contact') }}
                     </a>
                 </nav>
             </div>
 
             <!-- Right Section: Products -->
             <div class="space-y-4">
-                <h3 class="text-lg font-semibold text-white">Produk</h3>
+                <h3 class="text-lg font-semibold text-white">
+                    {{ __('footer.product') }}
+                </h3>
                 <div class="space-y-3">
                     <a href="{{ route('home') }}#steffi"
                        class="block text-sm text-gray-300 transition-colors duration-200 hover:text-white">

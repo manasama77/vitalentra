@@ -50,12 +50,11 @@
             <div class="order-2 w-full min-w-0 space-y-4 overflow-hidden sm:space-y-6 lg:order-2">
 
                 <div class="w-full">
-                    <h3 class="text-body-light-12 mb-3 break-words text-2xl font-bold sm:mb-4 sm:text-3xl">Steffi</h3>
+                    <h3 class="text-body-light-12 mb-3 break-words text-2xl font-bold sm:mb-4 sm:text-3xl">
+                        {{ __('product_steffi.title') }}
+                    </h3>
                     <p class="text-body-light-11 hyphens-auto break-words text-sm leading-relaxed sm:text-base">
-                        Steffi adalah pengganti gula yang sehat dan alami, terbuat dari ekstrak daun Stevia murni
-                        (varietas
-                        Paraguay) dan dikembangkan oleh BP Group. Dengan tingkat kemanisan 300x lebih tinggi dari gula
-                        biasa, cukup 1 tetes untuk 1 gelas minuman favorit Anda.
+                        {{ __('product_steffi.description') }}
                     </p>
                 </div>
 
@@ -63,44 +62,34 @@
                 <div class="accordion divide-neutral/20 w-full divide-y">
 
                     <div class="accordion-item w-full" id="steffi-keunggulan-utama-arrow">
-                        <button class="accordion-toggle inline-flex w-full items-center gap-x-4 text-start"
+                        <button class="accordion-toggle inline-flex w-full items-center gap-x-4 pl-0 text-start"
                                 aria-controls="steffi-keunggulan-utama-arrow-collapse"
                                 aria-expanded="false">
                             <span
                                   class="icon-[tabler--chevron-right] accordion-item-active:rotate-90 size-4 shrink-0 transition-transform duration-300 sm:size-5 rtl:rotate-180"></span>
-                            <span class="break-words">Keunggulan Utama:</span>
+                            <span class="break-words">
+                                {{ __('product_steffi.point.1.title') }}
+                            </span>
                         </button>
                         <div id="steffi-keunggulan-utama-arrow-collapse"
                              class="accordion-content hidden w-full overflow-hidden transition-[height] duration-300"
                              aria-labelledby="steffi-keunggulan-utama-arrow"
                              role="region">
-                            <div class="w-full pb-4">
-                                <ul
-                                    class="text-base-content/80 list-disc space-y-1 break-words pl-6 text-sm font-normal sm:space-y-2 sm:pl-14 sm:text-base">
-                                    <li class="break-words">Tanpa Pemanis Buatan</li>
-                                    <li class="break-words">Tanpa Glukosa</li>
-                                    <li class="break-words">Tanpa Gula</li>
-                                    <li class="break-words">0 Kalori</li>
-                                    <li class="break-words">Tanpa Karbohidrat</li>
-                                    <li class="break-words">100% Ekstrak Stevia Alami</li>
-                                    <li class="break-words">Tanpa Rasa Pahit</li>
-                                    <li class="break-words">Mudah Larut</li>
-                                    <li class="break-words">Tahan Panas - cocok untuk makanan &amp; minuman panas</li>
-                                    <li class="break-words">Kemasan Praktis dan Mudah Dibawa</li>
-                                    <li class="break-words">Bersertifikat BPOM dan Halal</li>
-                                    <li class="break-words">Aman untuk penderita diabetes, ibu hamil, dan anak-anak</li>
-                                </ul>
+                            <div class="prose prose:sm md:prose-md w-full max-w-none pb-4">
+                                {!! __('product_steffi.point.1.description') !!}
                             </div>
                         </div>
                     </div>
 
                     <div class="accordion-item w-full" id="steffi-manfaat-kesehatan-arrow">
-                        <button class="accordion-toggle inline-flex w-full items-center gap-x-4 text-start"
+                        <button class="accordion-toggle inline-flex w-full items-center gap-x-4 pl-0 text-start"
                                 aria-controls="steffi-manfaat-kesehatan-arrow-collapse"
                                 aria-expanded="false">
                             <span
                                   class="icon-[tabler--chevron-right] accordion-item-active:rotate-90 size-4 shrink-0 transition-transform duration-300 sm:size-5 rtl:rotate-180"></span>
-                            <span class="break-words">Manfaat Kesehatan:</span>
+                            <span class="break-words">
+                                {{ __('product_steffi.point.2.title') }}
+                            </span>
                         </button>
                         <div id="steffi-manfaat-kesehatan-arrow-collapse"
                              class="accordion-content hidden w-full overflow-hidden transition-[height] duration-300"
@@ -109,20 +98,21 @@
                             <div class="w-full pb-4">
                                 <p
                                    class="text-base-content/80 hyphens-auto break-words text-sm font-normal sm:text-base">
-                                    Ideal untuk menjaga kesehatan hati, jantung, dan ginjal, serta membantu mengontrol
-                                    kolesterol, asam urat, gula darah, dan tekanan darah.
+                                    {!! __('product_steffi.point.2.description') !!}
                                 </p>
                             </div>
                         </div>
                     </div>
 
                     <div class="accordion-item w-full" id="steffi-aturan-pakai-arrow">
-                        <button class="accordion-toggle inline-flex w-full items-center gap-x-4 text-start"
+                        <button class="accordion-toggle inline-flex w-full items-center gap-x-4 pl-0 text-start"
                                 aria-controls="steffi-aturan-pakai-arrow-collapse"
                                 aria-expanded="false">
                             <span
                                   class="icon-[tabler--chevron-right] accordion-item-active:rotate-90 size-4 shrink-0 transition-transform duration-300 sm:size-5 rtl:rotate-180"></span>
-                            <span class="break-words">Aturan Pakai:</span>
+                            <span class="break-words">
+                                {{ __('product_steffi.point.3.title') }}
+                            </span>
                         </button>
                         <div id="steffi-aturan-pakai-arrow-collapse"
                              class="accordion-content hidden w-full overflow-hidden transition-[height] duration-300"
@@ -131,9 +121,7 @@
                             <div class="w-full pb-4">
                                 <p
                                    class="text-base-content/80 hyphens-auto break-words text-sm font-normal sm:text-base">
-                                    Cukup 1 tetes untuk 150-200 ml teh, kopi, susu, atau minuman lainnya.
-                                    Satu botol 30 ml tahan lebih lama dibandingkan pemanis biasa.
-                                    Nikmati manisnya hidup sehat—tanpa rasa khawatir—dengan Steffi!
+                                    {!! __('product_steffi.point.3.description') !!}
                                 </p>
                             </div>
                         </div>
@@ -145,7 +133,7 @@
                 <div class="flex items-center justify-center pb-4 pt-3 sm:pt-4">
                     <a href="#"
                        class="btn btn-primary btn-sm sm:btn-lg w-full rounded-lg px-6 text-sm font-semibold shadow-lg transition-all duration-300 hover:shadow-xl sm:rounded-xl sm:px-8 sm:text-base">
-                        Pesan Sekarang
+                        {{ __('product_steffi.cta') }}
                     </a>
                 </div>
 

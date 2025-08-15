@@ -22,14 +22,14 @@
                               class="icon-[tabler--chevron-right] accordion-item-active:rotate-90 size-5 shrink-0 transition-transform duration-300 rtl:rotate-180"></span>
                         {{ __('faq.detail.product_1.question.1') }}
                     </button>
-                    <div id="payment-sub-collapse-one"
+                    <div id="steffi-sub-collapse-one"
                          class="accordion-content w-full overflow-hidden transition-[height] duration-300"
                          aria-labelledby="steffi-sub-one"
                          role="region">
                         <div class="px-5 pb-4">
-                            <p class="text-base-content/80 font-normal">
-                                {{ __('faq.detail.product_1.answer.1') }}
-                            </p>
+                            <div class="text-base-content/80 prose prose-sm md:prose-md max-w-none font-normal">
+                                {!! __('faq.detail.product_1.answer.1') !!}
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -47,9 +47,9 @@
                          aria-labelledby="steffi-sub-two"
                          role="region">
                         <div class="px-5 pb-4">
-                            <p class="text-base-content/80 font-normal">
-                                {{ __('faq.detail.product_1.answer.2') }}
-                            </p>
+                            <div class="text-base-content/80 prose prose-sm md:prose-md max-w-none font-normal">
+                                {!! __('faq.detail.product_1.answer.2') !!}
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -67,9 +67,9 @@
                          aria-labelledby="steffi-sub-three"
                          role="region">
                         <div class="px-5 pb-4">
-                            <p class="text-base-content/80 font-normal">
-                                {{ __('faq.detail.product_1.answer.3') }}
-                            </p>
+                            <div class="text-base-content/80 prose prose-sm md:prose-md max-w-none font-normal">
+                                {!! __('faq.detail.product_1.answer.3') !!}
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -87,9 +87,9 @@
                          aria-labelledby="steffi-sub-four"
                          role="region">
                         <div class="px-5 pb-4">
-                            <p class="text-base-content/80 font-normal">
-                                {{ __('faq.detail.product_1.answer.4') }}
-                            </p>
+                            <div class="text-base-content/80 prose prose-sm md:prose-md max-w-none font-normal">
+                                {!! __('faq.detail.product_1.answer.4') !!}
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -100,16 +100,16 @@
                             aria-expanded="false">
                         <span
                               class="icon-[tabler--chevron-right] accordion-item-active:rotate-90 size-5 shrink-0 transition-transform duration-300 rtl:rotate-180"></span>
-                        {{ __('faq.detail.product_1.question.5') }}
+                        {!! __('faq.detail.product_1.question.5') !!}
                     </button>
                     <div id="steffi-sub-collapse-five"
                          class="accordion-content hidden w-full overflow-hidden transition-[height] duration-300"
                          aria-labelledby="steffi-sub-five"
                          role="region">
                         <div class="px-5 pb-4">
-                            <p class="text-base-content/80 font-normal">
-                                {{ __('faq.detail.product_1.answer.5') }}
-                            </p>
+                            <div class="text-base-content/80 prose prose-sm md:prose-md max-w-none font-normal">
+                                {!! __('faq.detail.product_1.answer.5') !!}
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -140,14 +140,14 @@
                               class="icon-[tabler--chevron-right] accordion-item-active:rotate-90 size-5 shrink-0 transition-transform duration-300 rtl:rotate-180"></span>
                         {{ __('faq.detail.product_2.question.1') }}
                     </button>
-                    <div id="payment-sub-collapse-one"
+                    <div id="british-propolis-british-propolis-green-sub-collapse-one"
                          class="accordion-content hidden w-full overflow-hidden transition-[height] duration-300"
                          aria-labelledby="british-propolis-british-propolis-green-sub-one"
                          role="region">
                         <div class="px-5 pb-4">
-                            <p class="text-base-content/80 font-normal">
-                                {{ __('faq.detail.product_2.answer.1') }}
-                            </p>
+                            <div class="text-base-content/80 prose prose-sm md:prose-md max-w-none font-normal">
+                                {!! __('faq.detail.product_2.answer.1') !!}
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -165,9 +165,9 @@
                          aria-labelledby="british-propolis-british-propolis-green-sub-two"
                          role="region">
                         <div class="px-5 pb-4">
-                            <p class="text-base-content/80 font-normal">
-                                {{ __('faq.detail.product_2.answer.2') }}
-                            </p>
+                            <div class="text-base-content/80 prose prose-sm md:prose-md max-w-none font-normal">
+                                {!! __('faq.detail.product_2.answer.2') !!}
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -185,9 +185,9 @@
                          aria-labelledby="british-propolis-british-propolis-green-sub-three"
                          role="region">
                         <div class="px-5 pb-4">
-                            <p class="text-base-content/80 font-normal">
-                                {{ __('faq.detail.product_2.answer.3') }}
-                            </p>
+                            <div class="text-base-content/80 prose prose-sm md:prose-md max-w-none font-normal">
+                                {!! __('faq.detail.product_2.answer.3') !!}
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -205,9 +205,9 @@
                          aria-labelledby="british-propolis-british-propolis-green-sub-four"
                          role="region">
                         <div class="px-5 pb-4">
-                            <p class="text-base-content/80 font-normal">
-                                {{ __('faq.detail.product_2.answer.4') }}
-                            </p>
+                            <div class="text-base-content/80 prose prose-sm md:prose-md max-w-none font-normal">
+                                {!! __('faq.detail.product_2.answer.4') !!}
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -225,9 +225,9 @@
                          aria-labelledby="british-propolis-british-propolis-green-sub-five"
                          role="region">
                         <div class="px-5 pb-4">
-                            <p class="text-base-content/80 font-normal">
-                                {{ __('faq.detail.product_2.answer.5') }}
-                            </p>
+                            <div class="text-base-content/80 prose prose-sm md:prose-md max-w-none font-normal">
+                                {!! __('faq.detail.product_2.answer.5') !!}
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -258,14 +258,14 @@
                               class="icon-[tabler--chevron-right] accordion-item-active:rotate-90 size-5 shrink-0 transition-transform duration-300 rtl:rotate-180"></span>
                         {{ __('faq.detail.product_3.question.1') }}
                     </button>
-                    <div id="payment-sub-collapse-one"
+                    <div id="british-propolis-norway-sub-collapse-one"
                          class="accordion-content hidden w-full overflow-hidden transition-[height] duration-300"
                          aria-labelledby="british-propolis-norway-sub-one"
                          role="region">
                         <div class="px-5 pb-4">
-                            <p class="text-base-content/80 font-normal">
-                                {{ __('faq.detail.product_3.answer.1') }}
-                            </p>
+                            <div class="text-base-content/80 prose prose-sm md:prose-md max-w-none font-normal">
+                                {!! __('faq.detail.product_3.answer.1') !!}
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -283,9 +283,9 @@
                          aria-labelledby="british-propolis-norway-sub-two"
                          role="region">
                         <div class="px-5 pb-4">
-                            <p class="text-base-content/80 font-normal">
-                                {{ __('faq.detail.product_3.answer.2') }}
-                            </p>
+                            <div class="text-base-content/80 prose prose-sm md:prose-md max-w-none font-normal">
+                                {!! __('faq.detail.product_3.answer.2') !!}
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -303,9 +303,9 @@
                          aria-labelledby="british-propolis-norway-sub-three"
                          role="region">
                         <div class="px-5 pb-4">
-                            <p class="text-base-content/80 font-normal">
-                                {{ __('faq.detail.product_3.answer.3') }}
-                            </p>
+                            <div class="text-base-content/80 prose prose-sm md:prose-md max-w-none font-normal">
+                                {!! __('faq.detail.product_3.answer.3') !!}
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -323,9 +323,9 @@
                          aria-labelledby="british-propolis-norway-sub-four"
                          role="region">
                         <div class="px-5 pb-4">
-                            <p class="text-base-content/80 font-normal">
-                                {{ __('faq.detail.product_3.answer.4') }}
-                            </p>
+                            <div class="text-base-content/80 prose prose-sm md:prose-md max-w-none font-normal">
+                                {!! __('faq.detail.product_3.answer.4') !!}
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -343,9 +343,9 @@
                          aria-labelledby="british-propolis-norway-sub-five"
                          role="region">
                         <div class="px-5 pb-4">
-                            <p class="text-base-content/80 font-normal">
-                                {{ __('faq.detail.product_3.answer.5') }}
-                            </p>
+                            <div class="text-base-content/80 prose prose-sm md:prose-md max-w-none font-normal">
+                                {!! __('faq.detail.product_3.answer.5') !!}
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -376,14 +376,14 @@
                               class="icon-[tabler--chevron-right] accordion-item-active:rotate-90 size-5 shrink-0 transition-transform duration-300 rtl:rotate-180"></span>
                         {{ __('faq.detail.product_4.question.1') }}
                     </button>
-                    <div id="payment-sub-collapse-one"
+                    <div id="belgie-sub-collapse-one"
                          class="accordion-content hidden w-full overflow-hidden transition-[height] duration-300"
                          aria-labelledby="belgie-sub-one"
                          role="region">
                         <div class="px-5 pb-4">
-                            <p class="text-base-content/80 font-normal">
-                                {{ __('faq.detail.product_4.answer.1') }}
-                            </p>
+                            <div class="text-base-content/80 prose prose-sm md:prose-md max-w-none font-normal">
+                                {!! __('faq.detail.product_4.answer.1') !!}
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -401,9 +401,9 @@
                          aria-labelledby="belgie-sub-two"
                          role="region">
                         <div class="px-5 pb-4">
-                            <p class="text-base-content/80 font-normal">
-                                {{ __('faq.detail.product_4.answer.2') }}
-                            </p>
+                            <div class="text-base-content/80 prose prose-sm md:prose-md max-w-none font-normal">
+                                {!! __('faq.detail.product_4.answer.2') !!}
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -421,9 +421,9 @@
                          aria-labelledby="belgie-sub-three"
                          role="region">
                         <div class="px-5 pb-4">
-                            <p class="text-base-content/80 font-normal">
-                                {{ __('faq.detail.product_4.answer.3') }}
-                            </p>
+                            <div class="text-base-content/80 prose prose-sm md:prose-md max-w-none font-normal">
+                                {!! __('faq.detail.product_4.answer.3') !!}
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -441,9 +441,9 @@
                          aria-labelledby="belgie-sub-four"
                          role="region">
                         <div class="px-5 pb-4">
-                            <p class="text-base-content/80 font-normal">
-                                {{ __('faq.detail.product_4.answer.4') }}
-                            </p>
+                            <div class="text-base-content/80 prose prose-sm md:prose-md max-w-none font-normal">
+                                {!! __('faq.detail.product_4.answer.4') !!}
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -461,9 +461,9 @@
                          aria-labelledby="belgie-sub-five"
                          role="region">
                         <div class="px-5 pb-4">
-                            <p class="text-base-content/80 font-normal">
-                                {{ __('faq.detail.product_4.answer.5') }}
-                            </p>
+                            <div class="text-base-content/80 prose prose-sm md:prose-md max-w-none font-normal">
+                                {!! __('faq.detail.product_4.answer.5') !!}
+                            </div>
                         </div>
                     </div>
                 </div>

@@ -60,14 +60,14 @@
         <!-- Product Description (Right) -->
         <div class="order-2 space-y-1">
             <div>
-                <h3 class="text-body-light-12 mb-4 text-3xl font-bold">Belgie - Perawatan Kulit Premium</h3>
+                <h3 class="text-body-light-12 mb-4 text-3xl font-bold">
+                    {{ __('product_belgie.title') }}
+                </h3>
                 <p class="text-body-light-11 text-md leading-relaxed">
-                    Belgie adalah rangkaian perawatan kulit mewah yang menggabungkan keahlian Eropa dengan bahan
-                    berkualitas tinggi untuk menghasilkan kulit yang sehat dan bercahaya.
+                    {{ __('product_belgie.description_1') }}
                 </p>
                 <p class="text-body-light-11 text-md leading-relaxed">
-                    Setiap produk Belgie aman, halal, terdaftar BPOM, dan terjangkau, dirancang untuk menutrisi kulit
-                    dari luar sekaligus menyegarkan dari dalam.
+                    {{ __('product_belgie.description_2') }}
                 </p>
             </div>
 
@@ -79,7 +79,7 @@
                             aria-expanded="false">
                         <span
                               class="icon-[tabler--chevron-right] accordion-item-active:rotate-90 size-5 shrink-0 transition-transform duration-300 rtl:rotate-180"></span>
-                        Teknologi & Bahan Aktif:
+                        {{ __('product_belgie.point.1.title') }}
                     </button>
                     <div id="belgie-teknologi-collapse"
                          class="accordion-content hidden w-full overflow-hidden transition-[height] duration-300"
@@ -87,8 +87,7 @@
                          role="region">
                         <div class="w-full pb-4">
                             <p class="text-base-content/80 hyphens-auto break-words text-sm font-normal sm:text-base">
-                                Mengandung Propolis, Hyaluronic Acid, dan Kolagen Hidrolisat—bahan aktif yang dikenal
-                                mampu melembabkan, meregenerasi, dan meremajakan kulit.
+                                {{ __('product_belgie.point.1.description') }}
                             </p>
                         </div>
                     </div>
@@ -100,7 +99,7 @@
                             aria-expanded="false">
                         <span
                               class="icon-[tabler--chevron-right] accordion-item-active:rotate-90 size-5 shrink-0 transition-transform duration-300 rtl:rotate-180"></span>
-                        Rangkaian Produk Belgie:
+                        {{ __('product_belgie.point.2.title') }}
                     </button>
                     <div id="belgie-rangkaian-collapse"
                          class="accordion-content hidden w-full overflow-hidden transition-[height] duration-300"
@@ -114,7 +113,7 @@
                                         aria-expanded="false">
                                     <span
                                           class="icon-[tabler--chevron-right] accordion-item-active:rotate-90 size-5 shrink-0 transition-transform duration-300 rtl:rotate-180"></span>
-                                    Belgie Facial Wash
+                                    {{ __('product_belgie.point.2.product.1.title') }}
                                 </button>
                                 <div id="belgie-facial-wash-collapse"
                                      class="accordion-content hidden w-full overflow-hidden transition-[height] duration-300"
@@ -123,20 +122,11 @@
                                     <div class="px-5 pb-4">
                                         <p
                                            class="text-base-content/80 hyphens-auto break-words text-sm font-normal sm:text-base">
-                                            <b>Belgie Facial Wash</b> Pembersih wajah yang mencerahkan, diperkaya dengan
-                                            Ekstrak Propolis dan Kolagen Terhidrolisis. Sabun wajah ini secara lembut
-                                            mengangkat kotoran, menghaluskan garis halus, dan membantu menampilkan kulit
-                                            yang segar dan sehat.
+                                            {!! __('product_belgie.point.2.product.1.description') !!}
                                         </p>
                                     </div>
                                     <div class="px-5 pb-4">
-                                        <ul
-                                            class="text-base-content/80 list-disc space-y-1 break-words pl-4 text-sm font-normal sm:space-y-2 sm:text-base">
-                                            <li>Membersihkan dan menyegarkan dengan lembut</li>
-                                            <li>Mengurangi tanda-tanda penuaan</li>
-                                            <li>Menjaga kesehatan kulit</li>
-                                            <li>Bersertifikat Halal MUI & BPOM</li>
-                                        </ul>
+                                        {!! __('product_belgie.point.2.product.1.point') !!}
                                     </div>
                                 </div>
                             </div>
@@ -147,7 +137,7 @@
                                         aria-expanded="false">
                                     <span
                                           class="icon-[tabler--chevron-right] accordion-item-active:rotate-90 size-5 shrink-0 transition-transform duration-300 rtl:rotate-180"></span>
-                                    Belgie Face Serum
+                                    {{ __('product_belgie.point.2.product.2.title') }}
                                 </button>
                                 <div id="belgie-face-serum-collapse"
                                      class="accordion-content hidden w-full overflow-hidden transition-[height] duration-300"
@@ -156,19 +146,11 @@
                                     <div class="px-5 pb-4">
                                         <p
                                            class="text-base-content/80 hyphens-auto break-words text-sm font-normal sm:text-base">
-                                            Serum anti-aging ini menggabungkan Propolis, Palmitoyl Tripeptide-5, dan
-                                            Kolagen untuk mengencangkan kulit, merangsang regenerasi, dan menciptakan
-                                            tampilan wajah yang cerah serta awet muda.
+                                            {{ __('product_belgie.point.2.product.2.description') }}
                                         </p>
                                     </div>
                                     <div class="px-5 pb-4">
-                                        <ul
-                                            class="text-base-content/80 list-disc space-y-1 break-words pl-4 text-sm font-normal sm:space-y-2 sm:text-base">
-                                            <li>Mengencangkan dan menghaluskan kulit</li>
-                                            <li>Meningkatkan kilau alami</li>
-                                            <li>Meregenerasi sel-sel kulit</li>
-                                            <li>Kualitas Eropa, Bersertifikat Halal & BPOM</li>
-                                        </ul>
+                                        {!! __('product_belgie.point.2.product.2.point') !!}
                                     </div>
                                 </div>
                             </div>
@@ -179,7 +161,7 @@
                                         aria-expanded="false">
                                     <span
                                           class="icon-[tabler--chevron-right] accordion-item-active:rotate-90 size-5 shrink-0 transition-transform duration-300 rtl:rotate-180"></span>
-                                    Belgie Night Cream
+                                    {{ __('product_belgie.point.2.product.3.title') }}
                                 </button>
                                 <div id="belgie-night-cream-collapse"
                                      class="accordion-content hidden w-full overflow-hidden transition-[height] duration-300"
@@ -188,20 +170,11 @@
                                     <div class="px-5 pb-4">
                                         <p
                                            class="text-base-content/80 hyphens-auto break-words text-sm font-normal sm:text-base">
-                                            Krim malam ini diformulasikan dengan Ekstrak Propolis, Kolagen
-                                            Terhidrolisis, Palmitoyl Tripeptide-5, dan Asam Hialuronat untuk memberikan
-                                            nutrisi mendalam, membantu memudarkan noda hitam, dan melembabkan kulit
-                                            sepanjang malam.
+                                            {{ __('product_belgie.point.2.product.3.description') }}
                                         </p>
                                     </div>
                                     <div class="px-5 pb-4">
-                                        <ul
-                                            class="text-base-content/80 list-disc space-y-1 break-words pl-4 text-sm font-normal sm:space-y-2 sm:text-base">
-                                            <li>Mengurangi perubahan warna kulit</li>
-                                            <li>Melembabkan dan menghaluskan secara mendalam</li>
-                                            <li>Mendukung proses perbaikan kulit saat tidur</li>
-                                            <li>Bersertifikat Halal & BPOM</li>
-                                        </ul>
+                                        {!! __('product_belgie.point.2.product.3.point') !!}
                                     </div>
                                 </div>
                             </div>
@@ -212,7 +185,7 @@
                                         aria-expanded="false">
                                     <span
                                           class="icon-[tabler--chevron-right] accordion-item-active:rotate-90 size-5 shrink-0 transition-transform duration-300 rtl:rotate-180"></span>
-                                    Belgie Day Cream
+                                    {{ __('product_belgie.point.2.product.4.title') }}
                                 </button>
                                 <div id="belgie-day-cream-collapse"
                                      class="accordion-content hidden w-full overflow-hidden transition-[height] duration-300"
@@ -221,26 +194,15 @@
                                     <div class="px-5 pb-4">
                                         <p
                                            class="text-base-content/80 hyphens-auto break-words text-sm font-normal sm:text-base">
-                                            Krim siang yang ringan ini mengandalkan tiga bahan aktif utama yang bekerja
-                                            sama melindungi dan menutrisi kulit sepanjang hari, serta memberikan
-                                            tampilan cerah dan awet muda. Propolis yang kaya antioksidan membantu
-                                            mengurangi tanda penuaan dini, melembapkan, dan menenangkan kulit
-                                            berjerawat.
+                                            {{ __('product_belgie.point.2.product.4.description_1') }}
                                         </p>
                                         <p
                                            class="text-base-content/80 hyphens-auto break-words text-sm font-normal sm:text-base">
-                                            Titanium Dioksida melindungi dari sinar matahari, mencerahkan noda gelap,
-                                            dan menjaga kelembutan kulit. Ethylhexyl Methoxycinnamate menambah lapisan
-                                            perlindungan dengan menangkal sinar UV berbahaya dan mencegah penuaan dini.
+                                            {{ __('product_belgie.point.2.product.4.description_2') }}
                                         </p>
                                     </div>
                                     <div class="px-5 pb-4">
-                                        <ul
-                                            class="text-base-content/80 list-disc space-y-1 break-words pl-4 text-sm font-normal sm:space-y-2 sm:text-base">
-                                            <li>Melindungi kulit dari paparan sinar matahari setiap hari</li>
-                                            <li>Menjaga kilau alami kulit</li>
-                                            <li>Kaya hidrasi dan antioksidan</li>
-                                        </ul>
+                                        {!! __('product_belgie.point.2.product.4.point') !!}
                                     </div>
                                 </div>
                             </div>
@@ -251,7 +213,7 @@
                                         aria-expanded="false">
                                     <span
                                           class="icon-[tabler--chevron-right] accordion-item-active:rotate-90 size-5 shrink-0 transition-transform duration-300 rtl:rotate-180"></span>
-                                    Belgie Hair Tonic
+                                    {{ __('product_belgie.point.2.product.5.title') }}
                                 </button>
                                 <div id="belgie-hair-tonic-collapse"
                                      class="accordion-content hidden w-full overflow-hidden transition-[height] duration-300"
@@ -260,33 +222,20 @@
                                     <div class="px-5 pb-4">
                                         <p
                                            class="text-base-content/80 hyphens-auto break-words text-sm font-normal sm:text-base">
-                                            membantu mengatasi kerontokan, menumbuhkan rambut lebih tebal, dan menjaga
-                                            kesehatan kulit kepala. Selain itu, produk ini diformulasikan dengan
-                                            bahan-bahan alami dan diklaim aman karena sudah terdaftar di BPOM.
+                                            {{ __('product_belgie.point.2.product.5.description_1') }}
                                         </p>
                                         <p
                                            class="text-base-content/80 hyphens-auto break-words text-sm font-normal sm:text-base">
-                                            Berikut adalah beberapa kelebihan Belgie Hair Tonic secara lebih detail:
+                                            {{ __('product_belgie.point.2.product.5.description_2') }}
                                         </p>
                                     </div>
                                     <div class="px-5 pb-4">
-                                        <ul
-                                            class="text-base-content/80 list-disc space-y-1 break-words pl-4 text-sm font-normal sm:space-y-2 sm:text-base">
-                                            <li>Mengatasi rambut rontok</li>
-                                            <li>Merangsang pertumbuhan rambut baru</li>
-                                            <li>Memperkuat rambut</li>
-                                            <li>Menjaga kesehatan kulit kepala</li>
-                                            <li>Mengandung bahan alami</li>
-                                            <li>Terdaftar BPOM</li>
-                                            <li>Mudah digunakan</li>
-                                        </ul>
+                                        {!! __('product_belgie.point.2.product.5.point') !!}
                                     </div>
                                     <div class="px-5 pb-4">
                                         <p
                                            class="text-base-content/80 hyphens-auto break-words text-sm font-normal sm:text-base">
-                                            Dengan berbagai kelebihan tersebut, Belgie Hair Tonic menjadi pilihan yang
-                                            baik untuk mengatasi masalah rambut dan menjaga kesehatan rambut secara
-                                            keseluruhan.
+                                            {{ __('product_belgie.point.2.product.5.description_3') }}
                                         </p>
                                     </div>
                                 </div>
@@ -296,10 +245,7 @@
                     </div>
                     <div class="mt-4 w-full pb-4">
                         <p class="text-base-content/80 hyphens-auto break-words text-sm font-normal sm:text-base">
-                            <b>Belgie</b> - Kulit Cantik Natural dengan Sentuhan Eropa
-                            Tampilkan versi terbaik dari kulit Anda dengan perawatan kulit yang aman, ilmiah, dan
-                            efektif.
-
+                            {!! __('product_belgie.tagline') !!}
                         </p>
                     </div>
                 </div>
@@ -310,7 +256,7 @@
             <div class="flex items-center justify-center pb-4 pt-3 sm:pt-4">
                 <a href="#"
                    class="btn btn-primary btn-sm sm:btn-lg w-full rounded-lg px-6 text-sm font-semibold shadow-lg transition-all duration-300 hover:shadow-xl sm:rounded-xl sm:px-8 sm:text-base">
-                    Pesan Sekarang
+                    {{ __('product_belgie.cta') }}
                 </a>
             </div>
         </div>

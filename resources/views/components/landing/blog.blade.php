@@ -23,7 +23,7 @@
                 </figure>
                 <div class="card-body p-6">
                     <div class="mb-3 flex items-center text-sm text-gray-500">
-                        <i class="fas fa-calendar"></i>
+                        <i class="fas fa-calendar fa-fw mr-1"></i>
                         <time datetime="2024-01-15">
                             {{ $n->publish_date_formatted }}
                         </time>

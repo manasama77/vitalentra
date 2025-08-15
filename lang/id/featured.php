@@ -2,7 +2,7 @@
 
 return [
     'title' => 'Fitur',
-    'sub_title' => 'Fitur Unggulan',
+    'sub_title' => 'Sekilas Manfaat Utama',
     'content_1' => 'Kami percaya bahwa hidup sehat dimulai dari pilihan yang tepat. Karena itu, setiap produk dan layanan kami dirancang untuk memberikan manfaat maksimal tanpa mengorbankan kualitas, rasa, maupun nilai-nilai penting seperti kehalalan dan keamanan. Berikut adalah keunggulan yang menjadikan kami berbeda:',
     'point_1' => [
         'title' => 'Produk Kesehatan Alami',

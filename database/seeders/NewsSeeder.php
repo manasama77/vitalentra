@@ -54,7 +54,7 @@ class NewsSeeder extends Seeder
                 'created_at' => now(),
                 'updated_at' => now(),
                 'content_ind' => view('article3_ind')->render(),
-                'content_eng' => view('article3_ind')->render(),
+                'content_eng' => view('article3_eng')->render(),
             ],
         ];
 

@@ -51,90 +51,67 @@
         <!-- Product Description (Left) -->
         <div class="order-2 space-y-1 lg:order-1">
             <div>
-                <h3 class="text-body-light-12 mb-4 text-3xl font-bold">British Propolis Reguler</h3>
+                <h3 class="text-body-light-12 mb-4 text-3xl font-bold">
+                    {{ __('product_bp_reguler.title') }}
+                </h3>
                 <p class="text-body-light-11 text-md leading-relaxed">
-                    British Propolis adalah suplemen kesehatan premium dari 100% propolis murni, diformulasikan untuk
-                    usia 2 tahun ke atas. Diproduksi dengan teknologi mutakhir dari Inggris dan memenuhi standar
-                    internasional, British Propolis kaya akan bioflavonoid—hingga 400% lebih tinggi dari propolis biasa.
+                    {{ __('product_bp_reguler.description_1') }}
                 </p>
                 <p class="text-body-light-11 text-md leading-relaxed">
-                    Berasal dari lebah tangguh Inggris yang terbiasa dengan iklim ekstrem, produk ini memberikan manfaat
-                    antioksidan dan daya tahan tubuh yang kuat. Telah tersertifikasi halal (MUI dan lembaga UK), bebas
-                    alkohol, terdaftar BPOM, dan bukan bagian dari skema MLM.
+                    {{ __('product_bp_reguler.description_2') }}
                 </p>
             </div>
 
             <!-- Accordions -->
             <div class="accordion divide-neutral/20 divide-y">
                 <div class="accordion-item" id="bp-reguler-manfaat-utama-arrow">
-                    <button class="accordion-toggle inline-flex items-center gap-x-4 text-start"
+                    <button class="accordion-toggle inline-flex w-full items-center gap-x-4 pl-0 text-start"
                             aria-controls="bp-reguler-manfaat-utama-arrow-collapse"
                             aria-expanded="false">
                         <span
                               class="icon-[tabler--chevron-right] accordion-item-active:rotate-90 size-5 shrink-0 transition-transform duration-300 rtl:rotate-180"></span>
-                        Manfaat Utama:
+                        {{ __('product_bp_reguler.point.1.title') }}
                     </button>
                     <div id="bp-reguler-manfaat-utama-arrow-collapse"
                          class="accordion-content hidden w-full overflow-hidden transition-[height] duration-300"
                          aria-labelledby="bp-reguler-manfaat-utama-arrow"
                          role="region">
-                        <div class="w-full pb-4">
-                            <ul
-                                class="text-base-content/80 list-disc space-y-1 break-words pl-6 text-sm font-normal sm:space-y-2 sm:pl-14 sm:text-base">
-                                <li>Meningkatkan stamina dan energi</li>
-                                <li>Menguatkan sistem imun</li>
-                                <li>Mempercepat pemulihan setelah sakit</li>
-                                <li>Meningkatkan vitalitas dan kebugaran</li>
-                                <li>Hasil nyata dirasakan dalam 21 hari atau kurang</li>
-                            </ul>
+                        <div class="prose prose-sm md:prose-md w-full max-w-none pb-4">
+                            {!! __('product_bp_reguler.point.1.description') !!}
                         </div>
                     </div>
                 </div>
                 <div class="accordion-item" id="bp-reguler-kelebihan-arrow">
-                    <button class="accordion-toggle inline-flex items-center gap-x-4 text-start"
+                    <button class="accordion-toggle inline-flex w-full items-center gap-x-4 pl-0 text-start"
                             aria-controls="bp-reguler-kelebihan-arrow-collapse"
                             aria-expanded="false">
                         <span
                               class="icon-[tabler--chevron-right] accordion-item-active:rotate-90 size-5 shrink-0 transition-transform duration-300 rtl:rotate-180"></span>
-                        Kelebihan:
+                        {{ __('product_bp_reguler.point.2.title') }}
                     </button>
                     <div id="bp-reguler-kelebihan-arrow-collapse"
                          class="accordion-content hidden w-full overflow-hidden transition-[height] duration-300"
                          aria-labelledby="bp-reguler-kelebihan-arrow"
                          role="region">
                         <div class="w-full pb-4">
-                            <ul
-                                class="text-base-content/80 list-disc space-y-1 break-words pl-6 text-sm font-normal sm:space-y-2 sm:pl-14 sm:text-base">
-                                <li>Diproduksi dengan standar dari Inggris</li>
-                                <li>Mengandung kadar flavonoid (antioksidan alami) yang tinggi</li>
-                                <li>Aman dan tidak memiliki efek samping</li>
-                                <li>Dikemas dalam botol kaca yang aman</li>
-                            </ul>
+                            {!! __('product_bp_reguler.point.2.description') !!}
                         </div>
                     </div>
                 </div>
                 <div class="accordion-item" id="bp-reguler-informasi-produk-arrow">
-                    <button class="accordion-toggle inline-flex items-center gap-x-4 text-start"
+                    <button class="accordion-toggle inline-flex w-full items-center gap-x-4 pl-0 text-start"
                             aria-controls="bp-reguler-informasi-produk-arrow-collapse"
                             aria-expanded="false">
                         <span
                               class="icon-[tabler--chevron-right] accordion-item-active:rotate-90 size-5 shrink-0 transition-transform duration-300 rtl:rotate-180"></span>
-                        Informasi Produk:
+                        {{ __('product_bp_reguler.point.3.title') }}
                     </button>
                     <div id="bp-reguler-informasi-produk-arrow-collapse"
                          class="accordion-content hidden w-full overflow-hidden transition-[height] duration-300"
                          aria-labelledby="bp-reguler-informasi-produk-arrow"
                          role="region">
                         <div class="w-full pb-4">
-                            <ul
-                                class="text-base-content/80 list-disc space-y-1 break-words pl-6 text-sm font-normal sm:space-y-2 sm:pl-14 sm:text-base">
-                                <li>Isi bersih: 6 ml</li>
-                                <li>BPOM: TR183610771</li>
-                                <li>Sertifikat Halal MUI: 0013009335019</li>
-                                <li>Sertifikat Halal UK (HMC): 2018-196</li>
-                                <li>Sertifikat FDA</li>
-                                <li>Masa simpan: Hingga 3 tahun</li>
-                            </ul>
+                            {!! __('product_bp_reguler.point.3.description') !!}
                         </div>
                     </div>
                 </div>
@@ -144,7 +121,7 @@
             <div class="flex items-center justify-center pb-4 pt-3 sm:pt-4">
                 <a href="#"
                    class="btn btn-primary btn-sm sm:btn-lg w-full rounded-lg px-6 text-sm font-semibold shadow-lg transition-all duration-300 hover:shadow-xl sm:rounded-xl sm:px-8 sm:text-base">
-                    Pesan Sekarang
+                    {{ __('product_bp_reguler.cta') }}
                 </a>
             </div>
         </div>

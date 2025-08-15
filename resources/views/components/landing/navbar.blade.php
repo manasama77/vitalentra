@@ -37,7 +37,7 @@
                                 <a href="{{ route('home') }}"
                                    class="group-hover:text-base-content lg:text-primary {{ request()->routeIs('home') ? 'active' : '' }} mx-8 flex py-2 text-base font-medium lg:mx-0 lg:inline-flex lg:px-0 lg:py-6 lg:group-hover:opacity-70"
                                    role="menuitem">
-                                    Beranda
+                                    {{ __('menu.home') }}
                                 </a>
                             </li>
 
@@ -49,7 +49,7 @@
                                 <a href="{{ $link }}"
                                    class="{{ $is_home ? 'ic-page-scroll' : '' }} group-hover:text-base-content lg:text-primary mx-8 flex py-2 text-base font-medium lg:mr-0 lg:inline-flex lg:px-0 lg:py-6 lg:group-hover:opacity-70"
                                    role="menuitem">
-                                    Tentang Kami
+                                    {{ __('menu.about') }}
                                 </a>
                             </li>
 
@@ -60,7 +60,9 @@
                                 @endphp
                                 <a href="{{ $link }}"
                                    class="{{ $is_home ? 'ic-page-scroll' : '' }} group-hover:text-base-content lg:text-primary mx-8 flex py-2 text-base font-medium lg:mr-0 lg:inline-flex lg:px-0 lg:py-6 lg:group-hover:opacity-70"
-                                   role="menuitem">Produk</a>
+                                   role="menuitem">
+                                    {{ __('menu.product') }}
+                                </a>
                             </li>
 
                             <li class="group relative">
@@ -70,7 +72,9 @@
                                 @endphp
                                 <a href="{{ $link }}"
                                    class="{{ $is_home ? 'ic-page-scroll' : '' }} group-hover:text-base-content lg:text-primary mx-8 flex py-2 text-base font-medium lg:mr-0 lg:inline-flex lg:px-0 lg:py-6 lg:group-hover:opacity-70"
-                                   role="menuitem">FAQ</a>
+                                   role="menuitem">
+                                    {{ __('menu.faq') }}
+                                </a>
                             </li>
 
                             <li class="group relative">
@@ -81,7 +85,9 @@
                                 @endphp
                                 <a href="{{ $link }}"
                                    class="{{ $is_home ? 'ic-page-scroll' : '' }} group-hover:text-base-content lg:text-primary {{ $is_news }} mx-8 flex py-2 text-base font-medium lg:mr-0 lg:inline-flex lg:px-0 lg:py-6 lg:group-hover:opacity-70"
-                                   role="menuitem">Berita & Blog</a>
+                                   role="menuitem">
+                                    {{ __('menu.news_and_blog') }}
+                                </a>
                             </li>
 
                             <li class="group relative">
@@ -91,13 +97,15 @@
                                 @endphp
                                 <a href="{{ $link }}"
                                    class="{{ $is_home ? 'ic-page-scroll' : '' }} group-hover:text-base-content lg:text-primary mx-8 flex py-2 text-base font-medium lg:mr-0 lg:inline-flex lg:px-0 lg:py-6 lg:group-hover:opacity-70"
-                                   role="menuitem">Kontak</a>
+                                   role="menuitem">
+                                    {{ __('menu.contact') }}
+                                </a>
                             </li>
                         </ul>
                     </nav>
                 </div>
                 <div class="flex items-center justify-end gap-6 pr-[52px] lg:pr-0">
-                    {{-- <x-landing.language /> --}}
+                    <x-landing.language />
                     <button type="button"
                             class="text-primary-color hidden items-center text-[22px]/none"
                             aria-label="Switch theme"

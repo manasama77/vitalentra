@@ -3,43 +3,33 @@
     <x-landing.hero />
 
     <!-- About section -->
-    {{-- <x-landing.about  /> --}}
     <x-landing.about loading="lazy" />
 
     <!-- Featured section -->
-    {{-- <x-landing.featured /> --}}
     <x-landing.featured loading="lazy" />
 
     <!-- Intro video section -->
-    {{-- <x-landing.intro /> --}}
     <x-landing.intro loading="lazy" />
 
     <!-- Call action section -->
-    {{-- <x-landing.cta /> --}}
     <x-landing.cta loading="lazy" />
 
     <!-- Product section -->
-    {{-- <x-landing.product :carousels="$carousels" /> --}}
     <x-landing.product :carousels="$carousels" loading="lazy" />
 
     <!-- Team section -->
-    {{-- <x-landing.team /> --}}
     <x-landing.team loading="lazy" />
 
     <!-- Testimonials section -->
-    {{-- <x-landing.testimonial /> --}}
     <x-landing.testimonial loading="lazy" />
 
     <!-- FAQ section -->
-    {{-- <x-landing.faq /> --}}
     <x-landing.faq loading="lazy" />
 
     <!-- Blog section -->
-    {{-- <x-landing.blog :news="$news" /> --}}
     <x-landing.blog :news="$news" loading="lazy" />
 
     <!-- Contact section -->
-    {{-- <x-landing.contact /> --}}
     <x-landing.contact loading="lazy" />
 
     <!-- Team Member Modals -->
@@ -51,7 +41,7 @@
 
     <x-landing.partials.modal_figure modalId="{{ Str::slug('Beka Masinggil') }}"
                                      name="Beka Masinggil"
-                                     position="Komisaris"
+                                     position="{{ __('team.commissioner') }}"
                                      photo="{{ Vite::asset('resources/images/Management - Beka Masinggil.jpg') }}"
                                      content="{!! __('team.content.2') !!}" />
 

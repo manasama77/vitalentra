@@ -5,6 +5,15 @@ use App\Livewire\Settings\Password;
 use App\Livewire\Settings\Appearance;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\BerandaController;
+use App\Http\Controllers\LanguageController;
+
+// Language switching route
+Route::get('language/{locale}', [LanguageController::class, 'switch'])->name('language.switch');
+
+// Test route for multilanguage (development only)
+Route::get('test-multilanguage', function () {
+    return view('test-multilanguage');
+})->name('test.multilanguage');
 
 Route::get('/', [BerandaController::class, 'index'])->name('home');
 Route::get('/phpinfo', function () {

@@ -53,7 +53,7 @@ class News extends Model
 
     public function getContentAttribute(): string
     {
-        // Get current locale from config
+        // Get current locale from session
         $locale = config('app.locale');
 
         return $locale === 'id' ? ($this->content_ind ?: '') : ($this->content_eng ?: '');

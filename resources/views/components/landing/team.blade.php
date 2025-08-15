@@ -26,7 +26,7 @@
             <div class="scroll-revealed mx-auto w-full max-w-[300px]">
                 <x-landing.partials.figure photo="{{ Vite::asset('resources/images/Management - Beka Masinggil.jpg') }}"
                                            name="Beka Masinggil"
-                                           position="Komisaris"
+                                           position="{{ __('team.commissioner') }}"
                                            triggerId="{{ Str::slug('Beka Masinggil') }}"
                                            contentKey="2" />
             </div>

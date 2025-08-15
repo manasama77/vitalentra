@@ -50,16 +50,14 @@
         <!-- Product Description (Left) -->
         <div class="order-2 space-y-1 lg:order-1">
             <div>
-                <h3 class="text-body-light-12 mb-4 text-3xl font-bold">British Propolis Norway</h3>
+                <h3 class="text-body-light-12 mb-4 text-3xl font-bold">
+                    {{ __('product_bp_norway.title') }}
+                </h3>
                 <p class="text-body-light-11 text-md leading-relaxed">
-                    BP Norway adalah suplemen berkualitas tinggi berbahan dasar Minyak Ikan Salmon Atlantik murni, kaya
-                    Omega-3, DHA, EPA, dan DPA (Docosapentaenoic Acid) yang langka. Nutrisi ini mendukung kesehatan
-                    jantung, otak, mata, dan imunitas—terutama untuk anak-anak.
+                    {{ __('product_bp_norway.description_1') }}
                 </p>
                 <p class="text-body-light-11 text-md leading-relaxed">
-                    Berbeda dari ikan salmon segar yang perlu disimpan dingin dan dimasak dengan benar, BP Norway
-                    dikemas dalam bentuk kapsul lunak praktis menggunakan teknologi canggih yang menjaga kandungan
-                    gizinya tetap utuh.
+                    {{ __('product_bp_norway.description_2') }}
                 </p>
             </div>
 
@@ -71,20 +69,14 @@
                             aria-expanded="false">
                         <span
                               class="icon-[tabler--chevron-right] accordion-item-active:rotate-90 size-5 shrink-0 transition-transform duration-300 rtl:rotate-180"></span>
-                        Manfaat untuk Anak:
+                        {{ __('product_bp_norway.point.1.title') }}
                     </button>
                     <div id="bp-norway-manfaat-collapse"
                          class="accordion-content hidden w-full overflow-hidden transition-[height] duration-300"
                          aria-labelledby="bp-norway-manfaat"
                          role="region">
                         <div class="w-full pb-4">
-                            <ul
-                                class="text-base-content/80 list-disc space-y-1 break-words pl-6 text-sm font-normal sm:space-y-2 sm:pl-14 sm:text-base">
-                                <li>Mendukung perkembangan otak dan fungsi kognitif</li>
-                                <li>Mengurangi gejala alergi</li>
-                                <li>Membantu meredakan asma</li>
-                                <li>Menjaga kesehatan jantung</li>
-                            </ul>
+                            {!! __('product_bp_norway.point.1.description') !!}
                         </div>
                     </div>
                 </div>
@@ -94,23 +86,19 @@
                             aria-expanded="false">
                         <span
                               class="icon-[tabler--chevron-right] accordion-item-active:rotate-90 size-5 shrink-0 transition-transform duration-300 rtl:rotate-180"></span>
-                        Kelebihan:
+                        {{ __('product_bp_norway.point.2.title') }}
                     </button>
                     <div id="bp-norway-kelebihan-collapse"
                          class="accordion-content hidden w-full overflow-hidden transition-[height] duration-300"
                          aria-labelledby="bp-norway-kelebihan"
                          role="region">
                         <div class="w-full pb-4">
-                            <ul
-                                class="text-base-content/80 list-disc space-y-1 break-words pl-6 text-sm font-normal sm:space-y-2 sm:pl-14 sm:text-base">
-                                <li>Menjaga kesehatan jantung</li>
-                                <li>Mengurangi risiko demensia pada lansia</li>
-                            </ul>
+                            {!! __('product_bp_norway.point.2.description') !!}
                         </div>
                         <div class="w-full pb-4">
                             <p
                                class="text-base-content/80 list-disc space-y-1 break-words pl-6 text-sm font-bold sm:space-y-2 sm:text-base md:pl-8">
-                                Isi: 40 kapsul lunak bening
+                                {{ __('product_bp_norway.point.2.info') }}
                             </p>
                         </div>
                     </div>
@@ -121,7 +109,7 @@
             <div class="flex items-center justify-center pb-4 pt-3 sm:pt-4">
                 <a href="#"
                    class="btn btn-primary btn-sm sm:btn-lg w-full rounded-lg px-6 text-sm font-semibold shadow-lg transition-all duration-300 hover:shadow-xl sm:rounded-xl sm:px-8 sm:text-base">
-                    Pesan Sekarang
+                    {{ __('product_bp_norway.cta') }}
                 </a>
             </div>
         </div>

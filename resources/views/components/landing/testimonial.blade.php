@@ -13,27 +13,27 @@
              <div class="swiper-wrapper">
                  <x-landing.partials.testimony_card name="Teuku Wisnu"
                                                     job="{{ __('testimony.user.1.job') }}"
-                                                    description="{{ __('testimony.user.1.description') }}"
+                                                    description="{!! __('testimony.user.1.description') !!}"
                                                     photo="{{ Vite::asset('resources/images/Testimonials - Teuku Wisnu.jpg') }}" />
 
                  <x-landing.partials.testimony_card name="Irwansyah"
                                                     job="{{ __('testimony.user.2.job') }}"
-                                                    description="{{ __('testimony.user.2.description') }}"
+                                                    description="{!! __('testimony.user.2.description') !!}"
                                                     photo="{{ Vite::asset('resources/images/Testimonials - Irwansyah.jpg') }}" />
 
                  <x-landing.partials.testimony_card name="Mario Irwinsyah"
                                                     job="{{ __('testimony.user.3.job') }}"
-                                                    description="{{ __('testimony.user.3.description') }}"
+                                                    description="{!! __('testimony.user.3.description') !!}"
                                                     photo="{{ Vite::asset('resources/images/Testimonials - Mario Irwinsyah.jpg') }}" />
 
                  <x-landing.partials.testimony_card name="Citra Kirana"
                                                     job="{{ __('testimony.user.4.job') }}"
-                                                    description="{{ __('testimony.user.4.description') }}"
+                                                    description="{!! __('testimony.user.4.description') !!}"
                                                     photo="{{ Vite::asset('resources/images/Testimonials - Citra Kirana.jpg') }}" />
 
                  <x-landing.partials.testimony_card name="Natasha Rizky"
                                                     job="{{ __('testimony.user.5.job') }}"
-                                                    description="{{ __('testimony.user.5.description') }}"
+                                                    description="{!! __('testimony.user.5.description') !!}"
                                                     photo="{{ Vite::asset('resources/images/Testimonials - Natasha Rizky.jpg') }}" />
              </div>
 
@@ -48,3 +48,4 @@
          </div>
      </div>
  </section>
+
