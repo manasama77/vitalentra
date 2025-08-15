@@ -1,5 +1,7 @@
 <?php
 
+use Illuminate\Support\Facades\Session;
+
 test('helper functions work correctly', function () {
     // Test current_locale function
     expect(current_locale())->toBeString();
@@ -35,9 +37,9 @@ test('language switching works', function () {
     $response->assertSessionHas('locale', 'id');
 });
 
-test('invalid language returns 400', function () {
+test('invalid language returns 404', function () {
     $response = $this->get('/language/invalid');
-    $response->assertStatus(400);
+    $response->assertStatus(404);
 });
 
 test('test multilanguage page loads', function () {
@@ -46,15 +48,35 @@ test('test multilanguage page loads', function () {
     $response->assertViewIs('test-multilanguage');
 });
 
+it('first time visitor gets indonesian default', function () {
+    // Clear all sessions to simulate first time visitor
+    Session::flush();
+
+    // Test visiting the test multilanguage page instead of homepage
+    $response = $this->get('/test-multilanguage', [
+        'Accept-Language' => 'id-ID,id;q=0.9',  // Simulate Indonesian browser
+    ]);
+
+    $response->assertOk();
+
+    // Should default to Indonesian
+    expect(app()->getLocale())->toBe('id');
+
+    // Should see Indonesian content on the test page
+    $response->assertSee('Konten Bahasa Indonesia');
+    $response->assertSee('Ini adalah konten yang ditampilkan ketika bahasa aktif adalah');
+});
+
 test('middleware sets correct locale', function () {
     // Test with session locale
-    $this->withSession(['locale' => 'en'])
-         ->get('/')
-         ->assertOk();
+    $response = $this->withSession(['locale' => 'en'])
+         ->get('/test-multilanguage');
 
+    $response->assertOk();
     expect(app()->getLocale())->toBe('en');
 
     // Test with URL parameter
-    $this->get('/?lang=id');
+    $response = $this->get('/test-multilanguage?lang=id');
+    $response->assertOk();
     expect(app()->getLocale())->toBe('id');
 });
