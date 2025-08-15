@@ -1,0 +1,35 @@
+# Dependencies
+node_modules/
+vendor/
+
+# Build outputs
+public/build/
+public/hot
+storage/
+
+# Logs
+*.log
+
+# Environment files
+.env*
+
+# Cache files
+bootstrap/cache/
+storage/framework/cache/
+storage/framework/sessions/
+storage/framework/testing/
+storage/framework/views/
+
+# Compiled assets
+public/css/
+public/js/
+public/mix-manifest.json
+
+# Laravel specific
+storage/logs/
+storage/app/
+bootstrap/cache/
+
+# Temporary files
+*.tmp
+*.temp

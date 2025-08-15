@@ -1,0 +1,57 @@
+{
+	"printWidth": 80,
+	"tabWidth": 4,
+	"useTabs": true,
+	"semi": true,
+	"singleQuote": false,
+	"quoteProps": "as-needed",
+	"trailingComma": "es5",
+	"bracketSpacing": true,
+	"bracketSameLine": true,
+	"arrowParens": "avoid",
+	"endOfLine": "lf",
+	"overrides": [
+		{
+			"files": "*.js",
+			"options": {
+				"singleQuote": true
+			}
+		},
+		{
+			"files": "*.ts",
+			"options": {
+				"singleQuote": true
+			}
+		},
+		{
+			"files": "*.blade.php",
+			"options": {
+				"parser": "blade",
+				"printWidth": 120,
+				"wrapAttributes": "force-expand-multiline",
+				"sortTailwindcssClasses": true,
+				"wrapAttributesMinAttrs": 3,
+				"noPhpSyntaxCheck": true,
+				"useTabs": false,
+				"tabWidth": 4,
+				"singleQuote": true,
+				"htmlWhitespaceSensitivity": "ignore",
+				"bracketSameLine": true,
+				"endOfLine": "lf"
+			}
+		},
+		{
+			"files": "*.css",
+			"options": {
+				"singleQuote": false
+			}
+		},
+		{
+			"files": "*.scss",
+			"options": {
+				"singleQuote": false
+			}
+		}
+	],
+	"plugins": ["@shufo/prettier-plugin-blade"]
+}
