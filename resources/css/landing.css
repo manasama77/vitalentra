@@ -257,7 +257,10 @@ layer(base);
 		}
 	}
 
-	button#language-change-btn {
+	button#language-change-btn.not_home {
+		@apply !text-base-content;
+	}
+	button#language-change-btn.is_home {
 		@apply !text-white;
 	}
 

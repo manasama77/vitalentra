@@ -1,7 +1,10 @@
 <div class="dropdown wrapper-language relative inline-flex">
+    @php
+        $is_home = request()->routeIs('home');
+    @endphp
     <button id="language-change-btn"
             type="button"
-            class="dropdown-toggle inline-flex items-center gap-1 text-lg/none"
+            class="dropdown-toggle {{ $is_home ? 'is_home' : 'not_home' }} inline-flex items-center gap-1 text-lg/none"
             aria-haspopup="menu"
             aria-expanded="false"
             aria-label="Dropdown">

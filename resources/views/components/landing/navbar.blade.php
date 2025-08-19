@@ -4,8 +4,11 @@
     <div class="container">
         <div class="ic-navbar-container relative -mx-5 flex items-center justify-between">
             <div class="w-20 max-w-full px-5 lg:w-20">
+                @php
+                    $is_home = request()->routeIs('home');
+                @endphp
                 <a href="{{ route('home') }}" class="ic-navbar-logo text-primary-color block w-full">
-                    <img src="{{ Vite::asset('resources/images/logo_white.png') }}"
+                    <img src="{{ $is_home ? Vite::asset('resources/images/logo_white.png') : Vite::asset('resources/images/logo.png') }}"
                          alt="Vitalentra Logo"
                          class="w-full"
                          id="NavbarBrandWhite"
@@ -35,7 +38,7 @@
                             aria-label="Navigation menu">
                             <li class="group relative">
                                 <a href="{{ route('home') }}"
-                                   class="group-hover:text-base-content {{ request()->routeIs('home') ? 'active' : '' }} mx-8 flex py-2 text-base font-medium lg:mx-0 lg:inline-flex lg:px-0 lg:py-6 lg:group-hover:opacity-70"
+                                   class="group-hover:text-base-content {{ request()->routeIs('home') ? 'active' : '' }} lg:text-primary mx-8 flex py-2 text-base font-medium lg:mx-0 lg:inline-flex lg:px-0 lg:py-6 lg:group-hover:opacity-70"
                                    role="menuitem">
                                     {{ __('menu.home') }}
                                 </a>
@@ -84,7 +87,7 @@
                                     $is_news = request()->routeIs('news.*') ? 'active' : '';
                                 @endphp
                                 <a href="{{ $link }}"
-                                   class="{{ $is_home ? 'ic-page-scroll' : '' }} group-hover:text-base-content lg:text-primary {{ $is_news }} mx-8 flex py-2 text-base font-medium lg:mr-0 lg:inline-flex lg:px-0 lg:py-6 lg:group-hover:opacity-70"
+                                   class="{{ $is_home ? 'ic-page-scroll' : '!text-base-content' }} group-hover:text-base-content lg:text-primary {{ $is_news }} mx-8 flex py-2 text-base font-medium lg:mr-0 lg:inline-flex lg:px-0 lg:py-6 lg:group-hover:opacity-70"
                                    role="menuitem">
                                     {{ __('menu.news_and_blog') }}
                                 </a>
