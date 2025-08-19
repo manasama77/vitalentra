@@ -1,7 +1,7 @@
 <?php
 
 return [
-    'title' => 'British Propolis Norway',
+    'title' => 'BP Norway',
     'description_1' => 'BP Norway adalah suplemen berkualitas tinggi berbahan dasar Minyak Ikan Salmon Atlantik murni, kaya Omega-3, DHA, EPA, dan DPA (Docosapentaenoic Acid) yang langka. Nutrisi ini mendukung kesehatan jantung, otak, mata, dan imunitas—terutama untuk anak-anak.',
     'description_2' => 'Berbeda dari ikan salmon segar yang perlu disimpan dingin dan dimasak dengan benar, BP Norway dikemas dalam bentuk kapsul lunak praktis menggunakan teknologi canggih yang menjaga kandungan gizinya tetap utuh.',
     'point' => [

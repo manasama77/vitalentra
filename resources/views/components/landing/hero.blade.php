@@ -6,7 +6,7 @@
         "speed": 5000
      }'
      class="relative w-full">
-    <div class="carousel h-screen">
+    <div class="carousel h-screen rounded-none">
         <div class="carousel-body h-full opacity-0">
             @foreach ($carousels as $carousel)
                 <div class="carousel-slide">
@@ -33,3 +33,4 @@
         <span class="sr-only">Next</span>
     </button>
 </div>
+

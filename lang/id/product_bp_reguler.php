@@ -1,7 +1,7 @@
 <?php
 
 return [
-    'title' => 'British Propolis Reguler',
+    'title' => 'British Propolis',
     'description_1' => 'British Propolis adalah suplemen kesehatan premium dari 100% propolis murni, diformulasikan untuk usia 2 tahun ke atas. Diproduksi dengan teknologi mutakhir dari Inggris dan memenuhi standar internasional, British Propolis kaya akan bioflavonoid—hingga 400% lebih tinggi dari propolis biasa.',
     'description_2' => 'Berasal dari lebah tangguh Inggris yang terbiasa dengan iklim ekstrem, produk ini memberikan manfaat antioksidan dan daya tahan tubuh yang kuat. Telah tersertifikasi halal (MUI dan lembaga UK), bebas alkohol, terdaftar BPOM, dan bukan bagian dari skema MLM.',
     'point' => [

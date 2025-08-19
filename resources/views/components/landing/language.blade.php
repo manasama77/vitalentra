@@ -1,7 +1,7 @@
 <div class="dropdown wrapper-language relative inline-flex">
     <button id="language-change-btn"
             type="button"
-            class="dropdown-toggle text-primary-color inline-flex items-center gap-1 text-lg/none"
+            class="dropdown-toggle inline-flex items-center gap-1 text-lg/none"
             aria-haspopup="menu"
             aria-expanded="false"
             aria-label="Dropdown">

@@ -1,4 +1,4 @@
-<div id="bp-reguler" class="card overflow-hidden rounded-2xl shadow-xl transition-all duration-300">
+<div id="bp" class="card overflow-hidden rounded-2xl shadow-xl transition-all duration-300">
     <div class="grid gap-8 px-8 pb-14 pt-8 lg:grid-cols-2">
         <!-- Product Images (Right) -->
         <div class="order-1 lg:order-2">
@@ -11,17 +11,17 @@
                              class="flex h-full transition-transform duration-500 ease-in-out">
                             <div class="relative w-full flex-shrink-0">
                                 <img src="{{ Vite::asset('resources/images/products/british propolis reguler/1.jpg') }}"
-                                     alt="Modern Architecture"
+                                     alt="British Propolis"
                                      class="h-full w-full object-cover">
                             </div>
                             <div class="relative w-full flex-shrink-0">
                                 <img src="{{ Vite::asset('resources/images/products/british propolis reguler/2.jpg') }}"
-                                     alt="Nature Landscape"
+                                     alt="British Propolis"
                                      class="h-full w-full object-cover">
                             </div>
                             <div class="relative w-full flex-shrink-0">
                                 <img src="{{ Vite::asset('resources/images/products/british propolis reguler/3.jpg') }}"
-                                     alt="City Skyline"
+                                     alt="British Propolis"
                                      class="h-full w-full object-cover">
                             </div>
                         </div>

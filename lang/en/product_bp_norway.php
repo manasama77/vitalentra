@@ -1,7 +1,7 @@
 <?php
 
 return [
-    'title' => 'British Propolis Norway',
+    'title' => 'BP Norway',
     'description_1' => 'BP Norway is a high-quality supplement made from pure Atlantic Salmon Fish Oil, rich in Omega-3, DHA, EPA, and the rare DPA (Docosapentaenoic Acid). These nutrients support heart, brain, eye, and immune health—especially for children.',
     'description_2' => 'Unlike fresh salmon, which must be kept cold and properly cooked, BP Norway is packaged in convenient soft capsules using advanced technology that preserves its nutritional content.',
     'point' => [

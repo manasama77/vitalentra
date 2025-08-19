@@ -1,4 +1,4 @@
-@charset "UTF-8";
+/* @charset "UTF-8"; */
 @import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap")
 layer(base);
 @import "flag-icons/css/flag-icons.min.css";
@@ -224,14 +224,21 @@ layer(base);
 }
 
 @utility ic-navbar {
-	@apply border-0 border-transparent px-2 py-4;
+	@apply border-0 border-transparent px-2 py-4 transition-all duration-300 ease-in-out;
+
+	.ic-navbar-toggler {
+		@apply text-white;
+	}
 
 	a.active {
-		@apply text-warning;
+		@apply text-white;
+		@media (max-width: 640px) {
+			@apply text-base-content;
+		}
 	}
 
 	a.ic-page-scroll {
-		@apply !text-primary;
+		@apply !text-white;
 
 		&:hover {
 			@apply !text-accent-content;
@@ -240,10 +247,14 @@ layer(base);
 		&.active {
 			@apply !text-accent-content;
 		}
+
+		@media (max-width: 640px) {
+			@apply !text-primary;
+		}
 	}
 
 	button#language-change-btn {
-		@apply !text-primary;
+		@apply !text-white;
 	}
 
 	&.sticky {
@@ -255,9 +266,7 @@ layer(base);
 	&.sticky .ic-navbar-logo #NavbarBrandIcon {
 		@apply fill-primary;
 	}
-	&.sticky .ic-navbar-toggler {
-		@apply text-body-light-12;
-	}
+
 	&.menu-show .ic-navbar-collapse {
 		@apply block -z-1;
 	}
@@ -277,11 +286,18 @@ layer(base);
 
 @utility sticky {
 	&.ic-navbar {
-		/* adam */
 		@apply fixed backdrop-blur-sm shadow-md z-9999 glass;
 
+		a.active {
+			@apply text-base-content;
+		}
+
+		a:hover {
+			@apply text-black;
+		}
+
 		button#language-change-btn {
-			@apply !text-primary;
+			@apply !text-base-content;
 		}
 
 		a.ic-page-scroll {
@@ -303,9 +319,7 @@ layer(base);
 	&.ic-navbar .ic-navbar-logo #NavbarBrandIcon {
 		@apply fill-primary;
 	}
-	&.ic-navbar .ic-navbar-toggler {
-		@apply text-body-light-12;
-	}
+
 	&.ic-navbar .ic-page-scroll {
 		@apply lg:text-body-light-12 lg:hover:text-primary lg:hover:opacity-100;
 	}
@@ -330,10 +344,6 @@ layer(base);
 }
 
 @utility ic-navbar-toggler {
-	.ic-navbar.sticky & {
-		@apply text-body-light-12;
-	}
-
 	/* Ensure proper color states */
 	@apply hover:text-primary-light-10 active:text-primary-light-9 focus:text-primary;
 
@@ -344,7 +354,7 @@ layer(base);
 
 	/* When navbar is sticky */
 	.ic-navbar.sticky & {
-		@apply text-body-light-12 hover:text-primary active:text-primary-light-9;
+		@apply text-base-content hover:text-primary active:text-primary-light-9;
 	}
 }
 

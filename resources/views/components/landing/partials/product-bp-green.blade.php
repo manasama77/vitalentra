@@ -11,17 +11,17 @@
                              class="flex h-full transition-transform duration-500 ease-in-out">
                             <div class="relative w-full flex-shrink-0">
                                 <img src="{{ Vite::asset('resources/images/products/british propolis green/1.jpg') }}"
-                                     alt="Modern Architecture"
+                                     alt="BP Green"
                                      class="h-full w-full object-cover">
                             </div>
                             <div class="relative w-full flex-shrink-0">
                                 <img src="{{ Vite::asset('resources/images/products/british propolis green/2.jpg') }}"
-                                     alt="Nature Landscape"
+                                     alt="BP Green"
                                      class="h-full w-full object-cover">
                             </div>
                             <div class="relative w-full flex-shrink-0">
                                 <img src="{{ Vite::asset('resources/images/products/british propolis green/3.jpg') }}"
-                                     alt="City Skyline"
+                                     alt="BP Green"
                                      class="h-full w-full object-cover">
                             </div>
                         </div>

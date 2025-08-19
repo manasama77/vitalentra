@@ -1,7 +1,7 @@
 <?php
 
 return [
-    'title' => 'British Propolis Regular',
+    'title' => 'British Propolis',
     'description_1' => 'British Propolis is a premium health supplement made from 100% pure propolis, formulated for ages 2 and up. Produced with advanced technology from England and meeting international standards, British Propolis is rich in bioflavonoids—up to 400% higher than ordinary propolis.',
     'description_2' => 'Sourced from resilient English bees accustomed to extreme climates, this product provides strong antioxidant benefits and immune support. It is certified halal (MUI and UK institutions), alcohol-free, registered with BPOM, and not part of any MLM scheme.',
     'point' => [

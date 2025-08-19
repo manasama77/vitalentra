@@ -79,17 +79,17 @@
                        class="block text-sm text-gray-300 transition-colors duration-200 hover:text-white">
                         Steffi
                     </a>
-                    <a href="{{ route('home') }}#bp-reguler"
+                    <a href="{{ route('home') }}#bp"
                        class="block text-sm text-gray-300 transition-colors duration-200 hover:text-white">
-                        British Propolis Reguler
+                        British Propolis
                     </a>
                     <a href="{{ route('home') }}#bp-green"
                        class="block text-sm text-gray-300 transition-colors duration-200 hover:text-white">
-                        British Propolis Green
+                        BP Green
                     </a>
                     <a href="{{ route('home') }}#bp-norway"
                        class="block text-sm text-gray-300 transition-colors duration-200 hover:text-white">
-                        British Propolis Norway
+                        BP Norway
                     </a>
                     <a href="{{ route('home') }}#belgie"
                        class="block text-sm text-gray-300 transition-colors duration-200 hover:text-white">

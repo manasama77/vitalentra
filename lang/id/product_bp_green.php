@@ -1,9 +1,9 @@
 <?php
 
 return [
-    'title' => 'British Propolis Green (Kids)',
-    'description_1' => 'British Propolis Kids / Green adalah suplemen premium standar internasional untuk anak usia 1-12 tahun. Terbuat dari campuran 50% propolis Inggris dan 50% propolis Trigona, produk ini mendukung perkembangan otak dan kesehatan anak lebih efektif dibanding minyak ikan biasa.',
-    'description_2' => 'Aman dan tanpa efek samping, British Propolis Green terbuat dari bahan alami, telah tersertifikasi halal (MUI & UK), dan terdaftar di BPOM. Rasanya disukai anak-anak, serta membantu meningkatkan nafsu makan, daya tahan tubuh, konsentrasi, dan daya ingat—dengan hasil nyata dalam 21 hari pemakaian rutin.',
+    'title' => 'BP Green',
+    'description_1' => 'BP Green adalah suplemen premium standar internasional untuk anak usia 1-12 tahun. Terbuat dari campuran 50% propolis Inggris dan 50% propolis Trigona, produk ini mendukung perkembangan otak dan kesehatan anak lebih efektif dibanding minyak ikan biasa.',
+    'description_2' => 'Aman dan tanpa efek samping, BP Green terbuat dari bahan alami, telah tersertifikasi halal (MUI & UK), dan terdaftar di BPOM. Rasanya disukai anak-anak, serta membantu meningkatkan nafsu makan, daya tahan tubuh, konsentrasi, dan daya ingat—dengan hasil nyata dalam 21 hari pemakaian rutin.',
     'point' => [
         '1' => [
             'title' => 'Manfaat Utama:',

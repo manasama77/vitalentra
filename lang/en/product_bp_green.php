@@ -1,9 +1,9 @@
 <?php
 
 return [
-    'title' => 'British Propolis Green (Kids)',
-    'description_1' => 'British Propolis Kids / Green is a premium international-standard supplement for children aged 1-12 years. Made from a blend of 50% British propolis and 50% Trigona propolis, this product supports brain development and children’s health more effectively than regular fish oil.',
-    'description_2' => 'Safe and without side effects, British Propolis Green is made from natural ingredients, certified halal (MUI & UK), and registered with BPOM. Its taste is loved by children, and it helps increase appetite, immunity, concentration, and memory—with visible results in 21 days of regular use.',
+    'title' => 'BP Green (Kids)',
+    'description_1' => 'BP Green is a premium international-standard supplement for children aged 1-12 years. Made from a blend of 50% BP and 50% Trigona propolis, this product supports brain development and children’s health more effectively than regular fish oil.',
+    'description_2' => 'Safe and without side effects, BP Green is made from natural ingredients, certified halal (MUI & UK), and registered with BPOM. Its taste is loved by children, and it helps increase appetite, immunity, concentration, and memory—with visible results in 21 days of regular use.',
     'point' => [
         '1' => [
             'title' => 'Main Benefits:',

@@ -2,7 +2,9 @@
 <section id="product" class="section-area">
     <div class="container">
         <div class="scroll-revealed mx-auto mb-8 max-w-[750px] text-center">
-            <h2 class="text-base-content mb-6">Produk</h2>
+            <h2 class="text-base-content mb-6">
+                {{ __('product.title') }}
+            </h2>
         </div>
 
         <!-- Products Grid -->
@@ -16,3 +18,4 @@
 
     </div>
 </section>
+
