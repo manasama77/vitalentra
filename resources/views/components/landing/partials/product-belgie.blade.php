@@ -377,4 +377,3 @@
         belgieStartAutoPlay();
     </script>
 @endpush
-

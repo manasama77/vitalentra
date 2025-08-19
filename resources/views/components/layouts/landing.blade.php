@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" data-theme="vitalentra">
+<html lang="{{ current_locale() }}" data-theme="vitalentra">
 
 <head>
     <!-- Meta Tags -->
@@ -22,7 +22,7 @@
     <meta property="og:image:height" content="628" />
     <meta property="og:image:type" content="image/webp" />
 
-    <meta name="twitter:image" content="@yield('image', './vitalentra-cover.png')" />
+    <meta name="twitter:image" content="@yield('image', asset('vitalentra-cover.png'))" />
     <meta content="@yield('title', 'Vitalentra')" property="og:title" />
     <meta content="Vitalentra" property="og:site_name" />
     <meta content="@yield('description', 'Mulai Hidup Sehat Bersama Vitalentra')" property="og:description" />
@@ -30,7 +30,7 @@
     <meta content="website" property="og:type" />
 
     <meta name="msapplication-TileColor" content="#fff" />
-    <meta name="msapplication-TileImage" content="./web-app-manifest-192x192.png" />
+    <meta name="msapplication-TileImage" content="{{ asset('web-app-manifest-192x192.png') }}" />
     <meta name="theme-color" content="#fff" />
 
     <!-- Page title -->
@@ -58,18 +58,21 @@
 
     <!-- Favicon -->
     <link rel="icon"
+          type="image/x-icon"
+          href="{{ asset('favicon.ico') }}" />
+    <link rel="icon"
           type="image/png"
-          href="/favicon-96x96.png"
+          href="{{ asset('favicon-96x96.png') }}"
           sizes="96x96" />
     <link rel="icon"
           type="image/svg+xml"
-          href="/favicon.svg" />
-    <link rel="shortcut icon" href="/favicon.ico" />
+          href="{{ asset('favicon.svg') }}" />
+    <link rel="shortcut icon" href="{{ asset('favicon.ico') }}" />
     <link rel="apple-touch-icon"
           sizes="180x180"
-          href="/apple-touch-icon.png" />
+          href="{{ asset('apple-touch-icon.png') }}" />
     <meta name="apple-mobile-web-app-title" content="Vitalentra" />
-    <link rel="manifest" href="/site.webmanifest" />
+    <link rel="manifest" href="{{ asset('site.webmanifest') }}" />
 
     <!-- CSS Plugins -->
     {{-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" /> --}}
@@ -140,7 +143,7 @@
     @stack('styles')
 </head>
 
-<body class="bg-base-200">
+<body class="bg-base-200 transition-all duration-500 ease-in-out">
     <!-- Page loading -->
     <x-landing.loading />
 
@@ -263,4 +266,3 @@
 </body>
 
 </html>
-

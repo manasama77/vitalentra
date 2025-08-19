@@ -58,4 +58,3 @@
     <p>Replace one of your sweet drinks today with Steffi and feel the difference. Your body (and your taste buds) will
         thank you.</p>
 </blockquote>
-

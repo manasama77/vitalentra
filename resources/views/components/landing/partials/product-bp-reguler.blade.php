@@ -248,4 +248,3 @@
         britishPropolisRegulerStartAutoPlay();
     </script>
 @endpush
-

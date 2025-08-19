@@ -237,6 +237,10 @@ layer(base);
 		}
 	}
 
+	& .dropdown-menu a {
+		@apply text-base-content;
+	}
+
 	a.ic-page-scroll {
 		@apply !text-white;
 

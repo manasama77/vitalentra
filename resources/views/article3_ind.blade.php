@@ -44,4 +44,3 @@
 <p>
     <em>#GulaSehat #KurangiGula #HidupSehatTanpaGula #SteffiSweet</em>
 </p>
-

@@ -7,4 +7,3 @@
          class="{{ $class }}"
          loading="{{ $loading }}" />
 </picture>
-

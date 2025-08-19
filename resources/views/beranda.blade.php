@@ -63,4 +63,3 @@
                                      photo="{{ Vite::asset('resources/images/Management - Renya Nuringtyas.jpg') }}"
                                      content="{!! __('team.content.5') !!}" />
 </x-layouts.landing>
-

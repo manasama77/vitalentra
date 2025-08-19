@@ -7,7 +7,7 @@
      }'
      class="relative w-full">
     <div class="carousel h-screen rounded-none">
-        <div class="carousel-body h-full opacity-0">
+        <div class="carousel-body h-full opacity-0 transition-all duration-500 ease-in-out">
             @foreach ($carousels as $carousel)
                 <div class="carousel-slide">
                     <div class="flex h-full justify-center">
@@ -33,4 +33,3 @@
         <span class="sr-only">Next</span>
     </button>
 </div>
-

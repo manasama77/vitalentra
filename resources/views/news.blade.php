@@ -197,4 +197,3 @@
         </div>
     </section>
 </x-layouts.landing>
-

@@ -224,4 +224,3 @@
         bpGreenStartAutoPlay();
     </script>
 @endpush
-
