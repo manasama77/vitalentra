@@ -14,4 +14,3 @@
         <x-landing.partials.faq_accordion />
     </div>
 </div>
-

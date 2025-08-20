@@ -339,4 +339,3 @@
         belgieStartAutoPlay();
     </script>
 @endpush
-

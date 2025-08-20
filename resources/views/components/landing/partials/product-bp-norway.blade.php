@@ -234,4 +234,3 @@
         bpNorwayStartAutoPlay();
     </script>
 @endpush
-
