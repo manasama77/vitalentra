@@ -11,17 +11,17 @@
                                  class="flex h-full transition-transform duration-500 ease-in-out">
                                 <div class="relative w-full flex-shrink-0">
                                     <img src="{{ Vite::asset('resources/images/products/steffi/1.jpg') }}"
-                                         alt="Modern Architecture"
+                                         alt="Steffi"
                                          class="h-full w-full object-cover">
                                 </div>
                                 <div class="relative w-full flex-shrink-0">
                                     <img src="{{ Vite::asset('resources/images/products/steffi/2.jpg') }}"
-                                         alt="Nature Landscape"
+                                         alt="Steffi"
                                          class="h-full w-full object-cover">
                                 </div>
                                 <div class="relative w-full flex-shrink-0">
                                     <img src="{{ Vite::asset('resources/images/products/steffi/3.jpg') }}"
-                                         alt="City Skyline"
+                                         alt="Steffi"
                                          class="h-full w-full object-cover">
                                 </div>
                             </div>
@@ -49,11 +49,11 @@
 
             <div class="order-2 w-full min-w-0 space-y-4 overflow-hidden sm:space-y-6 lg:order-2">
 
-                <div class="w-full">
-                    <h3 class="text-body-light-12 mb-3 break-words text-2xl font-bold sm:mb-4 sm:text-3xl">
+                <div class="mb-4 w-full">
+                    <h3 class="text-base-content mb-3 break-words text-2xl font-bold sm:mb-4 sm:text-3xl">
                         {{ __('product_steffi.title') }}
                     </h3>
-                    <p class="text-body-light-11 hyphens-auto break-words text-sm leading-relaxed sm:text-base">
+                    <p class="text-base-content hyphens-auto break-words text-sm leading-relaxed sm:text-base">
                         {{ __('product_steffi.description') }}
                     </p>
                 </div>
@@ -95,11 +95,8 @@
                              class="accordion-content hidden w-full overflow-hidden transition-[height] duration-300"
                              aria-labelledby="steffi-manfaat-kesehatan-arrow"
                              role="region">
-                            <div class="w-full pb-4">
-                                <p
-                                   class="text-base-content/80 hyphens-auto break-words text-sm font-normal sm:text-base">
-                                    {!! __('product_steffi.point.2.description') !!}
-                                </p>
+                            <div class="prose prose-sm md:prose-md w-full max-w-none pb-4">
+                                {!! __('product_steffi.point.2.description') !!}
                             </div>
                         </div>
                     </div>
@@ -118,11 +115,8 @@
                              class="accordion-content hidden w-full overflow-hidden transition-[height] duration-300"
                              aria-labelledby="steffi-aturan-pakai-arrow"
                              role="region">
-                            <div class="w-full pb-4">
-                                <p
-                                   class="text-base-content/80 hyphens-auto break-words text-sm font-normal sm:text-base">
-                                    {!! __('product_steffi.point.3.description') !!}
-                                </p>
+                            <div class="prose prose-sm md:prose-md w-full max-w-none pb-4">
+                                {!! __('product_steffi.point.3.description') !!}
                             </div>
                         </div>
                     </div>
@@ -256,3 +250,4 @@
         steffiStartAutoPlay();
     </script>
 @endpush
+

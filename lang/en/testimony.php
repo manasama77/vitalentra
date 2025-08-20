@@ -2,7 +2,7 @@
 
 return [
     'title' => 'Client Reviews',
-    'sub_title' => 'What they say about our products',
+    'sub_title' => 'What they say about our products?',
     'user' => [
         '1' => [
             'job' => 'Artist',

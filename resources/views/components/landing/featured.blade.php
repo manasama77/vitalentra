@@ -2,10 +2,12 @@
 <section id="featured" class="section-area">
     <div class="container">
         <div class="scroll-revealed mx-auto mb-12 text-center md:max-w-[900px]">
-            <h6 class="text-primary mb-2 block text-lg font-semibold">
+            {{-- <h6 class="text-primary mb-2 block text-lg font-semibold"> --}}
+            <h6 class="text-primary scroll-revealed mb-2 block text-lg font-semibold">
                 {{ __('featured.title') }}
             </h6>
-            <h2 class="text-base-content mb-6">
+            {{-- <h2 class="text-base-content mb-6"> --}}
+            <h2 class="text-base-content scroll-revealed mb-6 text-3xl leading-tight md:text-4xl">
                 {{ __('featured.sub_title') }}
             </h2>
             <p>
@@ -70,3 +72,4 @@
         </div>
     </div>
 </section>
+

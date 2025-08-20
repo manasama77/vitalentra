@@ -2,13 +2,13 @@
 <section id="team" class="section-area">
     <div class="container">
         <div class="scroll-revealed mx-auto mb-12 max-w-[700px] text-center">
-            <h6 class="text-primary mb-2 block text-lg font-semibold">
+            <h6 class="text-primary scroll-revealed mb-2 block text-lg font-semibold">
                 {{ __('team.title') }}
             </h6>
-            <h2 class="text-base-content mb-6">
+            <h2 class="text-base-content scroll-revealed mb-6 text-2xl md:text-4xl">
                 {{ __('team.sub_title') }}
             </h2>
-            <p>
+            <p class="text-base-content scroll-revealed mb-6">
                 {{ __('team.description') }}
             </p>
         </div>
@@ -58,3 +58,4 @@
 
     </div>
 </section>
+

@@ -23,7 +23,7 @@ return [
         ],
 
         'product_2' => [
-            'name' => 'British Propolis & British Propolis Green',
+            'name' => 'British Propolis & BP Green',
             'question' => [
                 '1' => 'Apa itu British Propolis?',
                 '2' => 'Apa manfaat utama mengonsumsi British Propolis?',
@@ -41,9 +41,9 @@ return [
         ],
 
         'product_3' => [
-            'name' => 'British Propolis Norway',
+            'name' => 'BP Norway',
             'question' => [
-                '1' => 'Apa itu British Propolis Norway?',
+                '1' => 'Apa itu BP Norway?',
                 '2' => 'Apa manfaat utama BP Norway untuk kesehatan?',
                 '3' => 'Siapa yang cocok mengonsumsi BP Norway?',
                 '4' => 'Apa perbedaan BP Norway dengan varian British Propolis lainnya?',

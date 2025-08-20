@@ -1,10 +1,10 @@
  <section id="testimonials" class="section-area">
      <div class="container">
          <div class="scroll-revealed mx-auto mb-12 max-w-[550px] text-center">
-             <h6 class="text-primary mb-2 block text-lg font-semibold">
+             <h6 class="text-primary scroll-revealed mb-2 block text-lg font-semibold">
                  {{ __('testimony.title') }}
              </h6>
-             <h2 class="mb-6">
+             <h2 class="text-base-content scroll-revealed mb-6 text-2xl md:text-4xl">
                  {{ __('testimony.sub_title') }}
              </h2>
          </div>
@@ -48,3 +48,4 @@
          </div>
      </div>
  </section>
+

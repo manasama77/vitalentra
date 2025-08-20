@@ -5,10 +5,17 @@
             <!-- Left Section: Logo + Description + Social Media -->
             <div class="space-y-4">
                 <div class="flex flex-col items-start justify-center gap-2">
-                    <div class="flex size-14 items-center justify-center rounded-lg md:size-24">
-                        <img src="{{ asset('logo_white.png') }}"
-                             alt="Vitalentra Group International (VGI) Logo"
-                             class="w-full" />
+                    <div class="flex items-center justify-center gap-4">
+                        <div class="size-18 md:size-24">
+                            <img src="{{ Vite::asset('resources/images/BP Group Logo.png') }}"
+                                 alt="BP Group Logo"
+                                 class="w-full" />
+                        </div>
+                        <div class="size-18 md:size-24">
+                            <img src="{{ Vite::asset('resources/images/logo_white.png') }}"
+                                 alt="Vitalentra Group International (VGI) Logo"
+                                 class="w-full" />
+                        </div>
                     </div>
                     <span class="text-xl font-bold">Vitalentra Group International (VGI)</span>
                 </div>
@@ -43,27 +50,27 @@
                 <h3 class="text-lg font-semibold text-white">Menu</h3>
                 <nav class="space-y-3">
                     <a href="{{ route('home') }}"
-                       class="block text-sm text-gray-300 transition-colors duration-200 hover:text-white">
+                       class="text-md block text-gray-300 transition-colors duration-200 hover:text-white">
                         {{ __('menu.home') }}
                     </a>
                     <a href="{{ route('home') }}#about"
-                       class="block text-sm text-gray-300 transition-colors duration-200 hover:text-white">
+                       class="text-md block text-gray-300 transition-colors duration-200 hover:text-white">
                         {{ __('menu.about') }}
                     </a>
                     <a href="{{ route('home') }}#product"
-                       class="block text-sm text-gray-300 transition-colors duration-200 hover:text-white">
+                       class="text-md block text-gray-300 transition-colors duration-200 hover:text-white">
                         {{ __('menu.product') }}
                     </a>
                     <a href="{{ route('home') }}#faq"
-                       class="block text-sm text-gray-300 transition-colors duration-200 hover:text-white">
+                       class="text-md block text-gray-300 transition-colors duration-200 hover:text-white">
                         {{ __('menu.faq') }}
                     </a>
                     <a href="{{ route('news.list') }}"
-                       class="block text-sm text-gray-300 transition-colors duration-200 hover:text-white">
-                        {{ __('menu.news') }}
+                       class="text-md block text-gray-300 transition-colors duration-200 hover:text-white">
+                        {{ __('menu.news_and_blog') }}
                     </a>
                     <a href="{{ route('home') }}#contact"
-                       class="block text-sm text-gray-300 transition-colors duration-200 hover:text-white">
+                       class="text-md block text-gray-300 transition-colors duration-200 hover:text-white">
                         {{ __('menu.contact') }}
                     </a>
                 </nav>
@@ -76,23 +83,23 @@
                 </h3>
                 <div class="space-y-3">
                     <a href="{{ route('home') }}#steffi"
-                       class="block text-sm text-gray-300 transition-colors duration-200 hover:text-white">
+                       class="text-md block text-gray-300 transition-colors duration-200 hover:text-white">
                         Steffi
                     </a>
                     <a href="{{ route('home') }}#bp"
-                       class="block text-sm text-gray-300 transition-colors duration-200 hover:text-white">
+                       class="text-md block text-gray-300 transition-colors duration-200 hover:text-white">
                         British Propolis
                     </a>
                     <a href="{{ route('home') }}#bp-green"
-                       class="block text-sm text-gray-300 transition-colors duration-200 hover:text-white">
+                       class="text-md block text-gray-300 transition-colors duration-200 hover:text-white">
                         BP Green
                     </a>
                     <a href="{{ route('home') }}#bp-norway"
-                       class="block text-sm text-gray-300 transition-colors duration-200 hover:text-white">
+                       class="text-md block text-gray-300 transition-colors duration-200 hover:text-white">
                         BP Norway
                     </a>
                     <a href="{{ route('home') }}#belgie"
-                       class="block text-sm text-gray-300 transition-colors duration-200 hover:text-white">
+                       class="text-md block text-gray-300 transition-colors duration-200 hover:text-white">
                         Belgie
                     </a>
                 </div>
@@ -109,3 +116,4 @@
         </div>
     </div>
 </footer>
+

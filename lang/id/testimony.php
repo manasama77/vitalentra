@@ -2,7 +2,7 @@
 
 return [
     'title' => 'Ulasan Klien',
-    'sub_title' => 'Apa kata mereka tentang produk kami',
+    'sub_title' => 'Apa kata mereka tentang produk kami?',
     'user' => [
         '1' => [
             'job' => 'Artis',

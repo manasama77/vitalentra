@@ -6,11 +6,11 @@ return [
     'description_2' => 'Berbeda dari ikan salmon segar yang perlu disimpan dingin dan dimasak dengan benar, BP Norway dikemas dalam bentuk kapsul lunak praktis menggunakan teknologi canggih yang menjaga kandungan gizinya tetap utuh.',
     'point' => [
         '1' => [
-            'title' => 'Manfaat untuk Anak:',
+            'title' => 'Manfaat untuk Anak',
             'description' => '<ul><li>Mendukung perkembangan otak dan fungsi kognitif</li><li>Mengurangi gejala alergi</li><li>Membantu meredakan asma</li><li>Menjaga kesehatan jantung</li></ul>',
         ],
         '2' => [
-            'title' => 'Kelebihan:',
+            'title' => 'Kelebihan',
             'description' => '<ul><li>Menjaga kesehatan jantung</li><li>Mengurangi risiko demensia pada lansia</li></ul>',
             'info' => 'Isi: 40 kapsul lunak bening',
         ],

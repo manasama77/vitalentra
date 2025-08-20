@@ -1,8 +1,8 @@
 <!-- Product Section -->
 <section id="product" class="section-area">
     <div class="container">
-        <div class="scroll-revealed mx-auto mb-8 max-w-[750px] text-center">
-            <h2 class="text-base-content mb-6">
+        <div class="mx-auto mb-8 text-center md:mb-12">
+            <h2 class="text-base-content scroll-revealed mb-6 text-4xl">
                 {{ __('product.title') }}
             </h2>
         </div>
@@ -18,3 +18,4 @@
 
     </div>
 </section>
+

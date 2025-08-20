@@ -1,24 +1,27 @@
 @props(['news'])
-<section id="blog" class="mx-auto max-w-7xl px-4 py-16 sm:px-6 lg:px-8">
+<section id="blog" class="bg-base-300 mx-auto w-full px-4 py-16 md:px-6 md:py-24 lg:px-8">
     <!-- Section Header -->
-    <div class="mb-12 text-center">
-        <h2 class="scroll-revealed text-base-content mb-4 text-3xl font-bold md:text-4xl">
-            {{ __('news_landing.title') }}
-        </h2>
-        <p class="scroll-revealed mx-auto max-w-2xl text-lg text-neutral-600">
-            {{ __('news_landing.sub_title') }}
-        </p>
+    <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+        {{-- <div class="mb-12 space-y-4 text-center sm:mb-16 lg:mb-24"> --}}
+        <div class="mx-auto mb-12 max-w-[700px] text-center">
+            <h6 class="text-primary scroll-revealed mb-2 block text-lg font-semibold">
+                {{ __('news_landing.title') }}
+            </h6>
+            <h2 class="text-base-content scroll-revealed mb-6 text-3xl leading-tight md:text-4xl">
+                {{ __('news_landing.sub_title') }}
+            </h2>
+        </div>
     </div>
 
     <!-- Blog Cards Grid -->
-    <div class="mb-12 grid grid-cols-1 gap-8 md:grid-cols-2 lg:grid-cols-3">
+    <div class="mb-12 grid grid-cols-1 gap-8 px-4 md:grid-cols-2 md:px-14 lg:grid-cols-3">
         @foreach ($news as $n)
             <div class="card scroll-revealed group bg-white shadow-lg transition-all duration-300 hover:shadow-xl">
                 <figure class="overflow-hidden">
                     <a href="{{ route('news.show', $n->slug) }}">
                         <img src="{{ asset($n->image) }}"
                              alt="{{ $n->title }}"
-                             class="group-hover:scale-102 h-48 w-full object-contain transition-transform duration-300">
+                             class="group-hover:scale-102 w-full object-cover transition-transform duration-300 ease-in-out">
                     </a>
                 </figure>
                 <div class="card-body p-6">
@@ -65,3 +68,4 @@
         </a>
     </div>
 </section>
+

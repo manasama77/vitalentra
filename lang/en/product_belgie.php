@@ -6,11 +6,11 @@ return [
     'description_2' => 'Every Belgie product is safe, halal, BPOM registered, and affordable, designed to nourish the skin from the outside while refreshing from within.',
     'point' => [
         '1' => [
-            'title' => 'Technology & Active Ingredients:',
+            'title' => 'Technology & Active Ingredients',
             'description' => 'Contains Propolis, Hyaluronic Acid, and Hydrolyzed Collagen—active ingredients known to moisturize, regenerate, and rejuvenate the skin.',
         ],
         '2' => [
-            'title' => 'Belgie Product Series:',
+            'title' => 'Belgie Product Series',
             'product' => [
                 '1' => [
                     'title' => 'Belgie Facial Wash',
@@ -36,7 +36,7 @@ return [
                 '5' => [
                     'title' => 'Belgie Hair Tonic',
                     'description_1' => 'Helps combat hair loss, promotes thicker hair growth, and maintains scalp health. Additionally, this product is formulated with natural ingredients and is claimed to be safe as it is BPOM registered.',
-                    'description_2' => 'Here are some detailed advantages of Belgie Hair Tonic:',
+                    'description_2' => 'Here are some detailed advantages of Belgie Hair Tonic',
                     'point' => '<ul><li>Combats hair loss</li><li>Stimulates new hair growth</li><li>Strengthens hair</li><li>Maintains scalp health</li><li>Contains natural ingredients</li><li>BPOM Registered</li><li>Easy to use</li></ul>',
                     'description_3' => 'With these advantages, Belgie Hair Tonic is a great choice for addressing hair problems and maintaining overall hair health.',
                 ],

@@ -1,4 +1,4 @@
-<div id="contact" class="bg-base-100 py-8 sm:py-16 lg:py-24">
+<div id="contact" class="bg-base-100 py-8 md:py-16 lg:py-24">
     <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         <!-- Header -->
         <div class="scroll-revealed relative mx-auto mb-12 w-fit sm:mb-16 lg:mb-24">
@@ -17,28 +17,28 @@
                 <!-- Contact Info Grid -->
                 <div class="grid gap-6 md:grid-cols-2">
                     <!-- Our Address -->
-                    <div class="card bg-warning glass shadow md:col-span-2">
+                    <div class="card bg-success glass shadow md:col-span-2">
                         <div class="card-body items-center gap-3">
                             <div class="avatar avatar-placeholder">
-                                <div class="border-primary text-primary w-9 rounded-full border">
-                                    <i class="fas fa-map-marker-alt text-primary text-xl"></i>
+                                <div class="w-9 rounded-full border border-white text-white">
+                                    <i class="fas fa-map-marker-alt text-xl text-white"></i>
                                 </div>
                             </div>
-                            <h4 class="text-warning-content text-lg font-medium">
+                            <h4 class="text-success-content text-lg font-medium">
                                 {{ __('contact.address_title') }}
                             </h4>
-                            <address class="text-warning-content text-center not-italic">
+                            <address class="text-success-content text-center not-italic">
                                 Pondok Indah Office Tower 5, Lantai 8 - Unit 1202<br />Jl. Sultan Iskandar Muda Kav.
                                 V-TA, Pondok Indah<br />Jakarta 12310 &mdash; Indonesia
                             </address>
                         </div>
                     </div>
 
-                    <div class="card bg-warning glass shadow-none">
+                    <div class="card bg-success glass shadow-none">
                         <div class="card-body group items-center gap-3">
                             <div class="avatar avatar-placeholder">
-                                <div class="border-primary text-primary w-9 rounded-full border">
-                                    <i class="fas fa-phone text-primary text-xl"></i>
+                                <div class="w-9 rounded-full border border-white text-white">
+                                    <i class="fas fa-phone text-xl text-white"></i>
                                 </div>
                             </div>
                             <h4 class="text-lg font-medium text-white">
@@ -52,11 +52,11 @@
                         </div>
                     </div>
 
-                    <div class="card bg-warning glass shadow-none">
+                    <div class="card bg-success glass shadow-none">
                         <div class="card-body items-center gap-3">
                             <div class="avatar avatar-placeholder">
-                                <div class="border-primary text-primary w-9 rounded-full border">
-                                    <i class="fas fa-envelope text-primary text-xl"></i>
+                                <div class="w-9 rounded-full border border-white text-white">
+                                    <i class="fas fa-envelope text-xl text-white"></i>
                                 </div>
                             </div>
                             <h4 class="text-lg font-medium text-white">Email</h4>
@@ -74,3 +74,4 @@
         </div>
     </div>
 </div>
+

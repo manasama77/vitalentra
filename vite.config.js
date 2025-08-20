@@ -21,6 +21,7 @@ export default defineConfig({
 				'resources/images/Halal_Indonesia.svg',
 				'resources/images/logo.png',
 				'resources/images/logo_white.png',
+				'resources/images/BP Group Logo.png',
 				'resources/images/Testimonials - Teuku Wisnu.jpg',
 				'resources/images/Testimonials - Irwansyah.jpg',
 				'resources/images/Testimonials - Mario Irwinsyah.jpg',

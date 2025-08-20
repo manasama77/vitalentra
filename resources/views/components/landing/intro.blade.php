@@ -1,10 +1,10 @@
  <section id="intro" class="section-area">
      <div class="container">
-         <div class="scroll-revealed mx-auto mb-12 max-w-[550px] text-center">
-             <h6 class="text-primary mb-2 block text-lg font-semibold">
+         <div class="mx-auto mb-12 max-w-[550px] text-center">
+             <h6 class="text-primary scroll-revealed mb-2 block text-lg font-semibold">
                  {{ __('intro.title') }}
              </h6>
-             <h2 class="text-base-content mb-6">
+             <h2 class="text-base-content scroll-revealed mb-6 text-3xl leading-tight md:text-4xl">
                  {{ __('intro.sub_title') }}
              </h2>
          </div>
@@ -20,3 +20,4 @@
          </div>
      </div>
  </section>
+

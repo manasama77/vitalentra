@@ -6,11 +6,11 @@ return [
     'description_2' => 'Setiap produk Belgie aman, halal, terdaftar BPOM, dan terjangkau, dirancang untuk menutrisi kulit dari luar sekaligus menyegarkan dari dalam.',
     'point' => [
         '1' => [
-            'title' => 'Teknologi & Bahan Aktif:',
+            'title' => 'Teknologi & Bahan Aktif',
             'description' => 'Mengandung Propolis, Hyaluronic Acid, dan Kolagen Hidrolisat—bahan aktif yang dikenal mampu melembabkan, meregenerasi, dan meremajakan kulit.',
         ],
         '2' => [
-            'title' => 'Rangkaian Produk Belgie:',
+            'title' => 'Rangkaian Produk Belgie',
             'product' => [
                 '1' => [
                     'title' => 'Belgie Facial Wash',
@@ -36,7 +36,7 @@ return [
                 '5' => [
                     'title' => 'Belgie Hair Tonic',
                     'description_1' => 'membantu mengatasi kerontokan, menumbuhkan rambut lebih tebal, dan menjaga kesehatan kulit kepala. Selain itu, produk ini diformulasikan dengan bahan-bahan alami dan diklaim aman karena sudah terdaftar di BPOM.',
-                    'description_2' => 'Berikut adalah beberapa kelebihan Belgie Hair Tonic secara lebih detail:',
+                    'description_2' => 'Berikut adalah beberapa kelebihan Belgie Hair Tonic secara lebih detail',
                     'point' => '<ul><li>Mengatasi rambut rontok</li><li>Merangsang pertumbuhan rambut baru</li><li>Memperkuat rambut</li><li>Menjaga kesehatan kulit kepala</li><li>Mengandung bahan alami</li><li>Terdaftar BPOM</li><li>Mudah digunakan</li></ul>',
                     'description_3' => 'Dengan berbagai kelebihan tersebut, Belgie Hair Tonic menjadi pilihan yang baik untuk mengatasi masalah rambut dan menjaga kesehatan rambut secara keseluruhan.',
                 ],

@@ -22,7 +22,7 @@
                            loading="lazy" />
 
         <span
-              class="bg-error absolute bottom-1 left-12 -z-10 h-10 w-10 rounded-full opacity-100 transition-all duration-500 ease-in-out group-hover:left-0 group-hover:opacity-100"></span>
+              class="bg-info absolute bottom-1 left-12 -z-10 h-10 w-10 rounded-full opacity-100 transition-all duration-500 ease-in-out group-hover:left-0 group-hover:opacity-100"></span>
         <span
               class="bg-primary absolute right-12 top-1 -z-10 h-10 w-10 rounded-full opacity-100 transition-all duration-500 ease-in-out group-hover:right-0 group-hover:opacity-100"></span>
     </div>
@@ -35,3 +35,4 @@
         </p>
     </figcaption>
 </figure>
+
