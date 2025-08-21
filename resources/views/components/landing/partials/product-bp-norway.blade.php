@@ -11,17 +11,17 @@
                             <div id="bp-norway-slides-container"
                                  class="flex h-full transition-transform duration-500 ease-in-out">
                                 <div class="relative w-full flex-shrink-0">
-                                    <img src="{{ Vite::asset('resources/images/products/british propolis norway/1.jpg') }}"
+                                    <img src="{{ Vite::asset('resources/images/products/british propolis norway/1.webp') }}"
                                          alt="Modern Architecture"
                                          class="h-full w-full object-cover">
                                 </div>
                                 <div class="relative w-full flex-shrink-0">
-                                    <img src="{{ Vite::asset('resources/images/products/british propolis norway/2.jpg') }}"
+                                    <img src="{{ Vite::asset('resources/images/products/british propolis norway/2.webp') }}"
                                          alt="Nature Landscape"
                                          class="h-full w-full object-cover">
                                 </div>
                                 <div class="relative w-full flex-shrink-0">
-                                    <img src="{{ Vite::asset('resources/images/products/british propolis norway/3.jpg') }}"
+                                    <img src="{{ Vite::asset('resources/images/products/british propolis norway/3.webp') }}"
                                          alt="City Skyline"
                                          class="h-full w-full object-cover">
                                 </div>

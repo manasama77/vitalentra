@@ -11,17 +11,17 @@
                             <div id="british-propolis-reguler-slides-container"
                                  class="flex h-full transition-transform duration-500 ease-in-out">
                                 <div class="relative w-full flex-shrink-0">
-                                    <img src="{{ Vite::asset('resources/images/products/british propolis reguler/1.jpg') }}"
+                                    <img src="{{ Vite::asset('resources/images/products/british propolis reguler/1.webp') }}"
                                          alt="British Propolis"
                                          class="h-full w-full object-cover">
                                 </div>
                                 <div class="relative w-full flex-shrink-0">
-                                    <img src="{{ Vite::asset('resources/images/products/british propolis reguler/2.jpg') }}"
+                                    <img src="{{ Vite::asset('resources/images/products/british propolis reguler/2.webp') }}"
                                          alt="British Propolis"
                                          class="h-full w-full object-cover">
                                 </div>
                                 <div class="relative w-full flex-shrink-0">
-                                    <img src="{{ Vite::asset('resources/images/products/british propolis reguler/3.jpg') }}"
+                                    <img src="{{ Vite::asset('resources/images/products/british propolis reguler/3.webp') }}"
                                          alt="British Propolis"
                                          class="h-full w-full object-cover">
                                 </div>

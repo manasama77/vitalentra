@@ -11,27 +11,27 @@
                             <div id="belgie-slides-container"
                                  class="flex h-full transition-transform duration-500 ease-in-out">
                                 <div class="relative w-full flex-shrink-0">
-                                    <img src="{{ Vite::asset('resources/images/products/belgie/1.jpg') }}"
+                                    <img src="{{ Vite::asset('resources/images/products/belgie/1.webp') }}"
                                          alt="Belgie"
                                          class="h-full w-full object-cover">
                                 </div>
                                 <div class="relative w-full flex-shrink-0">
-                                    <img src="{{ Vite::asset('resources/images/products/belgie/2.jpg') }}"
+                                    <img src="{{ Vite::asset('resources/images/products/belgie/2.webp') }}"
                                          alt="Belgie"
                                          class="h-full w-full object-cover">
                                 </div>
                                 <div class="relative w-full flex-shrink-0">
-                                    <img src="{{ Vite::asset('resources/images/products/belgie/3.jpg') }}"
+                                    <img src="{{ Vite::asset('resources/images/products/belgie/3.webp') }}"
                                          alt="Belgie"
                                          class="h-full w-full object-cover">
                                 </div>
                                 <div class="relative w-full flex-shrink-0">
-                                    <img src="{{ Vite::asset('resources/images/products/belgie/4.jpg') }}"
+                                    <img src="{{ Vite::asset('resources/images/products/belgie/4.webp') }}"
                                          alt="Belgie"
                                          class="h-full w-full object-cover">
                                 </div>
                                 <div class="relative w-full flex-shrink-0">
-                                    <img src="{{ Vite::asset('resources/images/products/belgie/5.jpg') }}"
+                                    <img src="{{ Vite::asset('resources/images/products/belgie/5.webp') }}"
                                          alt="Belgie"
                                          class="h-full w-full object-cover">
                                 </div>

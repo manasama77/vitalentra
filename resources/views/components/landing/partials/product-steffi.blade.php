@@ -10,17 +10,17 @@
                             <div id="steffi-slides-container"
                                  class="flex h-full transition-transform duration-500 ease-in-out">
                                 <div class="relative w-full flex-shrink-0">
-                                    <img src="{{ Vite::asset('resources/images/products/steffi/1.jpg') }}"
+                                    <img src="{{ Vite::asset('resources/images/products/steffi/1.webp') }}"
                                          alt="Steffi"
                                          class="h-full w-full object-cover">
                                 </div>
                                 <div class="relative w-full flex-shrink-0">
-                                    <img src="{{ Vite::asset('resources/images/products/steffi/2.jpg') }}"
+                                    <img src="{{ Vite::asset('resources/images/products/steffi/2.webp') }}"
                                          alt="Steffi"
                                          class="h-full w-full object-cover">
                                 </div>
                                 <div class="relative w-full flex-shrink-0">
-                                    <img src="{{ Vite::asset('resources/images/products/steffi/3.jpg') }}"
+                                    <img src="{{ Vite::asset('resources/images/products/steffi/3.webp') }}"
                                          alt="Steffi"
                                          class="h-full w-full object-cover">
                                 </div>
@@ -250,3 +250,4 @@
         steffiStartAutoPlay();
     </script>
 @endpush
+
