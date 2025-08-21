@@ -1,6 +1,7 @@
 import { defineConfig } from 'vite';
 import laravel from 'laravel-vite-plugin';
 import tailwindcss from '@tailwindcss/vite';
+import webfontDownload from 'vite-plugin-webfont-dl';
 
 export default defineConfig({
 	plugins: [
@@ -48,6 +49,7 @@ export default defineConfig({
 			refresh: true,
 		}),
 		tailwindcss(),
+		webfontDownload(),
 	],
 	server: {
 		cors: true,

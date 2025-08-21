@@ -28,7 +28,8 @@
 		"@iconify/tailwind4": "^1.0.6",
 		"@shufo/prettier-plugin-blade": "^1.14.13",
 		"@tailwindcss/typography": "^0.5.16",
-		"prettier": "^3.2.5"
+		"prettier": "^3.2.5",
+		"vite-plugin-webfont-dl": "^3.11.1"
 	},
 	"optionalDependencies": {
 		"@rollup/rollup-linux-x64-gnu": "4.9.5",
