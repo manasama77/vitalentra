@@ -49,7 +49,6 @@ export default defineConfig({
 			refresh: true,
 		}),
 		tailwindcss(),
-		webfontDownload(),
 	],
 	server: {
 		cors: true,
