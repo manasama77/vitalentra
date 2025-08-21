@@ -6,7 +6,7 @@
             <div class="space-y-4">
                 <div class="flex flex-col items-start justify-center gap-2">
                     <div class="flex items-center justify-center gap-4">
-						<div class="size-18 md:size-24">
+                        <div class="size-18 md:size-24">
                             <img src="{{ Vite::asset('resources/images/logo_white.png') }}"
                                  alt="Vitalentra Group International (VGI) Logo"
                                  class="w-full" />

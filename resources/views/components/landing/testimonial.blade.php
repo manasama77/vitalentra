@@ -39,10 +39,10 @@
 
              <div class="mb-5 mt-[60px] flex items-center justify-center gap-1">
                  <div class="swiper-button-prev">
-                     <i class="lni lni-arrow-left"></i>
+                     <i class="fa fa-arrow-left"></i>
                  </div>
                  <div class="swiper-button-next">
-                     <i class="lni lni-arrow-right"></i>
+                     <i class="fa fa-arrow-right"></i>
                  </div>
              </div>
          </div>

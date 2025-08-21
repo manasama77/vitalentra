@@ -66,13 +66,13 @@ window.addEventListener('load', function () {
 	var theme = localStorage.getItem('Vitalentra_WebTheme');
 
 	if (theme == 'vitalentra') {
-		webTheme.innerHTML = '<i class="lni lni-sun"></i>';
+		webTheme.innerHTML = '<i class="fa-solid fa-sun"></i>';
 	} else if (theme == 'dark') {
-		webTheme.innerHTML = '<i class="lni lni-night"></i>';
+		webTheme.innerHTML = '<i class="fa-solid fa-moon"></i>';
 	} else {
 		theme = 'vitalentra';
 		localStorage.setItem('Vitalentra_WebTheme', theme);
-		webTheme.innerHTML = '<i class="lni lni-night"></i>';
+		webTheme.innerHTML = '<i class="fa-solid fa-moon"></i>';
 	}
 	html.dataset.theme = theme;
 });

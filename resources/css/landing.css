@@ -1,7 +1,10 @@
 /* @charset "UTF-8"; */
-@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap")
-layer(base);
+/* @import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap")
+layer(base); */
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");
 @import "flag-icons/css/flag-icons.min.css";
+@import "@fortawesome/fontawesome-free/css/all.css";
+
 @plugin "@iconify/tailwind4";
 @plugin "@tailwindcss/typography";
 
@@ -561,6 +564,7 @@ layer(base);
 		@apply scroll-smooth;
 		color-scheme: light;
 		font-family: "Inter", sans-serif;
+		font-display: swap;
 	}
 
 	[data-theme="dark"] {
@@ -594,6 +598,7 @@ layer(base);
 	textarea {
 		@apply bg-inherit text-inherit border-0 outline-hidden;
 		font-family: inherit;
+		font-display: swap;
 		font-size: inherit;
 		line-height: inherit;
 	}

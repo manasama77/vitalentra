@@ -14,6 +14,9 @@ return new class () extends Migration {
             $table->id();
             $table->string('title');
             $table->string('image');
+            $table->string('image_480')->nullable();
+            $table->string('image_768')->nullable();
+            $table->string('image_1024')->nullable();
             $table->boolean('active')->default(true);
             $table->integer('order')->default(0);
             $table->string('link')->nullable();

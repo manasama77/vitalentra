@@ -51,10 +51,12 @@
           crossorigin>
 
     <!-- perbaikan -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
+    {{-- <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect"
           href="https://fonts.gstatic.com"
           crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+          rel="stylesheet"> --}}
 
     <!-- Favicon -->
     <link rel="icon"
@@ -86,14 +88,14 @@
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/glightbox/dist/css/glightbox.min.css">
     </noscript>
 
-    {{-- <link rel="stylesheet" href="https://cdn.lineicons.com/5.0/lineicons.css" /> --}}
-    <link rel="preload"
+    {{-- <link rel="stylesheet" href="{{ asset('fonts/regular-icon-font-free/lineicons.css') }}" /> --}}
+    {{-- <link rel="preload"
           href="https://cdn.lineicons.com/5.0/lineicons.css"
           as="style"
           onload="this.onload=null;this.rel='stylesheet'">
     <noscript>
         <link rel="stylesheet" href="https://cdn.lineicons.com/5.0/lineicons.css">
-    </noscript>
+    </noscript> --}}
 
     {{-- <link rel="stylesheet"
           href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css"
@@ -101,13 +103,13 @@
           crossorigin="anonymous"
           referrerpolicy="no-referrer" /> --}}
     {{-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css"> --}}
-    <link rel="preload"
+    {{-- <link rel="preload"
           href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css"
           as="style"
           onload="this.onload=null;this.rel='stylesheet'">
     <noscript>
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css">
-    </noscript>
+    </noscript> --}}
 
     <style>
         /* Critical CSS - inline above-the-fold styles */
@@ -217,6 +219,8 @@
             });
 
             const testimonialSwiper = new Swiper(".testimonial-carousel", {
+                lazy: true,
+                preloadImages: false,
                 slidesPerView: 1,
                 spaceBetween: 30,
                 loop: true,
@@ -259,4 +263,3 @@
 </body>
 
 </html>
-

@@ -9,6 +9,9 @@ class Carousel extends Model
     protected $fillable = [
         'title',
         'image',
+        'image_480',
+        'image_768',
+        'image_1024',
         'active',
         'order',
         'link',

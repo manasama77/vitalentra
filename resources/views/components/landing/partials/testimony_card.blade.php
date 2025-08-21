@@ -8,9 +8,9 @@
         </p>
         <figure class="flex items-center gap-4">
             <div class="size-22 overflow-hidden">
-                <img src="{{ $photo }}"
-                     alt="Testimonial picture"
-                     class="h-full w-full rounded-full object-cover" />
+                <img src="{{ asset($photo) }}"
+                     alt="{{ $name }}"
+                     class="swiper-lazy h-full w-full rounded-full object-cover" />
             </div>
             <figcaption class="flex-grow">
                 <h3 class="text-body-light-11 text-sm font-semibold">

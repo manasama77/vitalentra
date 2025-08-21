@@ -12,9 +12,13 @@
                 <div class="carousel-slide">
                     <div class="flex h-full justify-center">
                         <img src="{{ asset($carousel->image) }}"
+                             srcset="{{ asset($carousel->image_480) }} 480w,
+                                {{ asset($carousel->image_768) }} 768w,
+                                {{ asset($carousel->image_1024) }} 1024w"
+                             sizes="(max-width: 480px) 480px, (max-width: 768px) 768px, (max-width: 1024px) 1024px, 1500px"
                              class="size-full object-cover"
                              alt="{{ $carousel->title }}"
-                             loading="lazy" />
+                             loading="{{ $loop->first ? 'eager' : 'lazy' }}" />
                     </div>
                 </div>
             @endforeach
