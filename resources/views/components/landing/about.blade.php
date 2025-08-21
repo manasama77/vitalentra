@@ -4,9 +4,15 @@
         <div class="grid grid-cols-1 gap-14 lg:grid-cols-2">
             <div class="w-full">
                 <figure class="scroll-revealed mx-auto">
-                    <img src="{{ Vite::asset('resources/images/tentang_kami_cover.jpg') }}"
-                         alt="About image"
-                         class="rounded-xl" />
+                    <picture>
+                        <source srcset="{{ Vite::asset('resources/images/tentang_kami_cover_small.webp') }}"
+                                media="(max-width: 768px)">
+                        <source srcset="{{ Vite::asset('resources/images/tentang_kami_cover.webp') }}"
+                                media="(min-width: 769px)">
+                        <img src="{{ Vite::asset('resources/images/tentang_kami_cover.webp') }}"
+                             alt="About image"
+                             class="rounded-xl" />
+                    </picture>
                 </figure>
             </div>
 
@@ -33,3 +39,4 @@
         </div>
     </div>
 </section>
+

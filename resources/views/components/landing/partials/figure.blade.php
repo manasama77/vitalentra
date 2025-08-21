@@ -7,9 +7,9 @@
     'contentKey' => null,
 ])
 <figure id="{{ $triggerId }}"
-        class="bg-body-light-1 dark:bg-body-dark-12/10 shadow-card-2 group flex h-[280px] w-full cursor-pointer flex-col justify-between rounded-xl px-5 pb-10 pt-12 hover:-translate-y-1 hover:shadow-lg"
+        class="bg-body-light-1 dark:bg-body-dark-12/10 shadow-card-2 group flex w-full cursor-pointer flex-col justify-between rounded-xl px-5 pb-10 pt-12 hover:-translate-y-1 hover:shadow-lg"
         onclick="openModal('{{ $triggerId }}')">
-    <div class="relative z-10 mx-auto h-[150px] w-[150px]">
+    <div class="md:max-size-[150px] relative z-10 mx-auto size-[50vw] md:size-[100px] lg:size-[150px]">
         @php
             $baseName = basename($photo, '.jpg');
             $webpSrc = asset('build/assets/optimized/' . $baseName . '.webp');
@@ -18,7 +18,7 @@
         <x-optimized-image :webpSrc="$webpSrc"
                            :fallbackSrc="$photo"
                            alt="Team picture"
-                           class="h-full w-full rounded-full object-cover"
+                           class="size-auto rounded-full object-cover"
                            loading="lazy" />
 
         <span
@@ -35,3 +35,4 @@
         </p>
     </figcaption>
 </figure>
+

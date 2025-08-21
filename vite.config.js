@@ -25,6 +25,9 @@ export default defineConfig({
 				'resources/images/Management - Renya Nuringtyas.webp',
 
 				'resources/images/tentang_kami_cover.jpg',
+				'resources/images/tentang_kami_cover.webp',
+				'resources/images/tentang_kami_cover_small.webp',
+
 				'resources/images/Halal_Indonesia.svg',
 				'resources/images/logo.png',
 				'resources/images/logo_white.png',
