@@ -18,7 +18,6 @@ export default defineConfig({
 				'resources/images/Management - M. Nuzullaiman.jpg',
 				'resources/images/Management - Tito Masinggil.jpg',
 				'resources/images/Management - Renya Nuringtyas.jpg',
-
 				'resources/images/Management - Marida.webp',
 				'resources/images/Management - Beka Masinggil.webp',
 				'resources/images/Management - M. Nuzullaiman.webp',
@@ -30,11 +29,17 @@ export default defineConfig({
 				'resources/images/logo.png',
 				'resources/images/logo_white.png',
 				'resources/images/BP Group Logo.png',
+
 				'resources/images/Testimonials - Teuku Wisnu.jpg',
 				'resources/images/Testimonials - Irwansyah.jpg',
 				'resources/images/Testimonials - Mario Irwinsyah.jpg',
 				'resources/images/Testimonials - Citra Kirana.jpg',
 				'resources/images/Testimonials - Natasha Rizky.jpg',
+				'resources/images/Testimonials - Teuku Wisnu.webp',
+				'resources/images/Testimonials - Irwansyah.webp',
+				'resources/images/Testimonials - Mario Irwinsyah.webp',
+				'resources/images/Testimonials - Citra Kirana.webp',
+				'resources/images/Testimonials - Natasha Rizky.webp',
 
 				'resources/images/products/belgie/1.jpg',
 				'resources/images/products/belgie/2.jpg',
