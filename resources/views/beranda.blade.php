@@ -36,30 +36,30 @@
     <x-landing.partials.modal_figure modalId="{{ Str::slug('Marida') }}"
                                      name="Marida"
                                      position="Chairman of the Board"
-                                     photo="{{ Vite::asset('resources/images/Management - Marida.jpg') }}"
+                                     photo="{{ Vite::asset('resources/images/Management - Marida.webp') }}"
                                      content="{!! __('team.content.1') !!}" />
 
     <x-landing.partials.modal_figure modalId="{{ Str::slug('Beka Masinggil') }}"
                                      name="Beka Masinggil"
                                      position="{{ __('team.commissioner') }}"
-                                     photo="{{ Vite::asset('resources/images/Management - Beka Masinggil.jpg') }}"
+                                     photo="{{ Vite::asset('resources/images/Management - Beka Masinggil.webp') }}"
                                      content="{!! __('team.content.2') !!}" />
 
     <x-landing.partials.modal_figure modalId="{{ Str::slug('M. Nuzullaiman') }}"
                                      name="M. Nuzullaiman"
                                      position="Chief Executive Officer"
-                                     photo="{{ Vite::asset('resources/images/Management - M. Nuzullaiman.jpg') }}"
+                                     photo="{{ Vite::asset('resources/images/Management - M. Nuzullaiman.webp') }}"
                                      content="{!! __('team.content.3') !!}" />
 
     <x-landing.partials.modal_figure modalId="{{ Str::slug('Tito Masinggil') }}"
                                      name="Tito Masinggil"
                                      position="Chief Operating Officer"
-                                     photo="{{ Vite::asset('resources/images/Management - Tito Masinggil.jpg') }}"
+                                     photo="{{ Vite::asset('resources/images/Management - Tito Masinggil.webp') }}"
                                      content="{!! __('team.content.4') !!}" />
 
     <x-landing.partials.modal_figure modalId="{{ Str::slug('Renya Nuringtyas') }}"
                                      name="Renya Nuringtyas"
                                      position="Chief Marketing Officer"
-                                     photo="{{ Vite::asset('resources/images/Management - Renya Nuringtyas.jpg') }}"
+                                     photo="{{ Vite::asset('resources/images/Management - Renya Nuringtyas.webp') }}"
                                      content="{!! __('team.content.5') !!}" />
 </x-layouts.landing>

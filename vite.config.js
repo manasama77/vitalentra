@@ -18,6 +18,13 @@ export default defineConfig({
 				'resources/images/Management - M. Nuzullaiman.jpg',
 				'resources/images/Management - Tito Masinggil.jpg',
 				'resources/images/Management - Renya Nuringtyas.jpg',
+
+				'resources/images/Management - Marida.webp',
+				'resources/images/Management - Beka Masinggil.webp',
+				'resources/images/Management - M. Nuzullaiman.webp',
+				'resources/images/Management - Tito Masinggil.webp',
+				'resources/images/Management - Renya Nuringtyas.webp',
+
 				'resources/images/tentang_kami_cover.jpg',
 				'resources/images/Halal_Indonesia.svg',
 				'resources/images/logo.png',

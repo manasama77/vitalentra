@@ -16,7 +16,7 @@
         <!-- All Team Members -->
         <div class="grid grid-cols-1 gap-8 md:grid-cols-5">
             <div class="scroll-revealed mx-auto w-full max-w-[300px]">
-                <x-landing.partials.figure photo="{{ Vite::asset('resources/images/Management - Marida.jpg') }}"
+                <x-landing.partials.figure photo="{{ Vite::asset('resources/images/Management - Marida.webp') }}"
                                            name="Marida"
                                            position="Chairman of the Board"
                                            triggerId="{{ Str::slug('Marida') }}"
@@ -24,7 +24,7 @@
             </div>
 
             <div class="scroll-revealed mx-auto w-full max-w-[300px]">
-                <x-landing.partials.figure photo="{{ Vite::asset('resources/images/Management - Beka Masinggil.jpg') }}"
+                <x-landing.partials.figure photo="{{ Vite::asset('resources/images/Management - Beka Masinggil.webp') }}"
                                            name="Beka Masinggil"
                                            position="{{ __('team.commissioner') }}"
                                            triggerId="{{ Str::slug('Beka Masinggil') }}"
@@ -32,7 +32,7 @@
             </div>
 
             <div class="scroll-revealed mx-auto w-full max-w-[300px]">
-                <x-landing.partials.figure photo="{{ Vite::asset('resources/images/Management - M. Nuzullaiman.jpg') }}"
+                <x-landing.partials.figure photo="{{ Vite::asset('resources/images/Management - M. Nuzullaiman.webp') }}"
                                            name="M. Nuzullaiman"
                                            position="Chief Executive Officer"
                                            triggerId="{{ Str::slug('M. Nuzullaiman') }}"
@@ -40,7 +40,7 @@
             </div>
 
             <div class="scroll-revealed mx-auto w-full max-w-[300px]">
-                <x-landing.partials.figure photo="{{ Vite::asset('resources/images/Management - Tito Masinggil.jpg') }}"
+                <x-landing.partials.figure photo="{{ Vite::asset('resources/images/Management - Tito Masinggil.webp') }}"
                                            name="Tito Masinggil"
                                            position="Chief Operating Officer"
                                            triggerId="{{ Str::slug('Tito Masinggil') }}"
@@ -48,7 +48,7 @@
             </div>
 
             <div class="scroll-revealed mx-auto w-full max-w-[300px]">
-                <x-landing.partials.figure photo="{{ Vite::asset('resources/images/Management - Renya Nuringtyas.jpg') }}"
+                <x-landing.partials.figure photo="{{ Vite::asset('resources/images/Management - Renya Nuringtyas.webp') }}"
                                            name="Renya Nuringtyas"
                                            position="Chief Marketing Officer"
                                            triggerId="{{ Str::slug('Renya Nuringtyas') }}"
