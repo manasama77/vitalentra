@@ -7,6 +7,8 @@ use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\BerandaController;
 use App\Http\Controllers\LanguageController;
 use App\Http\Controllers\TestController;
+use App\Http\Controllers\DashboardController;
+use App\Http\Controllers\NewsController;
 
 // Language switching route - simplified for caching
 Route::get('language/{locale}', [LanguageController::class, 'switch'])
@@ -16,16 +18,21 @@ Route::get('language/{locale}', [LanguageController::class, 'switch'])
 // Test route for multilanguage (development only)
 Route::get('test-multilanguage', [TestController::class, 'multilanguage'])->name('test.multilanguage');
 
+// Test route for dashboard design (development only)
+Route::get('test-dashboard', [DashboardController::class, 'index'])->name('test.dashboard');
+
 Route::get('/', [BerandaController::class, 'index'])->name('home');
 // Route::get('/phpinfo', [TestController::class, 'phpinfo']);
 Route::get('news-blog/', [BerandaController::class, 'news_list'])->name('news.list');
 Route::get('news/{slug}', [BerandaController::class, 'show'])->name('news.show');
 
-Route::view('dashboard', 'dashboard')
-    ->middleware(['auth', 'verified'])
-    ->name('dashboard');
+// Route::get('dashboard', [DashboardController::class, 'index'])
+//     ->middleware(['auth', 'verified'])
+//     ->name('dashboard');
 
-Route::middleware(['auth'])->group(function () {
+Route::middleware(['auth', 'verified'])->group(function () {
+		Route::get('dashboard', [DashboardController::class, 'index'])->name('dashboard');
+		// Route::resource('news', NewsController::class);
     Route::redirect('settings', 'settings/profile');
 
     Route::get('settings/profile', Profile::class)->name('settings.profile');
