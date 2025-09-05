@@ -41,10 +41,7 @@
 
     $isJsMethod = str_starts_with($attributes->whereStartsWith('wire:click')->first() ?? '', '$js.');
 
-    $loading ??=
-        $loading ??
-        $isTypeSubmitAndNotDisabledOnRender ||
-            ($attributes->whereStartsWith('wire:click')->isNotEmpty() && !$isJsMethod);
+    $loading ??= $loading ?? $isTypeSubmitAndNotDisabledOnRender || ($attributes->whereStartsWith('wire:click')->isNotEmpty() && !$isJsMethod);
 
     if ($loading && $type !== 'submit' && !$isJsMethod) {
         $attributes = $attributes->merge(['wire:loading.attr' => 'data-flux-loading']);
@@ -98,8 +95,7 @@
             match (
                 $variant // Background color...
             ) {
-                'primary'
-                    => 'bg-[var(--color-accent)] hover:bg-[color-mix(in_oklab,_var(--color-accent),_transparent_10%)]',
+                'primary' => 'bg-[var(--color-accent)] hover:bg-[color-mix(in_oklab,_var(--color-accent),_transparent_10%)]',
                 'filled' => 'bg-zinc-800/5 hover:bg-zinc-800/10 dark:bg-white/10 dark:hover:bg-white/20',
                 'outline' => 'bg-white hover:bg-zinc-50 dark:bg-zinc-700 dark:hover:bg-zinc-600/75',
                 'danger' => 'bg-red-500 hover:bg-red-600 dark:bg-red-600 dark:hover:bg-red-500',
@@ -124,8 +120,7 @@
                 $variant // Border color...
             ) {
                 'primary' => 'border border-black/10 dark:border-0',
-                'outline'
-                    => 'border border-zinc-200 hover:border-zinc-200 border-b-zinc-300/80 dark:border-zinc-600 dark:hover:border-zinc-600',
+                'outline' => 'border border-zinc-200 hover:border-zinc-200 border-b-zinc-300/80 dark:border-zinc-600 dark:hover:border-zinc-600',
                 default => '',
             },
         )
@@ -134,8 +129,7 @@
                 $variant // Shadows...
             ) {
                 'primary' => 'shadow-[inset_0px_1px_--theme(--color-white/.2)]',
-                'danger'
-                    => 'shadow-[inset_0px_1px_var(--color-red-500),inset_0px_2px_--theme(--color-white/.15)] dark:shadow-none',
+                'danger' => 'shadow-[inset_0px_1px_var(--color-red-500),inset_0px_2px_--theme(--color-white/.15)] dark:shadow-none',
                 'outline' => match ($size) {
                     'base' => 'shadow-xs',
                     'sm' => 'shadow-xs',
@@ -234,21 +228,15 @@
 @endphp
 
 <flux:with-tooltip :$attributes>
-    <flux:button-or-link :$type
-                         :attributes="$attributes->class($classes)"
-                         data-flux-button>
+    <flux:button-or-link :$type :attributes="$attributes->class($classes)" data-flux-button>
         <?php if ($loading): ?>
         <div class="absolute inset-0 flex items-center justify-center opacity-0" data-flux-loading-indicator>
-            <flux:icon icon="loading"
-                       :variant="$iconVariant"
-                       :class="$iconClasses" />
+            <flux:icon icon="loading" :variant="$iconVariant" :class="$iconClasses" />
         </div>
         <?php endif; ?>
 
         <?php if (is_string($iconLeading) && $iconLeading !== ''): ?>
-        <flux:icon :icon="$iconLeading"
-                   :variant="$iconVariant"
-                   :class="$iconClasses" />
+        <flux:icon :icon="$iconLeading" :variant="$iconVariant" :class="$iconClasses" />
         <?php elseif ($iconLeading): ?>
         {{ $iconLeading }}
         <?php endif; ?>
@@ -268,9 +256,7 @@
         <?php if (is_string($iconTrailing) && $iconTrailing !== ''): ?>
         {{-- Adding the extra margin class inline on the icon component below was causing a double up, so it needs to be added here first... --}}
         <?php $iconClasses->add($square ? '' : '-ms-1'); ?>
-        <flux:icon :icon="$iconTrailing"
-                   :variant="$iconTrailingVariant"
-                   :class="$iconTrailingClasses" />
+        <flux:icon :icon="$iconTrailing" :variant="$iconTrailingVariant" :class="$iconTrailingClasses" />
         <?php elseif ($iconTrailing): ?>
         {{ $iconTrailing }}
         <?php endif; ?>

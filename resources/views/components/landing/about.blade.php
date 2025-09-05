@@ -5,13 +5,9 @@
             <div class="w-full">
                 <figure class="scroll-revealed mx-auto">
                     <picture>
-                        <source srcset="{{ Vite::asset('resources/images/tentang_kami_cover_small.webp') }}"
-                                media="(max-width: 768px)">
-                        <source srcset="{{ Vite::asset('resources/images/tentang_kami_cover.webp') }}"
-                                media="(min-width: 769px)">
-                        <img src="{{ Vite::asset('resources/images/tentang_kami_cover.webp') }}"
-                             alt="About image"
-                             class="rounded-xl" />
+                        <source srcset="{{ Vite::asset('resources/images/tentang_kami_cover_small.webp') }}" media="(max-width: 768px)">
+                        <source srcset="{{ Vite::asset('resources/images/tentang_kami_cover.webp') }}" media="(min-width: 769px)">
+                        <img src="{{ Vite::asset('resources/images/tentang_kami_cover.webp') }}" alt="About image" class="rounded-xl" />
                     </picture>
                 </figure>
             </div>
@@ -39,4 +35,3 @@
         </div>
     </div>
 </section>
-

@@ -28,9 +28,7 @@
         ->add($square ? '' : 'px-2.5!')
         ->add('text-zinc-500 dark:text-white/80 ')
         // Styles for when this link is the "current" one...
-        ->add(
-            'data-current:after:absolute data-current:after:-bottom-3 data-current:after:inset-x-0 data-current:after:h-[2px]',
-        )
+        ->add('data-current:after:absolute data-current:after:-bottom-3 data-current:after:inset-x-0 data-current:after:h-[2px]')
         ->add(['[--hover-fill:color-mix(in_oklab,_var(--color-accent-content),_transparent_90%)]'])
         ->add(
             match ($accent) {
@@ -52,9 +50,7 @@
     <?php if ($icon): ?>
     <div class="relative">
         <?php if (is_string($icon) && $icon !== ''): ?>
-        <flux:icon :$icon
-                   :variant="$iconVariant"
-                   class="{!! $iconClasses !!}" />
+        <flux:icon :$icon :variant="$iconVariant" class="{!! $iconClasses !!}" />
         <?php else: ?>
         {{ $icon }}
         <?php endif; ?>
@@ -69,13 +65,11 @@
 
     <?php if ($slot->isNotEmpty()): ?>
     <div class="{{ $icon ? 'ms-3' : '' }} flex-1 whitespace-nowrap text-sm font-medium leading-none [[data-nav-footer]_&]:hidden [[data-nav-sidebar]_[data-nav-footer]_&]:block"
-         data-content>{{ $slot }}</div>
+        data-content>{{ $slot }}</div>
     <?php endif; ?>
 
     <?php if (is_string($iconTrailing) && $iconTrailing !== ''): ?>
-    <flux:icon :icon="$iconTrailing"
-               variant="micro"
-               class="ms-1 size-4" />
+    <flux:icon :icon="$iconTrailing" variant="micro" class="ms-1 size-4" />
     <?php elseif ($iconTrailing): ?>
     {{ $iconTrailing }}
     <?php endif; ?>

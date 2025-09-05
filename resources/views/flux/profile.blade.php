@@ -22,9 +22,9 @@ $initials ??= collect(explode(' ', $name ?? ''))
     ->implode('');
 
 // When using the outline icon variant, we need to size it down to match the default icon sizes...
-$iconClasses = Flux::classes(
-    'text-zinc-400 dark:text-white/80 group-hover:text-zinc-800 dark:group-hover:text-white',
-)->add($iconVariant === 'outline' ? 'size-4' : '');
+$iconClasses = Flux::classes('text-zinc-400 dark:text-white/80 group-hover:text-zinc-800 dark:group-hover:text-white')->add(
+    $iconVariant === 'outline' ? 'size-4' : '',
+);
 
 $classes = Flux::classes()
     ->add('group flex items-center')
@@ -33,32 +33,27 @@ $classes = Flux::classes()
         ->add('p-1 hover:bg-zinc-800/5 dark:hover:bg-white/10');
 @endphp
 
-<button type="button"
-        {{ $attributes->class($classes) }}
-        data-flux-profile>
+<button type="button" {{ $attributes->class($classes) }} data-flux-profile>
     <div class="shrink-0">
         <?php if ($avatar instanceof \Illuminate\View\ComponentSlot): ?>
         {{ $avatar }}
         <?php else: ?>
         <flux:avatar
-                     :attributes="Flux::attributesAfter('avatar:', $attributes, ['src' => $avatar, 'size' => 'sm', 'circle' =>
-                         $circle, 'name' => $name, 'initials' => $initials
-                     ])" />
+            :attributes="Flux::attributesAfter('avatar:', $attributes, ['src' => $avatar, 'size' => 'sm', 'circle' =>
+                $circle, 'name' => $name, 'initials' => $initials
+            ])" />
         <?php endif; ?>
     </div>
 
     <?php if ($name): ?>
-    <span
-          class="mx-2 truncate text-sm font-medium text-zinc-500 group-hover:text-zinc-800 dark:text-white/80 dark:group-hover:text-white">
+    <span class="text-base-content mx-2 truncate text-sm font-medium group-hover:text-zinc-800">
         {{ $name }}
     </span>
     <?php endif; ?>
 
     <?php if (is_string($iconTrailing) && $iconTrailing !== ''): ?>
     <div class="ms-auto flex size-8 shrink-0 items-center justify-center">
-        <flux:icon :icon="$iconTrailing"
-                   :variant="$iconVariant"
-                   :class="$iconClasses" />
+        <flux:icon :icon="$iconTrailing" :variant="$iconVariant" :class="$iconClasses" />
     </div>
     <?php elseif ($iconTrailing): ?>
     {{ $iconTrailing }}

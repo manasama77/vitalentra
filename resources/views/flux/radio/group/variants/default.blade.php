@@ -19,9 +19,7 @@
 @endphp
 
 <flux:with-field :$attributes>
-    <ui-radio-group {{ $attributes->class($classes) }}
-                    @if ($showName) name="{{ $name }}" @endif
-                    data-flux-radio-group>
+    <ui-radio-group {{ $attributes->class($classes) }} @if ($showName) name="{{ $name }}" @endif data-flux-radio-group>
         {{ $slot }}
     </ui-radio-group>
 </flux:with-field>

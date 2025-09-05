@@ -12,8 +12,8 @@
                 {{ __('cta.content.2') }}
             </p>
             <a href="#product"
-               class="bg-success hover:bg-success-content hover:text-success focus:bg-success/80 scroll-revealed mt-11 inline-block rounded-md px-5 py-3 font-bold text-white focus:text-white"
-               role="button">
+                class="bg-success hover:bg-success-content hover:text-success focus:bg-success/80 scroll-revealed mt-11 inline-block rounded-md px-5 py-3 font-bold text-white focus:text-white"
+                role="button">
                 {{ __('cta.button') }}
             </a>
         </div>

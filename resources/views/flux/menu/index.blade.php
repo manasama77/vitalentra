@@ -7,8 +7,6 @@
         ->add('focus:outline-hidden');
 @endphp
 
-<ui-menu {{ $attributes->class($classes) }}
-         popover="manual"
-         data-flux-menu>
+<ui-menu {{ $attributes->class($classes) }} popover="manual" data-flux-menu>
     {{ $slot }}
 </ui-menu>

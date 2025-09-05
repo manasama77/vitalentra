@@ -3,6 +3,7 @@
 use App\Livewire\Settings\Profile;
 use App\Livewire\Settings\Password;
 use App\Livewire\Settings\Appearance;
+use App\Livewire\Components\FlyonuiThemeDemo;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\BerandaController;
 use App\Http\Controllers\LanguageController;
@@ -31,13 +32,17 @@ Route::get('news/{slug}', [BerandaController::class, 'show'])->name('news.show')
 //     ->name('dashboard');
 
 Route::middleware(['auth', 'verified'])->group(function () {
-		Route::get('dashboard', [DashboardController::class, 'index'])->name('dashboard');
-		// Route::resource('news', NewsController::class);
+    Route::get('dashboard', [DashboardController::class, 'index'])->name('dashboard');
+    Route::get('news', [DashboardController::class, 'index'])->name('news.index');
+    // Route::resource('news', NewsController::class);
     Route::redirect('settings', 'settings/profile');
 
     Route::get('settings/profile', Profile::class)->name('settings.profile');
     Route::get('settings/password', Password::class)->name('settings.password');
     Route::get('settings/appearance', Appearance::class)->name('settings.appearance');
+
+    // FlyonUI Theme Demo
+    Route::get('flyonui-demo', FlyonuiThemeDemo::class)->name('flyonui.demo');
 });
 
 require __DIR__ . '/auth.php';

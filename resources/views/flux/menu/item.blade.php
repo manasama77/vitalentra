@@ -38,8 +38,8 @@
                     '**:data-flux-menu-item-icon:text-zinc-400 dark:**:data-flux-menu-item-icon:text-white/60 [&[data-active]_[data-flux-menu-item-icon]]:text-current',
                 ],
                 'default' => [
-                    'text-zinc-800 data-active:bg-zinc-50 dark:text-white dark:data-active:bg-zinc-600',
-                    '**:data-flux-menu-item-icon:text-zinc-400 dark:**:data-flux-menu-item-icon:text-white/60 [&[data-active]_[data-flux-menu-item-icon]]:text-current',
+                    'text-base-content data-active:bg-base-200',
+                    '**:data-flux-menu-item-icon:text-zinc-400 [&[data-active]_[data-flux-menu-item-icon]]:text-current',
                 ],
             },
         );
@@ -47,14 +47,9 @@
     $suffixClasses = Flux::classes()->add('ms-auto text-xs text-zinc-400');
 @endphp
 
-<flux:button-or-link :attributes="$attributes->class($classes)"
-                     data-flux-menu-item
-                     :data-flux-menu-item-has-icon="!!$icon">
+<flux:button-or-link :attributes="$attributes->class($classes)" data-flux-menu-item :data-flux-menu-item-has-icon="!!$icon">
     <?php if (is_string($icon) && $icon !== ''): ?>
-    <flux:icon :$icon
-               :variant="$iconVariant"
-               :class="$iconClasses"
-               data-flux-menu-item-icon />
+    <flux:icon :$icon :variant="$iconVariant" :class="$iconClasses" data-flux-menu-item-icon />
     <?php elseif ($icon): ?>
     {{ $icon }}
     <?php else: ?>
@@ -74,10 +69,7 @@
     <?php endif; ?>
 
     <?php if (is_string($iconTrailing) && $iconTrailing !== ''): ?>
-    <flux:icon :icon="$iconTrailing"
-               :variant="$iconVariant"
-               :class="$trailingIconClasses"
-               data-flux-menu-item-icon />
+    <flux:icon :icon="$iconTrailing" :variant="$iconVariant" :class="$trailingIconClasses" data-flux-menu-item-icon />
     <?php elseif ($iconTrailing): ?>
     {{ $iconTrailing }}
     <?php endif; ?>

@@ -43,12 +43,8 @@
     <link rel="dns-prefetch" href="//cdn.jsdelivr.net">
     <link rel="dns-prefetch" href="//cdnjs.cloudflare.com">
     <link rel="dns-prefetch" href="//unpkg.com">
-    <link rel="preconnect"
-          href="https://cdn.jsdelivr.net"
-          crossorigin>
-    <link rel="preconnect"
-          href="https://cdnjs.cloudflare.com"
-          crossorigin>
+    <link rel="preconnect" href="https://cdn.jsdelivr.net" crossorigin>
+    <link rel="preconnect" href="https://cdnjs.cloudflare.com" crossorigin>
 
     <!-- perbaikan -->
     {{-- <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -59,31 +55,23 @@
           rel="stylesheet"> --}}
 
     <!-- Favicon -->
-    <link rel="icon"
-          type="image/x-icon"
-          href="{{ asset('favicon.ico') }}" />
+    <link rel="icon" type="image/x-icon" href="{{ asset('favicon.ico') }}" />
     <link rel="shortcut icon" href="{{ asset('favicon.ico') }}" />
-    <link rel="apple-touch-icon"
-          sizes="180x180"
-          href="{{ asset('apple-touch-icon.png') }}" />
+    <link rel="apple-touch-icon" sizes="180x180" href="{{ asset('apple-touch-icon.png') }}" />
     <meta name="apple-mobile-web-app-title" content="Vitalentra" />
     <link rel="manifest" href="{{ asset('site.webmanifest') }}" />
 
     <!-- CSS Plugins -->
     {{-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" /> --}}
-    <link rel="preload"
-          href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
-          as="style"
-          onload="this.onload=null;this.rel='stylesheet'">
+    <link rel="preload" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" as="style"
+        onload="this.onload=null;this.rel='stylesheet'">
     <noscript>
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
     </noscript>
 
     {{-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/glightbox/dist/css/glightbox.min.css" /> --}}
-    <link rel="preload"
-          href="https://cdn.jsdelivr.net/npm/glightbox/dist/css/glightbox.min.css"
-          as="style"
-          onload="this.onload=null;this.rel='stylesheet'">
+    <link rel="preload" href="https://cdn.jsdelivr.net/npm/glightbox/dist/css/glightbox.min.css" as="style"
+        onload="this.onload=null;this.rel='stylesheet'">
     <noscript>
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/glightbox/dist/css/glightbox.min.css">
     </noscript>
@@ -155,18 +143,14 @@
     {{-- FLOATING ACTION BUTTONS --}}
     <div class="fixed bottom-20 right-5 z-50 flex flex-col gap-4">
         <button type="button"
-                class="bg-primary text-primary-color hover:bg-primary-light-10 focus:bg-primary-light-10 is-hided visible inline-flex size-12 items-center justify-center rounded-md text-lg/none opacity-100 transition-all duration-300 hover:-translate-y-1"
-                data-web-trigger="scroll-top"
-                aria-label="Scroll to top">
+            class="bg-primary text-primary-color hover:bg-primary-light-10 focus:bg-primary-light-10 is-hided visible inline-flex size-12 items-center justify-center rounded-md text-lg/none opacity-100 transition-all duration-300 hover:-translate-y-1"
+            data-web-trigger="scroll-top" aria-label="Scroll to top">
             <i class="fas fa-chevron-up"></i>
         </button>
 
-        <a href="https://wa.me/6281234677747"
-           target="_blank"
-           class="is-hided visible inline-flex size-12 items-center justify-center rounded-md bg-green-500 text-lg/none text-white opacity-100 transition-all duration-300 hover:-translate-y-1 hover:bg-green-600 focus:bg-green-600"
-           aria-label="Contact us on WhatsApp"
-           data-web-trigger="whatsapp"
-           aria-label="WhatsApp">
+        <a href="https://wa.me/6281234677747" target="_blank"
+            class="is-hided visible inline-flex size-12 items-center justify-center rounded-md bg-green-500 text-lg/none text-white opacity-100 transition-all duration-300 hover:-translate-y-1 hover:bg-green-600 focus:bg-green-600"
+            aria-label="Contact us on WhatsApp" data-web-trigger="whatsapp" aria-label="WhatsApp">
             <i class="fab fa-whatsapp"></i>
         </a>
     </div>

@@ -50,14 +50,7 @@
     $iconLeading ??= $icon;
 
     $hasLeadingIcon = (bool) $iconLeading;
-    $countOfTrailingIcons = collect([
-        (bool) $iconTrailing,
-        (bool) $kbd,
-        (bool) $clearable,
-        (bool) $copyable,
-        (bool) $viewable,
-        (bool) $expandable,
-    ])
+    $countOfTrailingIcons = collect([(bool) $iconTrailing, (bool) $kbd, (bool) $clearable, (bool) $copyable, (bool) $viewable, (bool) $expandable])
         ->filter()
         ->count();
 
@@ -141,47 +134,33 @@
 
 <?php if ($type === 'file'): ?>
 <flux:with-field :$attributes :$name>
-    <flux:input.file :$attributes
-                     :$name
-                     :$size />
+    <flux:input.file :$attributes :$name :$size />
 </flux:with-field>
 <?php elseif ($as !== 'button'): ?>
 <flux:with-field :$attributes :$name>
     <div {{ $attributes->only('class')->class('w-full relative block group/input') }} data-flux-input>
         <?php if (is_string($iconLeading)): ?>
-        <div
-             class="pointer-events-none absolute bottom-0 start-0 top-0 flex items-center justify-center ps-3 text-xs text-zinc-400/75">
-            <flux:icon :icon="$iconLeading"
-                       :variant="$iconVariant"
-                       :class="$iconClasses" />
+        <div class="pointer-events-none absolute bottom-0 start-0 top-0 flex items-center justify-center ps-3 text-xs text-zinc-400/75">
+            <flux:icon :icon="$iconLeading" :variant="$iconVariant" :class="$iconClasses" />
         </div>
         <?php elseif ($iconLeading): ?>
-        <div
-             {{ $iconLeading->attributes->class('absolute top-0 bottom-0 flex items-center justify-center text-xs text-zinc-400/75 ps-3 start-0') }}>
+        <div {{ $iconLeading->attributes->class('absolute top-0 bottom-0 flex items-center justify-center text-xs text-zinc-400/75 ps-3 start-0') }}>
             {{ $iconLeading }}
         </div>
         <?php endif; ?>
 
-        <input type="{{ $type }}"
-               {{-- Leave file inputs unstyled... --}}
-               {{ $attributes->except('class')->class($type === 'file' ? '' : $classes) }}
-               @isset($name) name="{{ $name }}" @endisset
-               @if ($mask) x-mask="{{ $mask }}" @endif
-               @if ($invalid) aria-invalid="true" data-invalid @endif
-               @if (is_numeric($size)) size="{{ $size }}" @endif
-               data-flux-control
-               data-flux-group-target
-               @if ($loading) wire:loading.class="{{ $inputLoadingClasses }}" @endif
-               @if ($loading && $wireTarget) wire:target="{{ $wireTarget }}" @endif>
+        <input type="{{ $type }}" {{-- Leave file inputs unstyled... --}} {{ $attributes->except('class')->class($type === 'file' ? '' : $classes) }}
+            @isset($name) name="{{ $name }}" @endisset
+            @if ($mask) x-mask="{{ $mask }}" @endif
+            @if ($invalid) aria-invalid="true" data-invalid @endif
+            @if (is_numeric($size)) size="{{ $size }}" @endif data-flux-control data-flux-group-target
+            @if ($loading) wire:loading.class="{{ $inputLoadingClasses }}" @endif
+            @if ($loading && $wireTarget) wire:target="{{ $wireTarget }}" @endif>
 
         <div class="absolute bottom-0 end-0 top-0 flex items-center gap-x-1.5 pe-3 text-xs text-zinc-400">
             {{-- Icon should be text-zinc-400/75 --}}
             <?php if ($loading): ?>
-            <flux:icon name="loading"
-                       :variant="$iconVariant"
-                       :class="$iconClasses"
-                       wire:loading
-                       :wire:target="$wireTarget" />
+            <flux:icon name="loading" :variant="$iconVariant" :class="$iconClasses" wire:loading :wire:target="$wireTarget" />
             <?php endif; ?>
 
             <?php if ($clearable): ?>
@@ -209,9 +188,7 @@
             $trailingIconClasses = clone $iconClasses;
             $trailingIconClasses->add('pointer-events-none text-zinc-400/75');
             ?>
-            <flux:icon :icon="$iconTrailing"
-                       :variant="$iconVariant"
-                       :class="$trailingIconClasses" />
+            <flux:icon :icon="$iconTrailing" :variant="$iconVariant" :class="$trailingIconClasses" />
             <?php elseif ($iconTrailing): ?>
             {{ $iconTrailing }}
             <?php endif; ?>
@@ -222,13 +199,10 @@
 <button {{ $attributes->merge(['type' => 'button'])->class([$classes, 'w-full relative flex']) }}>
     <?php if (is_string($iconLeading)): ?>
     <div class="absolute bottom-0 start-0 top-0 flex items-center justify-center ps-3 text-xs text-zinc-400/75">
-        <flux:icon :icon="$iconLeading"
-                   :variant="$iconVariant"
-                   :class="$iconClasses" />
+        <flux:icon :icon="$iconLeading" :variant="$iconVariant" :class="$iconClasses" />
     </div>
     <?php elseif ($iconLeading): ?>
-    <div
-         {{ $iconLeading->attributes->class('absolute top-0 bottom-0 flex items-center justify-center text-xs text-zinc-400/75 ps-3 start-0') }}>
+    <div {{ $iconLeading->attributes->class('absolute top-0 bottom-0 flex items-center justify-center text-xs text-zinc-400/75 ps-3 start-0') }}>
         {{ $iconLeading }}
     </div>
     <?php endif; ?>
@@ -251,13 +225,10 @@
 
     <?php if (is_string($iconTrailing)): ?>
     <div class="absolute bottom-0 end-0 top-0 flex items-center justify-center pe-3 text-xs text-zinc-400/75">
-        <flux:icon :icon="$iconTrailing"
-                   :variant="$iconVariant"
-                   :class="$iconClasses" />
+        <flux:icon :icon="$iconTrailing" :variant="$iconVariant" :class="$iconClasses" />
     </div>
     <?php elseif  ($iconTrailing): ?>
-    <div
-         {{ $iconTrailing->attributes->class('absolute top-0 bottom-0 flex items-center justify-center text-xs text-zinc-400/75 pe-2 end-0') }}>
+    <div {{ $iconTrailing->attributes->class('absolute top-0 bottom-0 flex items-center justify-center text-xs text-zinc-400/75 pe-2 end-0') }}>
         {{ $iconTrailing }}
     </div>
     <?php endif; ?>

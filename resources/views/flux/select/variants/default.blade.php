@@ -29,18 +29,11 @@
         ->add($invalid ? 'border border-red-500' : 'border border-zinc-200 border-b-zinc-300/80 dark:border-white/10');
 @endphp
 
-<select {{ $attributes->class($classes) }}
-        @if ($invalid) aria-invalid="true" data-invalid @endif
-        @isset($name) name="{{ $name }}" @endisset
-        @if (is_numeric($size)) size="{{ $size }}" @endif
-        data-flux-control
-        data-flux-select-native
-        data-flux-group-target>
+<select {{ $attributes->class($classes) }} @if ($invalid) aria-invalid="true" data-invalid @endif
+    @isset($name) name="{{ $name }}" @endisset @if (is_numeric($size)) size="{{ $size }}" @endif
+    data-flux-control data-flux-select-native data-flux-group-target>
     <?php if ($placeholder): ?>
-    <option value=""
-            disabled
-            selected
-            class="placeholder">{{ $placeholder }}</option>
+    <option value="" disabled selected class="placeholder">{{ $placeholder }}</option>
     <?php endif; ?>
 
     {{ $slot }}

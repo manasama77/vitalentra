@@ -27,11 +27,8 @@
 @endphp
 
 <flux:with-field :$attributes>
-    <textarea {{ $attributes->class($classes) }}
-              rows="{{ $rows }}"
-              style="{{ $resizeStyle }}; {{ $rows === 'auto' ? 'field-sizing: content' : '' }}"
-              @isset($name) name="{{ $name }}" @endisset
-              @if ($invalid) aria-invalid="true" data-invalid @endif
-              data-flux-control
-              data-flux-textarea>{{ $slot }}</textarea>
+    <textarea {{ $attributes->class($classes) }} rows="{{ $rows }}"
+        style="{{ $resizeStyle }}; {{ $rows === 'auto' ? 'field-sizing: content' : '' }}"
+        @isset($name) name="{{ $name }}" @endisset @if ($invalid) aria-invalid="true" data-invalid @endif
+        data-flux-control data-flux-textarea>{{ $slot }}</textarea>
 </flux:with-field>

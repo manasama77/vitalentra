@@ -12,13 +12,9 @@
     $classes = Flux::classes()->add('p-1 -my-1 -me-1 opacity-50 hover:opacity-100');
 @endphp
 
-<button type="button"
-        {{ $attributes->class($classes) }}
-        data-flux-badge-close>
+<button type="button" {{ $attributes->class($classes) }} data-flux-badge-close>
     <?php if (is_string($icon) && $icon !== ''): ?>
-    <flux:icon :$icon
-               :variant="$iconVariant"
-               :class="$iconClasses" />
+    <flux:icon :$icon :variant="$iconVariant" :class="$iconClasses" />
     <?php else: ?>
     {{ $icon }}
     <?php endif; ?>

@@ -7,14 +7,11 @@
                 <div class="flex flex-col items-start justify-center gap-2">
                     <div class="flex items-center justify-center gap-4">
                         <div class="size-18 md:size-24">
-                            <img src="{{ Vite::asset('resources/images/logo_white.png') }}"
-                                 alt="Vitalentra Group International (VGI) Logo"
-                                 class="w-full" />
+                            <img src="{{ Vite::asset('resources/images/logo_white.png') }}" alt="Vitalentra Group International (VGI) Logo"
+                                class="w-full" />
                         </div>
                         <div class="size-18 md:size-24">
-                            <img src="{{ Vite::asset('resources/images/BP Group Logo.png') }}"
-                                 alt="BP Group Logo"
-                                 class="w-full" />
+                            <img src="{{ Vite::asset('resources/images/BP Group Logo.png') }}" alt="BP Group Logo" class="w-full" />
                         </div>
                     </div>
                     <span class="text-xl font-bold">Vitalentra Group International (VGI)</span>
@@ -31,15 +28,15 @@
                 <!-- Social Media Icons -->
                 <div class="flex space-x-4 pt-4">
                     <a href="https://www.instagram.com/vitalentra.official/"
-                       class="flex h-8 w-8 items-center justify-center rounded-full bg-gray-700 transition-colors duration-200 hover:bg-pink-600">
+                        class="flex h-8 w-8 items-center justify-center rounded-full bg-gray-700 transition-colors duration-200 hover:bg-pink-600">
                         <i class="fab fa-instagram text-sm text-white"></i>
                     </a>
                     <a href="https://www.tiktok.com/@vitalentra"
-                       class="flex h-8 w-8 items-center justify-center rounded-full bg-gray-700 transition-colors duration-200 hover:bg-black">
+                        class="flex h-8 w-8 items-center justify-center rounded-full bg-gray-700 transition-colors duration-200 hover:bg-black">
                         <i class="fab fa-tiktok text-sm text-white"></i>
                     </a>
                     <a href="https://www.facebook.com/profile.php?id=61578860111813"
-                       class="flex h-8 w-8 items-center justify-center rounded-full bg-gray-700 transition-colors duration-200 hover:bg-blue-800">
+                        class="flex h-8 w-8 items-center justify-center rounded-full bg-gray-700 transition-colors duration-200 hover:bg-blue-800">
                         <i class="fab fa-facebook-f text-sm text-white"></i>
                     </a>
                 </div>
@@ -49,28 +46,22 @@
             <div class="space-y-4">
                 <h3 class="text-lg font-semibold text-white">Menu</h3>
                 <nav class="space-y-3">
-                    <a href="{{ route('home') }}"
-                       class="text-md block text-gray-300 transition-colors duration-200 hover:text-white">
+                    <a href="{{ route('home') }}" class="text-md block text-gray-300 transition-colors duration-200 hover:text-white">
                         {{ __('menu.home') }}
                     </a>
-                    <a href="{{ route('home') }}#about"
-                       class="text-md block text-gray-300 transition-colors duration-200 hover:text-white">
+                    <a href="{{ route('home') }}#about" class="text-md block text-gray-300 transition-colors duration-200 hover:text-white">
                         {{ __('menu.about') }}
                     </a>
-                    <a href="{{ route('home') }}#product"
-                       class="text-md block text-gray-300 transition-colors duration-200 hover:text-white">
+                    <a href="{{ route('home') }}#product" class="text-md block text-gray-300 transition-colors duration-200 hover:text-white">
                         {{ __('menu.product') }}
                     </a>
-                    <a href="{{ route('home') }}#faq"
-                       class="text-md block text-gray-300 transition-colors duration-200 hover:text-white">
+                    <a href="{{ route('home') }}#faq" class="text-md block text-gray-300 transition-colors duration-200 hover:text-white">
                         {{ __('menu.faq') }}
                     </a>
-                    <a href="{{ route('news.list') }}"
-                       class="text-md block text-gray-300 transition-colors duration-200 hover:text-white">
+                    <a href="{{ route('news.list') }}" class="text-md block text-gray-300 transition-colors duration-200 hover:text-white">
                         {{ __('menu.news_and_blog') }}
                     </a>
-                    <a href="{{ route('home') }}#contact"
-                       class="text-md block text-gray-300 transition-colors duration-200 hover:text-white">
+                    <a href="{{ route('home') }}#contact" class="text-md block text-gray-300 transition-colors duration-200 hover:text-white">
                         {{ __('menu.contact') }}
                     </a>
                 </nav>
@@ -82,24 +73,19 @@
                     {{ __('footer.product') }}
                 </h3>
                 <div class="space-y-3">
-                    <a href="{{ route('home') }}#steffi"
-                       class="text-md block text-gray-300 transition-colors duration-200 hover:text-white">
+                    <a href="{{ route('home') }}#steffi" class="text-md block text-gray-300 transition-colors duration-200 hover:text-white">
                         Steffi
                     </a>
-                    <a href="{{ route('home') }}#bp"
-                       class="text-md block text-gray-300 transition-colors duration-200 hover:text-white">
+                    <a href="{{ route('home') }}#bp" class="text-md block text-gray-300 transition-colors duration-200 hover:text-white">
                         British Propolis
                     </a>
-                    <a href="{{ route('home') }}#bp-green"
-                       class="text-md block text-gray-300 transition-colors duration-200 hover:text-white">
+                    <a href="{{ route('home') }}#bp-green" class="text-md block text-gray-300 transition-colors duration-200 hover:text-white">
                         BP Green
                     </a>
-                    <a href="{{ route('home') }}#bp-norway"
-                       class="text-md block text-gray-300 transition-colors duration-200 hover:text-white">
+                    <a href="{{ route('home') }}#bp-norway" class="text-md block text-gray-300 transition-colors duration-200 hover:text-white">
                         BP Norway
                     </a>
-                    <a href="{{ route('home') }}#belgie"
-                       class="text-md block text-gray-300 transition-colors duration-200 hover:text-white">
+                    <a href="{{ route('home') }}#belgie" class="text-md block text-gray-300 transition-colors duration-200 hover:text-white">
                         Belgie
                     </a>
                 </div>

@@ -211,8 +211,7 @@
             <h3>🔗 Navigation</h3>
             <p>
                 <a href="{{ route('home') }}" style="color: #2196F3;">← Back to Homepage</a> |
-                <a href="{{ route('language.switch', current_locale() === 'id' ? 'en' : 'id') }}"
-                   style="color: #2196F3;">
+                <a href="{{ route('language.switch', current_locale() === 'id' ? 'en' : 'id') }}" style="color: #2196F3;">
                     Switch to {{ current_locale() === 'id' ? 'English' : 'Indonesia' }}
                 </a>
             </p>

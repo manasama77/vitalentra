@@ -18,8 +18,7 @@
         <div class="row">
             <div class="scroll-revealed col-12 sm:col-6 lg:col-4">
                 <div class="group hover:-translate-y-1">
-                    <div
-                         class="bg-primary text-primary-color mb-6 flex h-[70px] w-[70px] items-center justify-center rounded-2xl text-[37px]/none">
+                    <div class="bg-primary text-primary-color mb-6 flex h-[70px] w-[70px] items-center justify-center rounded-2xl text-[37px]/none">
                         <i class="fa-solid fa-leaf"></i>
                     </div>
                     <div class="w-full">
@@ -35,11 +34,8 @@
 
             <div class="scroll-revealed col-12 sm:col-6 lg:col-4">
                 <div class="group hover:-translate-y-1">
-                    <div
-                         class="bg-primary text-primary-color mb-6 flex h-[70px] w-[70px] items-center justify-center rounded-2xl text-[37px]/none">
-                        <img src="{{ Vite::asset('resources/images/Halal_Indonesia.svg') }}"
-                             alt="Halal"
-                             class="w-[45%]" />
+                    <div class="bg-primary text-primary-color mb-6 flex h-[70px] w-[70px] items-center justify-center rounded-2xl text-[37px]/none">
+                        <img src="{{ Vite::asset('resources/images/Halal_Indonesia.svg') }}" alt="Halal" class="w-[45%]" />
                     </div>
                     <div class="w-full">
                         <h4 class="text-base-content mb-5 text-[1.25rem]/tight font-semibold">
@@ -54,8 +50,7 @@
 
             <div class="scroll-revealed col-12 sm:col-6 lg:col-4">
                 <div class="group hover:-translate-y-1">
-                    <div
-                         class="bg-primary text-primary-color mb-6 flex h-[70px] w-[70px] items-center justify-center rounded-2xl text-[37px]/none">
+                    <div class="bg-primary text-primary-color mb-6 flex h-[70px] w-[70px] items-center justify-center rounded-2xl text-[37px]/none">
                         <i class="fa-solid fa-users"></i>
                     </div>
                     <div class="w-full">

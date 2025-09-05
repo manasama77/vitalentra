@@ -6,8 +6,6 @@
         ->add('bg-white dark:bg-zinc-700');
 @endphp
 
-<nav {{ $attributes->class($classes) }}
-     popover="manual"
-     data-flux-navmenu>
+<nav {{ $attributes->class($classes) }} popover="manual" data-flux-navmenu>
     {{ $slot }}
 </nav>

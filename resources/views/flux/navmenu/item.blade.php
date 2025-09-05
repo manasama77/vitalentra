@@ -53,10 +53,7 @@
     <?php endif; ?>
 
     <?php if (is_string($icon) && $icon !== ''): ?>
-    <flux:icon :$icon
-               :variant="$iconVariant"
-               :class="$iconClasses"
-               data-navmenu-icon />
+    <flux:icon :$icon :variant="$iconVariant" :class="$iconClasses" data-navmenu-icon />
     <?php elseif ($icon): ?>
     {{ $icon }}
     <?php endif; ?>
@@ -74,9 +71,7 @@
     <?php endif; ?>
 
     <?php if (is_string($iconTrailing) && $iconTrailing !== ''): ?>
-    <flux:icon :icon="$iconTrailing"
-               :variant="$iconVariant"
-               :class="$trailingIconClasses" />
+    <flux:icon :icon="$iconTrailing" :variant="$iconVariant" :class="$trailingIconClasses" />
     <?php elseif ($iconTrailing): ?>
     {{ $iconTrailing }}
     <?php endif; ?>

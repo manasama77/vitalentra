@@ -11,8 +11,7 @@
     if ($sticky) {
         $attributes = $attributes->merge([
             'x-data' => '',
-            'x-bind:style' =>
-                '{ position: \'sticky\', top: $el.offsetTop + \'px\', \'max-height\': \'calc(100vh - \' + $el.offsetTop + \'px)\' }',
+            'x-bind:style' => '{ position: \'sticky\', top: $el.offsetTop + \'px\', \'max-height\': \'calc(100vh - \' + $el.offsetTop + \'px)\' }',
         ]);
     }
 @endphp

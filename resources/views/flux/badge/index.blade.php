@@ -43,8 +43,7 @@
                 ? match ($color) {
                     default
                         => 'text-white dark:text-white bg-zinc-600 dark:bg-zinc-600 [&:is(button)]:hover:bg-zinc-700 dark:[button]:hover:bg-zinc-500',
-                    'red'
-                        => 'text-white dark:text-white bg-red-500 dark:bg-red-600 [&:is(button)]:hover:bg-red-600 dark:[button]:hover:bg-red-500',
+                    'red' => 'text-white dark:text-white bg-red-500 dark:bg-red-600 [&:is(button)]:hover:bg-red-600 dark:[button]:hover:bg-red-500',
                     'orange'
                         => 'text-white dark:text-white bg-orange-500 dark:bg-orange-600 [&:is(button)]:hover:bg-orange-600 dark:[button]:hover:bg-orange-500',
                     'amber'
@@ -61,8 +60,7 @@
                         => 'text-white dark:text-white bg-teal-500 dark:bg-teal-600 [&:is(button)]:hover:bg-teal-600 dark:[button]:hover:bg-teal-500',
                     'cyan'
                         => 'text-white dark:text-white bg-cyan-500 dark:bg-cyan-600 [&:is(button)]:hover:bg-cyan-600 dark:[button]:hover:bg-cyan-500',
-                    'sky'
-                        => 'text-white dark:text-white bg-sky-500 dark:bg-sky-600 [&:is(button)]:hover:bg-sky-600 dark:[button]:hover:bg-sky-500',
+                    'sky' => 'text-white dark:text-white bg-sky-500 dark:bg-sky-600 [&:is(button)]:hover:bg-sky-600 dark:[button]:hover:bg-sky-500',
                     'blue'
                         => 'text-white dark:text-white bg-blue-500 dark:bg-blue-600 [&:is(button)]:hover:bg-blue-600 dark:[button]:hover:bg-blue-500',
                     'indigo'
@@ -121,10 +119,7 @@
 
 <flux:button-or-div :attributes="$attributes->class($classes)" data-flux-badge>
     <?php if (is_string($icon) && $icon !== ''): ?>
-    <flux:icon :$icon
-               :variant="$iconVariant"
-               :class="$iconClasses"
-               data-flux-badge-icon />
+    <flux:icon :$icon :variant="$iconVariant" :class="$iconClasses" data-flux-badge-icon />
     <?php else: ?>
     {{ $icon }}
     <?php endif; ?>
@@ -134,9 +129,7 @@
     <?php if ($iconTrailing): ?>
     <div class="flex items-center ps-1" data-flux-badge-icon:trailing>
         <?php if (is_string($iconTrailing)): ?>
-        <flux:icon :icon="$iconTrailing"
-                   :variant="$iconVariant"
-                   :class="$iconClasses" />
+        <flux:icon :icon="$iconTrailing" :variant="$iconVariant" :class="$iconClasses" />
         <?php else: ?>
         {{ $iconTrailing }}
         <?php endif; ?>

@@ -22,18 +22,12 @@
 
         <x-slot:suffix>
             <?php if (is_string($iconTrailing) && $iconTrailing !== ''): ?>
-            <flux:icon :icon="$iconTrailing"
-                       :variant="$iconVariant"
-                       :class="$iconClasses" />
+            <flux:icon :icon="$iconTrailing" :variant="$iconVariant" :class="$iconClasses" />
             <?php elseif ($iconTrailing): ?>
             {{ $iconTrailing }}
             <?php else: ?>
-            <flux:icon icon="chevron-right"
-                       :variant="$iconVariant"
-                       :class="$iconClasses->add('rtl:hidden')" />
-            <flux:icon icon="chevron-left"
-                       :variant="$iconVariant"
-                       :class="$iconClasses->add('hidden rtl:inline')" />
+            <flux:icon icon="chevron-right" :variant="$iconVariant" :class="$iconClasses->add('rtl:hidden')" />
+            <flux:icon icon="chevron-left" :variant="$iconVariant" :class="$iconClasses->add('hidden rtl:inline')" />
             <?php endif; ?>
         </x-slot:suffix>
     </flux:menu.item>

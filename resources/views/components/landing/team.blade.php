@@ -18,46 +18,30 @@
             <!-- First row: first three items -->
             <div class="flex flex-col gap-8 md:flex-row md:justify-center">
                 <div class="scroll-revealed mx-auto w-full max-w-[300px]">
-                    <x-landing.partials.figure photo="{{ Vite::asset('resources/images/Management - Marida.webp') }}"
-                                               name="Marida"
-                                               position="Chairman of the Board"
-                                               triggerId="{{ Str::slug('Marida') }}"
-                                               contentKey="1" />
+                    <x-landing.partials.figure photo="{{ Vite::asset('resources/images/Management - Marida.webp') }}" name="Marida"
+                        position="Chairman of the Board" triggerId="{{ Str::slug('Marida') }}" contentKey="1" />
                 </div>
                 <div class="scroll-revealed mx-auto w-full max-w-[300px]">
-                    <x-landing.partials.figure photo="{{ Vite::asset('resources/images/Management - Beka Masinggil.webp') }}"
-                                               name="Beka Masinggil"
-                                               position="{{ __('team.commissioner') }}"
-                                               triggerId="{{ Str::slug('Beka Masinggil') }}"
-                                               contentKey="2" />
+                    <x-landing.partials.figure photo="{{ Vite::asset('resources/images/Management - Beka Masinggil.webp') }}" name="Beka Masinggil"
+                        position="{{ __('team.commissioner') }}" triggerId="{{ Str::slug('Beka Masinggil') }}" contentKey="2" />
                 </div>
                 <div class="scroll-revealed mx-auto w-full max-w-[300px]">
-                    <x-landing.partials.figure photo="{{ Vite::asset('resources/images/Management - M. Nuzullaiman.webp') }}"
-                                               name="M. Nuzullaiman"
-                                               position="Chief Executive Officer"
-                                               triggerId="{{ Str::slug('M. Nuzullaiman') }}"
-                                               contentKey="3" />
+                    <x-landing.partials.figure photo="{{ Vite::asset('resources/images/Management - M. Nuzullaiman.webp') }}" name="M. Nuzullaiman"
+                        position="Chief Executive Officer" triggerId="{{ Str::slug('M. Nuzullaiman') }}" contentKey="3" />
                 </div>
             </div>
             <!-- Second row: last two items, centered -->
             <div class="flex flex-col gap-8 md:flex-row md:justify-center">
                 <div class="scroll-revealed mx-auto w-full max-w-[300px]">
-                    <x-landing.partials.figure photo="{{ Vite::asset('resources/images/Management - Tito Masinggil.webp') }}"
-                                               name="Tito Masinggil"
-                                               position="Chief Operating Officer"
-                                               triggerId="{{ Str::slug('Tito Masinggil') }}"
-                                               contentKey="4" />
+                    <x-landing.partials.figure photo="{{ Vite::asset('resources/images/Management - Tito Masinggil.webp') }}" name="Tito Masinggil"
+                        position="Chief Operating Officer" triggerId="{{ Str::slug('Tito Masinggil') }}" contentKey="4" />
                 </div>
                 <div class="scroll-revealed mx-auto w-full max-w-[300px]">
                     <x-landing.partials.figure photo="{{ Vite::asset('resources/images/Management - Renya Nuringtyas.webp') }}"
-                                               name="Renya Nuringtyas"
-                                               position="Chief Marketing Officer"
-                                               triggerId="{{ Str::slug('Renya Nuringtyas') }}"
-                                               contentKey="5" />
+                        name="Renya Nuringtyas" position="Chief Marketing Officer" triggerId="{{ Str::slug('Renya Nuringtyas') }}" contentKey="5" />
                 </div>
             </div>
         </div>
 
     </div>
 </section>
-

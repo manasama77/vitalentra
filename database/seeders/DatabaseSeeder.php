@@ -16,10 +16,10 @@ class DatabaseSeeder extends Seeder
     {
         // Create test user without factory to avoid Faker issues
         User::create([
-            'name' => 'Test User',
-            'email' => 'test@example.com',
+            'name' => 'Super Admin',
+            'email' => 'admin@vitalentra.com',
             'email_verified_at' => now(),
-            'password' => Hash::make('password'),
+            'password' => Hash::make('TSFjnD2nXqyzWIOy'),
         ]);
 
         // Seed carousel and news data

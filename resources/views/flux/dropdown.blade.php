@@ -14,8 +14,6 @@
     }
 @endphp
 
-<ui-dropdown position="{{ $position }} {{ $align }}"
-             {{ $attributes }}
-             data-flux-dropdown>
+<ui-dropdown position="{{ $position }} {{ $align }}" {{ $attributes }} data-flux-dropdown>
     {{ $slot }}
 </ui-dropdown>

@@ -12,7 +12,7 @@
                 'sm' => 'text-xs',
             },
         )
-        ->add('[:where(&)]:text-zinc-500 [:where(&)]:dark:text-white/70');
+        ->add('[:where(&)]:text-base-content opacity-70');
 @endphp
 
 <div {{ $attributes->class($classes) }} data-flux-subheading>

@@ -19,9 +19,8 @@
             <div class="card scroll-revealed group bg-white shadow-lg transition-all duration-300 hover:shadow-xl">
                 <figure class="overflow-hidden">
                     <a href="{{ route('news.show', $n->slug) }}">
-                        <img src="{{ asset($n->image) }}"
-                             alt="{{ $n->title }}"
-                             class="group-hover:scale-102 w-full object-cover transition-transform duration-300 ease-in-out">
+                        <img src="{{ asset($n->image) }}" alt="{{ $n->title }}"
+                            class="group-hover:scale-102 w-full object-cover transition-transform duration-300 ease-in-out">
                     </a>
                 </figure>
                 <div class="card-body p-6">
@@ -52,16 +51,10 @@
 
     <!-- Bottom Section - Read More Blog Button -->
     <div class="scroll-revealed text-center">
-        <a href="{{ route('news.list') }}"
-           class="btn btn-outline btn-lg hover:btn-primary px-8 py-3 transition-all duration-300">
-            <svg class="mr-2 h-5 w-5"
-                 fill="none"
-                 stroke="currentColor"
-                 viewBox="0 0 24 24">
-                <path stroke-linecap="round"
-                      stroke-linejoin="round"
-                      stroke-width="2"
-                      d="M19 20H5a2 2 0 01-2-2V6a2 2 0 012-2h10a2 2 0 012 2v1m2 13a2 2 0 01-2-2V7m2 13a2 2 0 002-2V9a2 2 0 00-2-2h-2m-4-3H9M7 16h6M7 8h6v4H7V8z">
+        <a href="{{ route('news.list') }}" class="btn btn-outline btn-lg hover:btn-primary px-8 py-3 transition-all duration-300">
+            <svg class="mr-2 h-5 w-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                    d="M19 20H5a2 2 0 01-2-2V6a2 2 0 012-2h10a2 2 0 012 2v1m2 13a2 2 0 01-2-2V7m2 13a2 2 0 002-2V9a2 2 0 00-2-2h-2m-4-3H9M7 16h6M7 8h6v4H7V8z">
                 </path>
             </svg>
             {{ __('news_landing.view_all') }}

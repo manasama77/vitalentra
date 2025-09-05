@@ -12,26 +12,17 @@
     'footerValueColor' => 'text-blue-600',
 ])
 
-<div class="bg-white rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 p-6 border border-gray-100">
-    <div class="flex items-center justify-between mb-4">
-        <div class="{{ $iconBgColor }} p-3 rounded-lg">
+<div class="rounded-xl border border-gray-100 bg-white p-6 shadow-lg transition-all duration-300 hover:shadow-xl">
+    <div class="mb-4 flex items-center justify-between">
+        <div class="{{ $iconBgColor }} rounded-lg p-3">
             {!! $icon !!}
         </div>
         @if ($badgeText)
-            <span class="text-sm font-medium px-2 py-1 rounded-full {{ $badgeColor }}">{{ $badgeText }}</span>
+            <span class="{{ $badgeColor }} rounded-full px-2 py-1 text-sm font-medium">{{ $badgeText }}</span>
         @endif
     </div>
-    <div class="mb-2">
+    <div>
         <h3 class="text-2xl font-bold text-gray-900">{{ $value }}</h3>
-        <p class="text-gray-600 font-medium">{{ $title }}</p>
+        <p class="font-medium text-gray-600">{{ $title }}</p>
     </div>
-    @if ($description || $footerText)
-        <div class="text-sm text-gray-500">
-            @if ($footerText && $footerValue)
-                <span class="{{ $footerValueColor }} font-semibold">{{ $footerValue }}</span> {{ $footerText }}
-            @else
-                {{ $description }}
-            @endif
-        </div>
-    @endif
 </div>

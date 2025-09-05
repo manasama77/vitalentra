@@ -10,7 +10,7 @@
         ->add(
             match ($accent) {
                 true => 'text-[var(--color-accent-content)]',
-                default => '[:where(&)]:text-zinc-800 [:where(&)]:dark:text-white',
+                default => '[:where(&)]:text-base-content',
             },
         )
         ->add(

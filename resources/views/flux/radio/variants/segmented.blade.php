@@ -19,9 +19,7 @@
             'text-sm font-medium text-zinc-600 hover:text-zinc-800 dark:hover:text-white dark:text-white/70 data-checked:text-zinc-800 dark:data-checked:text-white',
         )
         ->add('data-checked:bg-white dark:data-checked:bg-white/20')
-        ->add(
-            '[&[disabled]]:opacity-50 dark:[&[disabled]]:opacity-75 [&[disabled]]:cursor-default [&[disabled]]:pointer-events-none',
-        )
+        ->add('[&[disabled]]:opacity-50 dark:[&[disabled]]:opacity-75 [&[disabled]]:cursor-default [&[disabled]]:pointer-events-none')
         ->add(
             match ($size) {
                 'sm' => 'px-3 text-sm',
@@ -41,14 +39,9 @@
 
 {{-- We have to put tabindex="-1" here because otherwise, Livewire requests will wipe out tabindex state, --}}
 {{-- even with durable attributes for some reason... --}}
-<ui-radio {{ $attributes->class($classes) }}
-          data-flux-control
-          data-flux-radio-segmented
-          tabindex="-1">
+<ui-radio {{ $attributes->class($classes) }} data-flux-control data-flux-radio-segmented tabindex="-1">
     <?php if (is_string($icon) && $icon !== ''): ?>
-    <flux:icon :$icon
-               :variant="$iconVariant"
-               class="{!! $iconClasses !!}" />
+    <flux:icon :$icon :variant="$iconVariant" class="{!! $iconClasses !!}" />
     <?php elseif ($icon): ?>
     {{ $icon }}
     <?php endif; ?>

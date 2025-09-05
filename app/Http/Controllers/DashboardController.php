@@ -2,7 +2,6 @@
 
 namespace App\Http\Controllers;
 
-use Illuminate\Http\Request;
 use App\Models\Carousel;
 use App\Models\News;
 
@@ -22,12 +21,12 @@ class DashboardController extends Controller
             $activeCarousels = 0;
             $activeNews = 0;
         }
-        
+
         return view('dashboard', compact(
             'totalCarousels',
-            'totalNews', 
+            'totalNews',
             'activeCarousels',
-            'activeNews'
+            'activeNews',
         ));
     }
 }

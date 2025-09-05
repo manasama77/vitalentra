@@ -36,15 +36,10 @@
         ]);
 @endphp
 
-<ui-menu-radio {{ $attributes->class($classes) }}
-               data-flux-menu-item-has-icon
-               data-flux-menu-radio>
+<ui-menu-radio {{ $attributes->class($classes) }} data-flux-menu-item-has-icon data-flux-menu-radio>
     <div class="w-7">
         <div class="group-data-checked/menu-radio:block hidden">
-            <flux:icon :variant="$iconVariant"
-                       icon="check"
-                       :class="$iconClasses"
-                       data-flux-menu-item-icon />
+            <flux:icon :variant="$iconVariant" icon="check" :class="$iconClasses" data-flux-menu-item-icon />
         </div>
     </div>
 
@@ -57,10 +52,7 @@
     <?php endif; ?>
 
     <?php if (is_string($iconTrailing) && $iconTrailing !== ''): ?>
-    <flux:icon :icon="$iconTrailing"
-               :variant="$iconVariant"
-               :class="$iconTrailingClasses"
-               data-flux-menu-item-icon />
+    <flux:icon :icon="$iconTrailing" :variant="$iconVariant" :class="$iconTrailingClasses" data-flux-menu-item-icon />
     <?php elseif ($iconTrailing): ?>
     {{ $iconTrailing }}
     <?php endif; ?>

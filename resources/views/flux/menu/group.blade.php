@@ -10,9 +10,7 @@
         );
 @endphp
 
-<div {{ $attributes->class($classes) }}
-     role="group"
-     data-flux-menu-group>
+<div {{ $attributes->class($classes) }} role="group" data-flux-menu-group>
     <flux:menu.separator data-flux-menu-separator-top />
 
     <?php if ($heading): ?>

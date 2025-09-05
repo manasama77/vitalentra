@@ -15,9 +15,7 @@
         ->add('group h-5 w-8 min-w-8 relative inline-flex items-center outline-offset-2')
         ->add('rounded-full')
         ->add('transition')
-        ->add(
-            'bg-zinc-800/15 [&[disabled]]:opacity-50 dark:bg-transparent dark:border dark:border-white/20 dark:[&[disabled]]:border-white/10',
-        )
+        ->add('bg-zinc-800/15 [&[disabled]]:opacity-50 dark:bg-transparent dark:border dark:border-white/20 dark:[&[disabled]]:border-white/10')
         ->add('[print-color-adjust:exact]')
         ->add(['data-checked:bg-(--color-accent)', 'data-checked:border-0']);
 
@@ -34,19 +32,15 @@
 
 @if ($align === 'left' || $align === 'start')
     <flux:with-inline-field :$attributes>
-        <ui-switch {{ $attributes->class($classes) }}
-                   @if ($showName) name="{{ $name }}" @endif
-                   data-flux-control
-                   data-flux-switch>
+        <ui-switch {{ $attributes->class($classes) }} @if ($showName) name="{{ $name }}" @endif data-flux-control
+            data-flux-switch>
             <span class="{{ \Illuminate\Support\Arr::toCssClasses($indicatorClasses) }}"></span>
         </ui-switch>
     </flux:with-inline-field>
 @else
     <flux:with-reversed-inline-field :$attributes>
-        <ui-switch {{ $attributes->class($classes) }}
-                   @if ($showName) name="{{ $name }}" @endif
-                   data-flux-control
-                   data-flux-switch>
+        <ui-switch {{ $attributes->class($classes) }} @if ($showName) name="{{ $name }}" @endif data-flux-control
+            data-flux-switch>
             <span class="{{ \Illuminate\Support\Arr::toCssClasses($indicatorClasses) }}"></span>
         </ui-switch>
     </flux:with-reversed-inline-field>

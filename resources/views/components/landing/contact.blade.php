@@ -9,8 +9,9 @@
 
         <div class="scroll-revealed grid items-center gap-12 lg:grid-cols-2">
             <!-- Image Section -->
-            <object data="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3795.5880251306326!2d106.78234479999999!3d-6.2634414!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e69f1a8a034678d%3A0x3e4a041162a0c7d9!2sPondok%20Indah%20Mall%20Phase%203%2C%20Office%20Tower%205%2C%20RT.1%2FRW.16%2C%20Pondok%20Pinang%2C%20Kebayoran%20Lama%2C%20South%20Jakarta%20City%2C%20Jakarta%2012310!5e1!3m2!1sen!2sid!4v1754729817199!5m2!1sen!2sid"
-                    class="h-100 order-2 w-full border-0 md:order-1 md:h-full"></object>
+            <object
+                data="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3795.5880251306326!2d106.78234479999999!3d-6.2634414!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e69f1a8a034678d%3A0x3e4a041162a0c7d9!2sPondok%20Indah%20Mall%20Phase%203%2C%20Office%20Tower%205%2C%20RT.1%2FRW.16%2C%20Pondok%20Pinang%2C%20Kebayoran%20Lama%2C%20South%20Jakarta%20City%2C%20Jakarta%2012310!5e1!3m2!1sen!2sid!4v1754729817199!5m2!1sen!2sid"
+                class="h-100 order-2 w-full border-0 md:order-1 md:h-full"></object>
 
             <!-- Contact Info Section -->
             <div class="order-1 md:order-2">
@@ -61,10 +62,9 @@
                             </div>
                             <h4 class="text-lg font-medium text-white">Email</h4>
                             <div class="text-center text-white">
-                                <a href="mailto:info@vitalentra.com"
-                                   class="!text-white hover:text-white hover:underline">info@vitalentra.com</a>
+                                <a href="mailto:info@vitalentra.com" class="!text-white hover:text-white hover:underline">info@vitalentra.com</a>
                                 <a href="mailto:marketing@vitalentra.com"
-                                   class="!text-white hover:text-white hover:underline">marketing@vitalentra.com</a>
+                                    class="!text-white hover:text-white hover:underline">marketing@vitalentra.com</a>
                             </div>
                         </div>
                     </div>

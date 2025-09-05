@@ -21,8 +21,8 @@
                             @if (!empty($carousel->image_1024))
                                 <source srcset="{{ asset($carousel->image_1024) }}" media="(max-width: 1024px)">
                             @endif
-                            <img src="{{ asset($carousel->image) }}" class="size-full object-cover"
-                                alt="{{ $carousel->title }}" loading="{{ $loop->first ? 'eager' : 'lazy' }}" />
+                            <img src="{{ asset($carousel->image) }}" class="size-full object-cover" alt="{{ $carousel->title }}"
+                                loading="{{ $loop->first ? 'eager' : 'lazy' }}" />
                         </picture>
                     </div>
                 </div>

@@ -19,9 +19,7 @@
 @endphp
 
 <?php if ($toggleable): ?>
-<ui-dropdown position="{{ $position }} {{ $align }}"
-             {{ $attributes }}
-             data-flux-tooltip>
+<ui-dropdown position="{{ $position }} {{ $align }}" {{ $attributes }} data-flux-tooltip>
     {{ $slot }}
 
     <?php if ($content !== null): ?>
@@ -29,10 +27,8 @@
     <?php endif; ?>
 </ui-dropdown>
 <?php else: ?>
-<ui-tooltip position="{{ $position }} {{ $align }}"
-            {{ $attributes }}
-            data-flux-tooltip
-            @if ($interactive) interactive @endif>
+<ui-tooltip position="{{ $position }} {{ $align }}" {{ $attributes }} data-flux-tooltip
+    @if ($interactive) interactive @endif>
     {{ $slot }}
 
     <?php if ($content !== null): ?>

@@ -27,17 +27,18 @@
 			"files": "*.blade.php",
 			"options": {
 				"parser": "blade",
-				"printWidth": 120,
-				"wrapAttributes": "force-expand-multiline",
+				"printWidth": 150,
+				"wrapAttributes": "auto",
 				"sortTailwindcssClasses": true,
-				"wrapAttributesMinAttrs": 3,
+				"wrapAttributesMinAttrs": 4,
 				"noPhpSyntaxCheck": true,
 				"useTabs": false,
 				"tabWidth": 4,
 				"singleQuote": true,
-				"htmlWhitespaceSensitivity": "ignore",
-				"bracketSameLine": true,
-				"endOfLine": "lf"
+				"htmlWhitespaceSensitivity": "css",
+				"bracketSameLine": false,
+				"endOfLine": "lf",
+				"proseWrap": "never"
 			}
 		},
 		{

@@ -8,8 +8,7 @@
 
     if ($sticky) {
         $attributes = $attributes->merge([
-            'x-bind:style' =>
-                '{ position: \'sticky\', top: $el.offsetTop + \'px\', \'max-height\': \'calc(100dvh - \' + $el.offsetTop + \'px)\' }',
+            'x-bind:style' => '{ position: \'sticky\', top: $el.offsetTop + \'px\', \'max-height\': \'calc(100dvh - \' + $el.offsetTop + \'px)\' }',
             'class' => 'max-h-dvh overflow-y-auto overscroll-contain',
         ]);
     }
@@ -34,9 +33,6 @@
     <flux:sidebar.backdrop />
 @endif
 
-<div {{ $attributes->class($classes) }}
-     x-data="{ screenLg: window.innerWidth >= 1024 }"
-     data-mobile-cloak
-     data-flux-sidebar>
+<div {{ $attributes->class($classes) }} x-data="{ screenLg: window.innerWidth >= 1024 }" data-mobile-cloak data-flux-sidebar>
     {{ $slot }}
 </div>

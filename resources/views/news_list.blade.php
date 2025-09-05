@@ -23,8 +23,7 @@
                 </nav>
 
                 <!-- Title -->
-                <h1
-                    class="scroll-revealed text-base-content mx-auto mb-6 max-w-4xl text-3xl font-bold md:text-4xl lg:text-5xl">
+                <h1 class="scroll-revealed text-base-content mx-auto mb-6 max-w-4xl text-3xl font-bold md:text-4xl lg:text-5xl">
                     {{ __('news.news_blog_title') }}
                 </h1>
 
@@ -44,16 +43,14 @@
                     <!-- Featured Article (First Article) - Only on first page -->
                     @php $featuredNews = $news->first(); @endphp
                     <div class="mb-16">
-                        <div
-                             class="scroll-revealed overflow-hidden rounded-2xl bg-white shadow-lg transition-shadow duration-300 hover:shadow-xl">
+                        <div class="scroll-revealed overflow-hidden rounded-2xl bg-white shadow-lg transition-shadow duration-300 hover:shadow-xl">
                             <div class="lg:flex">
                                 <!-- Featured Image -->
                                 <div class="lg:w-1/2">
                                     <div class="relative h-fit overflow-hidden md:h-fit">
-                                        <img src="{{ asset($featuredNews->image) }}"
-                                             alt="{{ $featuredNews->title }}"
-                                             class="h-full w-full object-contain transition-transform duration-300 hover:scale-105 md:object-contain"
-                                             loading="eager">
+                                        <img src="{{ asset($featuredNews->image) }}" alt="{{ $featuredNews->title }}"
+                                            class="h-full w-full object-contain transition-transform duration-300 hover:scale-105 md:object-contain"
+                                            loading="eager">
                                     </div>
                                 </div>
 
@@ -67,8 +64,7 @@
                                             </time>
                                         </div>
                                         <div>
-                                            <div
-                                                 class="bg-primary text-primary-content rounded-full px-3 py-1 text-sm font-medium">
+                                            <div class="bg-primary text-primary-content rounded-full px-3 py-1 text-sm font-medium">
                                                 {{ strtoupper($featuredNews->category) }}
                                             </div>
                                         </div>
@@ -76,7 +72,7 @@
 
                                     <h2 class="text-base-content mb-4 line-clamp-2 text-xl font-bold md:text-2xl">
                                         <a href="{{ route('news.show', $featuredNews->slug) }}"
-                                           class="hover:text-primary text-base-content transition-colors">
+                                            class="hover:text-primary text-base-content transition-colors">
                                             {{ $featuredNews->title }}
                                         </a>
                                     </h2>
@@ -86,9 +82,8 @@
                                     </p>
 
                                     <div>
-                                        <a href="{{ route('news.show', $featuredNews->slug) }}"
-                                           class="btn btn-primary"
-                                           aria-label="Read {{ $featuredNews->title }}">
+                                        <a href="{{ route('news.show', $featuredNews->slug) }}" class="btn btn-primary"
+                                            aria-label="Read {{ $featuredNews->title }}">
                                             {{ __('news.read_full_article') }}
                                             <i class="fas fa-arrow-right ml-2" aria-hidden="true"></i>
                                         </a>
@@ -102,13 +97,11 @@
                     @if ($news->count() > 1)
                         <div class="grid grid-cols-1 gap-8 md:grid-cols-2 lg:grid-cols-3">
                             @foreach ($news->skip(1) as $n)
-                                <div
-                                     class="card scroll-revealed group rounded-2xl bg-white shadow-lg transition-all duration-300 hover:shadow-xl">
+                                <div class="card scroll-revealed group rounded-2xl bg-white shadow-lg transition-all duration-300 hover:shadow-xl">
                                     <figure class="overflow-hidden">
                                         <a href="{{ route('news.show', $n->slug) }}">
-                                            <img src="{{ asset($n->image) }}"
-                                                 alt="{{ $n->title }}"
-                                                 class="group-hover:scale-102 w-full object-contain transition-transform duration-300">
+                                            <img src="{{ asset($n->image) }}" alt="{{ $n->title }}"
+                                                class="group-hover:scale-102 w-full object-contain transition-transform duration-300">
                                         </a>
                                     </figure>
                                     <div class="card-body p-6">
@@ -120,15 +113,13 @@
                                                 </time>
                                             </div>
                                             <div>
-                                                <div
-                                                     class="bg-primary text-primary-content rounded-full px-3 py-1 text-sm font-medium">
+                                                <div class="bg-primary text-primary-content rounded-full px-3 py-1 text-sm font-medium">
                                                     {{ strtoupper($n->category) }}
                                                 </div>
                                             </div>
                                         </div>
                                         <h3 class="card-title mb-3 line-clamp-2 text-xl font-semibold text-gray-900">
-                                            <a href="{{ route('news.show', $n->slug) }}"
-                                               class="text-base-content group-hover:text-primary">
+                                            <a href="{{ route('news.show', $n->slug) }}" class="text-base-content group-hover:text-primary">
                                                 {{ $n->title }}
                                             </a>
                                         </h3>
@@ -136,8 +127,7 @@
                                             {!! Str::limit(strip_tags($n->content), 200) !!}
                                         </p>
                                         <div class="card-actions">
-                                            <a href="{{ route('news.show', $n->slug) }}"
-                                               class="btn btn-primary btn-sm">
+                                            <a href="{{ route('news.show', $n->slug) }}" class="btn btn-primary btn-sm">
                                                 {{ __('news.read_more') }}
                                                 <i class="fas fa-chevron-right ml-1 text-[10px]"></i>
                                             </a>
@@ -151,13 +141,11 @@
                     <!-- All Articles Grid - For pages 2 and beyond -->
                     <div class="grid grid-cols-1 gap-8 md:grid-cols-2 lg:grid-cols-3">
                         @foreach ($news as $n)
-                            <div
-                                 class="card scroll-revealed group bg-white shadow-lg transition-all duration-300 hover:shadow-xl">
+                            <div class="card scroll-revealed group bg-white shadow-lg transition-all duration-300 hover:shadow-xl">
                                 <figure class="overflow-hidden">
                                     <a href="{{ route('news.show', $n->slug) }}">
-                                        <img src="{{ asset($n->image) }}"
-                                             alt="{{ $n->title }}"
-                                             class="group-hover:scale-102 h-48 w-full object-contain transition-transform duration-300">
+                                        <img src="{{ asset($n->image) }}" alt="{{ $n->title }}"
+                                            class="group-hover:scale-102 h-48 w-full object-contain transition-transform duration-300">
                                     </a>
                                 </figure>
                                 <div class="card-body p-6">
@@ -168,8 +156,7 @@
                                         </time>
                                     </div>
                                     <h3 class="card-title mb-3 line-clamp-2 text-xl font-semibold text-gray-900">
-                                        <a href="{{ route('news.show', $n->slug) }}"
-                                           class="text-base-content group-hover:text-primary">
+                                        <a href="{{ route('news.show', $n->slug) }}" class="text-base-content group-hover:text-primary">
                                             {{ $n->title }}
                                         </a>
                                     </h3>
@@ -200,9 +187,8 @@
                                         {{ __('pagination.previous') }}
                                     </span>
                                 @else
-                                    <a href="{{ $news->previousPageUrl() }}"
-                                       class="join-item btn btn-outline hover:btn-primary"
-                                       aria-label="{{ __('pagination.go_to_previous_page') }}">
+                                    <a href="{{ $news->previousPageUrl() }}" class="join-item btn btn-outline hover:btn-primary"
+                                        aria-label="{{ __('pagination.go_to_previous_page') }}">
                                         <i class="fas fa-chevron-left mr-1" aria-hidden="true"></i>
                                         {{ __('pagination.previous') }}
                                     </a>
@@ -211,20 +197,17 @@
                                 {{-- Pagination Elements --}}
                                 @foreach ($news->getUrlRange(1, $news->lastPage()) as $page => $url)
                                     @if ($page == $news->currentPage())
-                                        <span class="join-item btn btn-primary"
-                                              aria-current="page">{{ $page }}</span>
+                                        <span class="join-item btn btn-primary" aria-current="page">{{ $page }}</span>
                                     @else
-                                        <a href="{{ $url }}"
-                                           class="join-item btn btn-outline hover:btn-primary"
-                                           aria-label="{{ __('pagination.go_to_page') }} {{ $page }}">{{ $page }}</a>
+                                        <a href="{{ $url }}" class="join-item btn btn-outline hover:btn-primary"
+                                            aria-label="{{ __('pagination.go_to_page') }} {{ $page }}">{{ $page }}</a>
                                     @endif
                                 @endforeach
 
                                 {{-- Next Page Link --}}
                                 @if ($news->hasMorePages())
-                                    <a href="{{ $news->nextPageUrl() }}"
-                                       class="join-item btn btn-outline hover:btn-primary"
-                                       aria-label="{{ __('pagination.go_to_next_page') }}">
+                                    <a href="{{ $news->nextPageUrl() }}" class="join-item btn btn-outline hover:btn-primary"
+                                        aria-label="{{ __('pagination.go_to_next_page') }}">
                                         {{ __('pagination.next') }}
                                         <i class="fas fa-chevron-right ml-1" aria-hidden="true"></i>
                                     </a>
