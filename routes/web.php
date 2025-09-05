@@ -10,6 +10,7 @@ use App\Http\Controllers\LanguageController;
 use App\Http\Controllers\TestController;
 use App\Http\Controllers\DashboardController;
 use App\Http\Controllers\NewsController;
+use App\Http\Controllers\SitemapController;
 
 // Language switching route - simplified for caching
 Route::get('language/{locale}', [LanguageController::class, 'switch'])
@@ -27,11 +28,14 @@ Route::get('/', [BerandaController::class, 'index'])->name('home');
 Route::get('news-blog/', [BerandaController::class, 'news_list'])->name('news.list');
 Route::get('news/{slug}', [BerandaController::class, 'show'])->name('news.show');
 
+// SEO Routes
+Route::get('sitemap.xml', [SitemapController::class, 'index'])->name('sitemap');
+
 // Route::get('dashboard', [DashboardController::class, 'index'])
 //     ->middleware(['auth', 'verified'])
 //     ->name('dashboard');
 
-Route::middleware(['auth', 'verified'])->group(function () {
+Route::middleware(['auth', 'verified', 'noindex'])->group(function () {
     Route::get('dashboard', [DashboardController::class, 'index'])->name('dashboard');
     Route::get('news', [DashboardController::class, 'index'])->name('news.index');
     // Route::resource('news', NewsController::class);

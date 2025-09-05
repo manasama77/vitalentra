@@ -1,2 +1,18 @@
 User-agent: *
-Disallow:
+Allow: /
+Disallow: /dashboard
+Disallow: /settings
+Disallow: /news
+Disallow: /flyonui-demo
+Disallow: /login
+Disallow: /register
+Disallow: /forgot-password
+Disallow: /reset-password
+Disallow: /verify-email
+Disallow: /confirm-password
+
+# Allow public content
+Allow: /news-blog/
+Allow: /language/
+
+Sitemap: https://vitalentra.test/sitemap.xml

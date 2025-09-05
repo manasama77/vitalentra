@@ -14,6 +14,11 @@ return Application::configure(basePath: dirname(__DIR__))
         $middleware->web(append: [
             \App\Http\Middleware\SetLocale::class,
         ]);
+
+        // Register alias for the NoIndexForAuthRoutes middleware
+        $middleware->alias([
+            'noindex' => \App\Http\Middleware\NoIndexForAuthRoutes::class,
+        ]);
     })
     ->withExceptions(function (Exceptions $exceptions) {
         //
