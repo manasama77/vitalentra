@@ -20,6 +20,7 @@ export default defineConfig({
 				'resources/images/Management - Renya Nuringtyas.jpg',
 				'resources/images/Management - Marida.webp',
 				'resources/images/Management - Beka Masinggil.webp',
+				'resources/images/Management - Ratu Anandita.webp',
 				'resources/images/Management - M. Nuzullaiman.webp',
 				'resources/images/Management - Tito Masinggil.webp',
 				'resources/images/Management - Renya Nuringtyas.webp',

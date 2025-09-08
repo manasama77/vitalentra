@@ -25,8 +25,9 @@
         <h4 class="text-base-content mb-1 text-lg font-semibold">
             {{ $name }}
         </h4>
-        <p class="text-body-light-11 dark:text-body-dark-11 mb-5 text-sm">
+        <p class="mb-5 text-sm text-neutral-700">
             {{ $position }}
         </p>
     </figcaption>
 </figure>
+
