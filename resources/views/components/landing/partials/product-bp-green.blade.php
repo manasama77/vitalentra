@@ -93,7 +93,7 @@
 
                 <!-- CTA Button -->
                 <div class="flex items-center justify-center pb-4 pt-3 sm:pt-4">
-                    <a href="#"
+                    <a href="https://wa.me/6281234677747" target="_blank" rel="noopener"
                         class="btn btn-primary btn-sm sm:btn-lg w-full rounded-lg px-6 text-sm font-semibold shadow-lg transition-all duration-300 hover:shadow-xl sm:rounded-xl sm:px-8 sm:text-base">
                         {{ __('product_bp_green.cta') }}
                     </a>
@@ -217,3 +217,4 @@
         bpGreenStartAutoPlay();
     </script>
 @endpush
+
