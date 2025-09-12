@@ -20,7 +20,7 @@
                 <figure class="overflow-hidden">
                     <a href="{{ route('news.show', $n->slug) }}">
                         <img src="{{ asset($n->image) }}" alt="{{ $n->title }}"
-                            class="group-hover:scale-102 w-full object-cover transition-transform duration-300 ease-in-out">
+                            class="group-hover:scale-102 max-h-[218px] w-full object-cover transition-transform duration-300 ease-in-out">
                     </a>
                 </figure>
                 <div class="card-body p-6">
@@ -61,3 +61,4 @@
         </a>
     </div>
 </section>
+
