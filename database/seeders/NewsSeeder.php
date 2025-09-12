@@ -56,6 +56,20 @@ class NewsSeeder extends Seeder
                 'content_ind' => view('article3_ind')->render(),
                 'content_eng' => view('article3_eng')->render(),
             ],
+            [
+                'slug_ind' => Str::slug('Vitalentra Group International Resmi Diluncurkan, Hadirkan Solusi Wellness Alami untuk Masyarakat'),
+                'slug_eng' => Str::slug('Vitalentra Group International Officially Launched, Bringing Natural Wellness Solutions to the Community'),
+                'title_ind' => 'Vitalentra Group International Resmi Diluncurkan, Hadirkan Solusi Wellness Alami untuk Masyarakat',
+                'title_eng' => 'Vitalentra Group International Officially Launched, Bringing Natural Wellness Solutions to the Community',
+                'publish_date' => '2025-09-09',
+                'category' => 'press release',
+                'image' => 'storage/news/vitalentra-group-international-resmi-diluncurkan-hadirkan-solusi-wellness-alami-untuk-masyarakat.jpg',
+                'is_active' => true,
+                'created_at' => now(),
+                'updated_at' => now(),
+                'content_ind' => view('article4_ind')->render(),
+                'content_eng' => view('article4_eng')->render(),
+            ],
         ];
 
         News::insert($data);

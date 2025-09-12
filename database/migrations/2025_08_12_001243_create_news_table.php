@@ -19,7 +19,7 @@ return new class () extends Migration {
             $table->date('publish_date');
             $table->text('content_ind');
             $table->text('content_eng');
-            $table->enum('category', ['blog', 'news']);
+            $table->enum('category', ['blog', 'news', 'press release']);
             $table->string('image'); // size 640 x 427px
             $table->boolean('is_active')->default(true);
             $table->timestamps();

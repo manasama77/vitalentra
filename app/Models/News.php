@@ -18,7 +18,7 @@ class News extends Model
         'publish_date',
         'content_ind',
         'content_eng',
-        'category',
+        'category', // blog, news, press release
         'image',
         'is_active',
     ];
