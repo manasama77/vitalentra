@@ -30,7 +30,7 @@
 <blockquote>"Wellness doesn't have to be complicated. Starting from small steps, like replacing sugar with Steffi, we can reduce the risk of diabetes
     and
     other related diseases. With this simple choice, we want to help and invite more people to live healthier lives
-    while staying happy,"</blockquote> he said.
+    while staying happy," he said.</blockquote>
 </p>
 
 <p>
@@ -39,8 +39,9 @@
     not
     only as public faces, but also as part of the driving force behind the company's vision.
 <blockquote>"We used to have difficulty giving up sugar. But after getting to know Steffi, we felt we found a healthier middle ground. So we can still
-    enjoy sweetness, but without guilt. Now, the children have also gotten used to it, and that makes us feel more at ease as parents,"
-</blockquote> said Mario and Ratu.
+    enjoy sweetness, but without guilt. Now, the children have also gotten used to it, and that makes us feel more at ease as parents," said Mario and
+    Ratu.
+</blockquote>
 </p>
 
 <p>
@@ -55,8 +56,9 @@
     With support from BP Group, VGI strengthens its business foundation through global standards in distribution and product quality assurance. This
     partnership not
     only strengthens VGI's position in the domestic market, but also opens the way for international expansion.
-<blockquote>"We want Indonesia to be known not only as a consumer, but also as a pioneer of natural wellness products at the global level,"
-</blockquote> added M. Nuzullaiman.
+<blockquote>"We want Indonesia to be known not only as a consumer, but also as a pioneer of natural wellness products at the global level," added M.
+    Nuzullaiman.
+</blockquote>
 </p>
 
 <p>
@@ -74,12 +76,5 @@
     flagship products such as Steffi (liquid stevia), British Propolis, BP Norway and Belgie Skincare, VGI provides <i>wellness</i> solutions that are
     safe, quality, and affordable for families. With the vision of <i>"Natural Wellness for Everyone"</i>, Vitalentra is committed to making
     natural-based <i>wellness</i> a lifestyle for families in Indonesia and the world, while expanding distribution to international markets.
-</p>
-
-<p>
-    <b>For more information, contact:</b><br />
-    Renya Nuringtyas<br />
-    <a href="https://wa.me/+6281317084024">+62 813-1708-4024</a><br />
-    <a href="mailto:renya@vitalentra.com">renya@vitalentra.com</a>
 </p>
 

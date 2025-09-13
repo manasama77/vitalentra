@@ -26,7 +26,7 @@
     menjelaskan bahwa <i>wellness</i> tidak harus dimulai dengan perubahan besar, tetapi cukup dengan langkah kecil dan sederhana yang konsisten.
 <blockquote>“Wellness tidak harus rumit. Dimulai dari langkah kecil, seperti mengganti gula dengan Steffi, kita bisa mengurangi risiko diabetes dan
     penyakit terkait lainnya. Dengan pilihan yang sederhana ini, kami ingin membantu dan mengajak lebih banyak orang menjalani hidup yang lebih sehat
-    dan tetap bahagia,”</blockquote> ujarnya.
+    dan tetap bahagia,” ujarnya.</blockquote>
 </p>
 
 <p>
@@ -34,8 +34,9 @@
     sebagai Komisaris Vitalentra Group International dan sekaligus menjadi Wellness Advocates perusahaan. Peran ini menunjukkan komitmen mereka tidak
     hanya sebagai wajah publik, tetapi juga sebagai bagian dari penggerak visi perusahaan.
 <blockquote>“Dulu kami sulit lepas dari gula. Tapi setelah mengenal Steffi, rasanya kami menemukan jalan tengah yang lebih sehat. Jadi kami tetap bisa
-    menikmati manis, tapi tanpa rasa bersalah. Sekarang,anak-anak pun ikut terbiasa, dan itu membuat kami merasa lebih tenang sebagai orang tua,”
-</blockquote> ujar Mario dan Ratu.
+    menikmati manis, tapi tanpa rasa bersalah. Sekarang,anak-anak pun ikut terbiasa, dan itu membuat kami merasa lebih tenang sebagai orang tua,” ujar
+    Mario dan Ratu.
+</blockquote>
 </p>
 
 <p>
@@ -49,8 +50,9 @@
 <p>
     Dengan dukungan BP Group, VGI memperkuat fondasi bisnis melalui standar global dalam distribusi dan jaminan kualitas produk. Kemitraan ini tidak
     hanya memperkuat posisi VGI di pasar domestik, tetapi juga membuka jalan bagi ekspansi internasional.
-<blockquote>“Kami ingin Indonesia dikenal bukan hanya sebagai konsumen, tetapi juga sebagai pelopor produk wellness alami di tingkat global,”
-</blockquote> tambah M. Nuzullaiman.
+<blockquote>“Kami ingin Indonesia dikenal bukan hanya sebagai konsumen, tetapi juga sebagai pelopor produk wellness alami di tingkat global,” tambah
+    M. Nuzullaiman.
+</blockquote>
 </p>
 
 <p>
@@ -67,12 +69,5 @@
     produk unggulan seperti Steffi (liquid stevia), British Propolis, BP Norway dan Belgie Skincare, VGI menghadirkan solusi <i>wellness</i> yang
     aman, berkualitas, dan terjangkau bagi keluarga. Dengan visi <i>“Natural Wellness for Everyone”</i>, Vitalentra berkomitmen menjadikan
     <i>wellness</i> berbasis alami sebagai gaya hidup keluarga di Indonesia dan dunia, sekaligus memperluas distribusi ke pasar internasional.
-</p>
-
-<p>
-    <b>Untuk informasi lebih lanjut, hubungi:</b><br />
-    Renya Nuringtyas<br />
-    <a href="https://wa.me/+6281317084024">+62 813-1708-4024</a><br />
-    <a href="mailto:renya@vitalentra.com">renya@vitalentra.com</a>
 </p>
 
