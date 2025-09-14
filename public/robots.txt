@@ -13,6 +13,7 @@ Disallow: /confirm-password
 
 # Allow public content
 Allow: /news-blog
+Allow: /news-blog/*
 Allow: /language/
 
 Sitemap: https://vitalentra.com/sitemap.xml
