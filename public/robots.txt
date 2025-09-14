@@ -15,4 +15,4 @@ Disallow: /confirm-password
 Allow: /news-blog/
 Allow: /language/
 
-Sitemap: https://vitalentra.test/sitemap.xml
+Sitemap: https://vitalentra.com/sitemap.xml
