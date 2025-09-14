@@ -24,7 +24,8 @@
                 <flux:navlist.item icon="home" :href="route('dashboard')" :current="request()->routeIs('dashboard')" wire:navigate>
                     {{ __('ui.Dashboard') }}
                 </flux:navlist.item>
-                <flux:navlist.item icon="newspaper" :href="route('dashboard')" :current="request()->routeIs('news.*')" wire:navigate>
+                <flux:navlist.item icon="newspaper" :href="route('berita.index')"
+                    :current="request()->routeIs('berita.*') || request()->is('berita*')" wire:navigate>
                     {{ __('ui.News') }}
                 </flux:navlist.item>
             </flux:navlist.group>
@@ -138,6 +139,9 @@
     {{ $slot }}
 
     @fluxScripts
+
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    @stack('scripts')
 </body>
 
 </html>

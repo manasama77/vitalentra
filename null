@@ -1,0 +1,36 @@
+You are a professional developer using **Laravel 12 + TailwindCSS 4 + FlyonUI 2.4.0** (https://flyonui.com/).
+Implement **CRUD for the News model** in my News Blog project.
+
+### Requirements
+
+**Views**
+
+- Use `index.blade.php` as layout reference.
+- Add filters in the index view:
+    - `keyword` (search in `title_ind`, `title_eng`)
+    - `publish_date` (date input)
+    - `category` (dropdown: blog, news, press release)
+    - `status` (boolean)
+- Use `form.blade.php` for both Create and Edit pages.
+- Create/Edit page must include:
+    - **TinyMCE WYSIWYG** for `content_ind` and `content_eng` fields (API key: `y1lbyegpvnufywjd7k7c8p0drp9rfup9gymycg4n6evr6nfs`).
+    - Pre-filled data when editing.
+- Delete action must use **SweetAlert2 (Swal.fire)** confirmation.
+- All custom JS must be placed inside:
+
+        @push('script')
+        <script>/* JS code */</script>
+        @endpush
+
+**Controller / Logic**
+
+- Implement:
+    - `create` + `store`
+    - `edit` + `update`
+    - `delete`
+- Use `NewsRequest` validation for both store and update.
+- Prevent duplicate submissions in store function.
+
+**Testing**
+
+- Write feature tests to cover all CRUD scenarios and validations.

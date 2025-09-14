@@ -35,10 +35,17 @@ Route::get('sitemap.xml', [SitemapController::class, 'index'])->name('sitemap');
 //     ->middleware(['auth', 'verified'])
 //     ->name('dashboard');
 
-Route::middleware(['auth', 'verified', 'noindex'])->group(function () {
+Route::middleware(['auth', 'noindex'])->group(function () {
     Route::get('dashboard', [DashboardController::class, 'index'])->name('dashboard');
-    Route::get('news', [DashboardController::class, 'index'])->name('news.index');
-    // Route::resource('news', NewsController::class);
+
+    Route::get('berita', [NewsController::class, 'index'])->name('berita.index');
+    Route::get('berita/create', [NewsController::class, 'create'])->name('berita.create');
+    Route::post('berita/store', [NewsController::class, 'store'])->name('berita.store');
+    Route::get('berita/show/{id}', [NewsController::class, 'show'])->name('berita.backend.show');
+    Route::get('berita/edit/{id}', [NewsController::class, 'edit'])->name('berita.edit');
+    Route::put('berita/update/{id}', [NewsController::class, 'update'])->name('berita.update');
+    Route::delete('berita/destroy/{id}', [NewsController::class, 'destroy'])->name('berita.destroy');
+
     Route::redirect('settings', 'settings/profile');
 
     Route::get('settings/profile', Profile::class)->name('settings.profile');
