@@ -6,6 +6,7 @@ use App\Livewire\Settings\Appearance;
 use App\Livewire\Components\FlyonuiThemeDemo;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\BerandaController;
+use App\Http\Controllers\CarouselController;
 use App\Http\Controllers\LanguageController;
 use App\Http\Controllers\TestController;
 use App\Http\Controllers\DashboardController;
@@ -19,9 +20,6 @@ Route::get('language/{locale}', [LanguageController::class, 'switch'])
 
 // Test route for multilanguage (development only)
 Route::get('test-multilanguage', [TestController::class, 'multilanguage'])->name('test.multilanguage');
-
-// Test route for dashboard design (development only)
-Route::get('test-dashboard', [DashboardController::class, 'index'])->name('test.dashboard');
 
 Route::get('/', [BerandaController::class, 'index'])->name('home');
 // Route::get('/phpinfo', [TestController::class, 'phpinfo']);
@@ -45,6 +43,15 @@ Route::middleware(['auth', 'noindex'])->group(function () {
     Route::get('berita/edit/{id}', [NewsController::class, 'edit'])->name('berita.edit');
     Route::put('berita/update/{id}', [NewsController::class, 'update'])->name('berita.update');
     Route::delete('berita/destroy/{id}', [NewsController::class, 'destroy'])->name('berita.destroy');
+
+    Route::get('carousel', [CarouselController::class, 'index'])->name('carousel.index');
+    Route::get('carousel/create', [CarouselController::class, 'create'])->name('carousel.create');
+    Route::post('carousel/store', [CarouselController::class, 'store'])->name('carousel.store');
+    Route::get('carousel/up/{carousel}', [CarouselController::class, 'up'])->name('carousel.up');
+    Route::get('carousel/down/{carousel}', [CarouselController::class, 'down'])->name('carousel.down');
+    Route::get('carousel/edit/{carousel}', [CarouselController::class, 'edit'])->name('carousel.edit');
+    Route::put('carousel/update/{carousel}', [CarouselController::class, 'update'])->name('carousel.update');
+    Route::delete('carousel/destroy/{carousel}', [CarouselController::class, 'destroy'])->name('carousel.destroy');
 
     Route::redirect('settings', 'settings/profile');
 

@@ -33,12 +33,12 @@
             <!-- Second row: last two items, centered -->
             <div class="flex flex-col gap-8 md:flex-row md:justify-center">
                 <div class="scroll-revealed mx-auto w-full max-w-[300px]">
-                    <x-landing.partials.figure photo="{{ Vite::asset('resources/images/Management - Tito Masinggil.webp') }}" name="Tito Masinggil"
-                        position="Chief Operating Officer" triggerId="{{ Str::slug('Tito Masinggil') }}" contentKey="4" />
-                </div>
-                <div class="scroll-revealed mx-auto w-full max-w-[300px]">
                     <x-landing.partials.figure photo="{{ Vite::asset('resources/images/Management - M. Nuzullaiman.webp') }}" name="M. Nuzullaiman"
                         position="Chief Executive Officer" triggerId="{{ Str::slug('M. Nuzullaiman') }}" contentKey="5" />
+                </div>
+                <div class="scroll-revealed mx-auto w-full max-w-[300px]">
+                    <x-landing.partials.figure photo="{{ Vite::asset('resources/images/Management - Tito Masinggil.webp') }}" name="Tito Masinggil"
+                        position="Chief Operating Officer" triggerId="{{ Str::slug('Tito Masinggil') }}" contentKey="4" />
                 </div>
                 <div class="scroll-revealed mx-auto w-full max-w-[300px]">
                     <x-landing.partials.figure photo="{{ Vite::asset('resources/images/Management - Renya Nuringtyas.webp') }}"

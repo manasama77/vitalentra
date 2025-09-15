@@ -16,6 +16,7 @@ return [
     // Navigation
     'Dashboard' => 'Dashboard',
     'News' => 'Berita',
+    'Carousel' => 'Carousel',
     'Repository' => 'Repository',
     'Documentation' => 'Dokumentasi',
 

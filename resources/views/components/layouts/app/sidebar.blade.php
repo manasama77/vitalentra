@@ -28,30 +28,20 @@
                     :current="request()->routeIs('berita.*') || request()->is('berita*')" wire:navigate>
                     {{ __('ui.News') }}
                 </flux:navlist.item>
+                <flux:navlist.item icon="photo" :href="route('carousel.index')"
+                    :current="request()->routeIs('carousel.*') || request()->is('carousel*')" wire:navigate>
+                    {{ __('ui.Carousel') }}
+                </flux:navlist.item>
             </flux:navlist.group>
 
-            {{-- <flux:navlist.group :heading="__('ui.Development')" class="grid">
-                <flux:navlist.item icon="swatch" :href="route('flyonui.demo')" :current="request()->routeIs('flyonui.demo')" wire:navigate>
-                    {{ __('ui.FlyonUI Demo') }}
-                </flux:navlist.item>
-            </flux:navlist.group> --}}
         </flux:navlist>
 
         <flux:spacer />
 
-        <flux:navlist variant="outline">
-            <flux:navlist.item icon="folder-git-2" href="https://github.com/laravel/livewire-starter-kit" target="_blank">
-                {{ __('ui.Repository') }}
-            </flux:navlist.item>
-
-            <flux:navlist.item icon="book-open-text" href="https://laravel.com/docs/starter-kits#livewire" target="_blank">
-                {{ __('ui.Documentation') }}
-            </flux:navlist.item>
-        </flux:navlist>
-
         <!-- Desktop User Menu -->
         <flux:dropdown class="hidden lg:block" position="bottom" align="start">
-            <flux:profile :name="auth()->user()->name" :initials="auth()->user()->initials()" icon:trailing="chevrons-up-down" />
+            <flux:profile :name="auth()->user()->name" :initials="auth()->user()->initials()" icon:trailing="chevrons-up-down"
+                icon:color="text-primary" />
 
             <flux:menu class="!bg-base-300 w-[220px]">
                 <flux:menu.radio.group>

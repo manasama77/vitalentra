@@ -11,7 +11,7 @@
             @foreach ($carousels as $carousel)
                 <div class="carousel-slide">
                     <div class="flex size-full justify-center">
-                        <picture class="size-full object-cover">
+                        <picture class="size-full object-cover" alt="{{ $carousel->title }}">
                             @if (!empty($carousel->image_480))
                                 <source srcset="{{ asset($carousel->image_480) }}" media="(max-width: 480px)">
                             @endif
@@ -42,3 +42,4 @@
         <span class="sr-only">Next</span>
     </button>
 </div>
+

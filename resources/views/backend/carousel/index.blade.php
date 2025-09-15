@@ -1,13 +1,13 @@
-<x-layouts.app :title="__('News Management')">
+<x-layouts.app :title="__('Carousel Management')">
     <div class="min-h-screen">
         <!-- Header Section -->
         <div class="mx-auto max-w-7xl">
             <div class="mb-8">
                 <div class="flex items-center justify-between">
-                    <h1 class="mb-2 text-3xl font-bold text-gray-900 sm:text-4xl">News Management</h1>
-                    <a href="{{ route('berita.create') }}" class="btn btn-primary">
+                    <h1 class="mb-2 text-3xl font-bold text-gray-900 sm:text-4xl">Carousel Management</h1>
+                    <a href="{{ route('carousel.create') }}" class="btn btn-primary">
                         <i class="fas fa-plus mr-2"></i>
-                        Create News
+                        Create Carousel
                     </a>
                 </div>
             </div>
@@ -20,7 +20,7 @@
                         Filters
                     </h3>
 
-                    <form method="GET" action="{{ route('berita.index') }}" class="space-y-4">
+                    <form method="GET" action="{{ route('carousel.index') }}" class="space-y-4">
                         <div class="grid grid-cols-1 gap-4 md:grid-cols-2 lg:grid-cols-4">
                             <!-- Keyword Search -->
                             <div class="form-control">
@@ -29,29 +29,6 @@
                                 </label>
                                 <input type="text" name="keyword" value="{{ $filters['keyword'] ?? '' }}" placeholder="Search in titles..."
                                     class="input input-bordered input-sm">
-                            </div>
-
-                            <!-- Publish Date Filter -->
-                            <div class="form-control">
-                                <label class="label">
-                                    <span class="label-text font-medium">Publish Date</span>
-                                </label>
-                                <input type="date" name="publish_date" value="{{ $filters['publish_date'] ?? '' }}"
-                                    class="input input-bordered input-sm">
-                            </div>
-
-                            <!-- Category Filter -->
-                            <div class="form-control">
-                                <label class="label">
-                                    <span class="label-text font-medium">Category</span>
-                                </label>
-                                <select name="category" class="select select-bordered select-sm">
-                                    <option value="">All Categories</option>
-                                    <option value="blog" {{ ($filters['category'] ?? '') === 'blog' ? 'selected' : '' }}>Blog</option>
-                                    <option value="news" {{ ($filters['category'] ?? '') === 'news' ? 'selected' : '' }}>News</option>
-                                    <option value="press release" {{ ($filters['category'] ?? '') === 'press release' ? 'selected' : '' }}>Press
-                                        Release</option>
-                                </select>
                             </div>
 
                             <!-- Status Filter -->
@@ -73,7 +50,7 @@
                                 <i class="fas fa-search mr-2"></i>
                                 Apply Filters
                             </button>
-                            <a href="{{ route('berita.index') }}" class="btn btn-outline btn-sm">
+                            <a href="{{ route('carousel.index') }}" class="btn btn-outline btn-sm">
                                 <i class="fas fa-times mr-2"></i>
                                 Clear Filters
                             </a>
@@ -83,17 +60,14 @@
             </div>
 
             <!-- Results Summary -->
-            @if (request()->hasAny(['keyword', 'publish_date', 'category', 'status']))
+            @if (request()->hasAny(['keyword', 'status']))
                 <div class="alert alert-info mb-6">
                     <div>
                         <i class="fas fa-info-circle mr-2"></i>
                         <span>
-                            Showing {{ $news->count() }} of {{ $news->total() }} results
+                            Showing {{ $carousels->count() }} of {{ $carousels->total() }} results
                             @if ($filters['keyword'] ?? false)
                                 for keyword "{{ $filters['keyword'] }}"
-                            @endif
-                            @if ($filters['category'] ?? false)
-                                in category "{{ ucfirst($filters['category']) }}"
                             @endif
                             @if (isset($filters['status']) && $filters['status'] !== '')
                                 with status "{{ $filters['status'] == '1' ? 'Active' : 'Inactive' }}"
@@ -122,7 +96,7 @@
                 </div>
             @endif
 
-            <!-- News Table -->
+            <!-- Carousel Table -->
             <div class="card shadow">
                 <div class="h-fit w-full overflow-x-auto">
                     <table class="table-xs table">
@@ -131,23 +105,22 @@
                                 <th class="text-center">
                                     <i class="fas fa-cogs"></i>
                                 </th>
-                                <th>Publish Date</th>
-                                <th>Title Ind</th>
-                                <th>Title Eng</th>
-                                <th>Slug Ind</th>
-                                <th>Slug Eng</th>
-                                <th>Category</th>
+                                <th>Title</th>
+                                <th class="text-center">
+                                    <i class="fas fa-image"></i>
+                                </th>
                                 <th class="text-center">Status</th>
+                                <th class="text-center">Order</th>
                             </tr>
                         </thead>
                         <tbody>
-                            @forelse ($news as $n)
+                            @forelse ($carousels as $c)
                                 <tr class="row-hover">
                                     <td class="text-center">
                                         <div class="flex justify-center gap-1">
                                             <div class="tooltip">
-                                                <a href="{{ route('berita.edit', ['id' => $n->id]) }}" class="btn btn-sm btn-primary tooltip-toggle"
-                                                    data-tip="Edit">
+                                                <a href="{{ route('carousel.edit', ['carousel' => $c->id]) }}"
+                                                    class="btn btn-sm btn-primary tooltip-toggle" data-tip="Edit">
                                                     <i class="fas fa-edit"></i>
                                                 </a>
                                                 <span class="tooltip-content tooltip-shown:opacity-100 tooltip-shown:visible" role="tooltip">
@@ -156,50 +129,45 @@
                                             </div>
                                             <div class="tooltip">
                                                 <button type="button" class="btn btn-sm btn-error tooltip-toggle" data-tip="Delete"
-                                                    onclick="askDelete('{{ route('berita.destroy', ['id' => $n->id]) }}', '{{ $n->title_eng }}')">
+                                                    onclick="askDelete('{{ route('carousel.destroy', ['carousel' => $c->id]) }}', '{{ $c->title }}')">
                                                     <i class="fas fa-trash"></i>
                                                 </button>
                                                 <span class="tooltip-content tooltip-shown:opacity-100 tooltip-shown:visible" role="tooltip">
                                                     <span class="tooltip-body">Delete</span>
                                                 </span>
                                             </div>
-                                            <div class="tooltip">
-                                                <a href="{{ route('berita.backend.show', $n->id) }}" class="btn btn-sm btn-info tooltip-toggle"
-                                                    data-tip="View">
-                                                    <i class="fas fa-eye"></i>
+                                            <div class="tooltip {{ $loop->first ? 'hidden' : '' }}">
+                                                <a href="{{ route('carousel.up', ['carousel' => $c->id]) }}"
+                                                    class="btn btn-sm btn-warning tooltip-toggle" data-tip="Move Up">
+                                                    <i class="fas fa-arrow-up"></i>
                                                 </a>
                                                 <span class="tooltip-content tooltip-shown:opacity-100 tooltip-shown:visible" role="tooltip">
-                                                    <span class="tooltip-body">View</span>
+                                                    <span class="tooltip-body">Move Up</span>
                                                 </span>
                                             </div>
+                                            <div class="tooltip {{ $loop->last ? 'hidden' : '' }}">
+                                                <a href="{{ route('carousel.down', ['carousel' => $c->id]) }}"
+                                                    class="btn btn-sm btn-warning tooltip-toggle" data-tip="Move Down">
+                                                    <i class="fas fa-arrow-down"></i>
+                                                </a>
+                                                <span class="tooltip-content tooltip-shown:opacity-100 tooltip-shown:visible" role="tooltip">
+                                                    <span class="tooltip-body">Move Down</span>
+                                                </span>
+                                            </div </div>
+                                    </td>
+                                    <td>
+                                        <div title="{{ $c->title }}">
+                                            {{ $c->title }}
                                         </div>
                                     </td>
                                     <td>
-                                        <div class="font-medium">{{ $n->publish_date->format('d F Y') }}</div>
-                                    </td>
-                                    <td>
-                                        <div title="{{ $n->title_ind }}">
-                                            {{ $n->title_ind }}
+                                        <div class="flex justify-center">
+                                            <img src="{{ asset($c->image) }}" alt="{{ $c->title }}"
+                                                class="h-16 w-auto rounded-md object-cover shadow-sm">
                                         </div>
-                                    </td>
-                                    <td>
-                                        <div title="{{ $n->title_eng }}">
-                                            {{ $n->title_eng }}
-                                        </div>
-                                    </td>
-                                    <td>
-                                        <code class="text-xs">{{ $n->slug_ind }}</code>
-                                    </td>
-                                    <td>
-                                        <code class="text-xs">{{ $n->slug_eng }}</code>
-                                    </td>
-                                    <td>
-                                        <span class="badge badge-outline">
-                                            {{ strtoupper($n->category) }}
-                                        </span>
                                     </td>
                                     <td class="text-center">
-                                        @if ($n->is_active)
+                                        @if ($c->is_active)
                                             <span class="badge badge-success">
                                                 <i class="fas fa-check mr-1"></i>
                                                 Active
@@ -211,23 +179,26 @@
                                             </span>
                                         @endif
                                     </td>
+                                    <td class="text-center">
+                                        <code class="text-xs">{{ $c->order }}</code>
+                                    </td>
                                 </tr>
                             @empty
                                 <tr>
-                                    <td colspan="8" class="py-12 text-center">
+                                    <td colspan="6" class="py-12 text-center">
                                         <div class="flex flex-col items-center">
-                                            <i class="fas fa-newspaper mb-4 text-6xl text-gray-300"></i>
-                                            <h3 class="mb-2 text-lg font-medium text-gray-500">No news found</h3>
+                                            <i class="fas fa-images mb-4 text-6xl text-gray-300"></i>
+                                            <h3 class="mb-2 text-lg font-medium text-gray-500">No carousel found</h3>
                                             <p class="mb-4 text-gray-400">
-                                                @if (request()->hasAny(['keyword', 'publish_date', 'category', 'status']))
+                                                @if (request()->hasAny(['keyword', 'status']))
                                                     Try adjusting your filters or search criteria.
                                                 @else
-                                                    Get started by creating your first news article.
+                                                    Get started by creating your first carousel item.
                                                 @endif
                                             </p>
-                                            <a href="{{ route('berita.create') }}" class="btn btn-primary">
+                                            <a href="{{ route('carousel.create') }}" class="btn btn-primary">
                                                 <i class="fas fa-plus mr-2"></i>
-                                                Create News
+                                                Create Carousel Item
                                             </a>
                                         </div>
                                     </td>
@@ -238,8 +209,8 @@
                 </div>
 
                 <!-- Pagination -->
-                @if ($news->hasPages())
-                    {{ $news->links('vendor.pagination.tailwind') }}
+                @if ($carousels->hasPages())
+                    {{ $carousels->links('vendor.pagination.tailwind') }}
                 @endif
             </div>
         </div>
@@ -250,7 +221,7 @@
             function askDelete(url, title) {
                 Swal.fire({
                     title: 'Are you sure?',
-                    text: `You are about to delete the news "${title}". This action cannot be undone.`,
+                    text: `You are about to delete the carousel "${title}". This action cannot be undone.`,
                     icon: 'warning',
                     showCancelButton: true,
                     confirmButtonColor: '#d33',

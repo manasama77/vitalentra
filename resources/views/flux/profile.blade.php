@@ -1,8 +1,10 @@
 @php $iconVariant = $iconVariant ??= $attributes->pluck('icon:variant'); @endphp
+@php $iconColor = $iconColor ??= $attributes->pluck('icon:color'); @endphp
 @php $iconTrailing = $iconTrailing ??= $attributes->pluck('icon:trailing'); @endphp
 
 @props([
     'iconVariant' => 'micro',
+    'iconColor' => null,
     'iconTrailing' => null,
     'initials' => null,
     'chevron' => true,
@@ -53,9 +55,10 @@ $classes = Flux::classes()
 
     <?php if (is_string($iconTrailing) && $iconTrailing !== ''): ?>
     <div class="ms-auto flex size-8 shrink-0 items-center justify-center">
-        <flux:icon :icon="$iconTrailing" :variant="$iconVariant" :class="$iconClasses" />
+        <flux:icon :icon="$iconTrailing" :variant="$iconVariant" :class="$iconClasses" class="{{ $iconColor }}" />
     </div>
     <?php elseif ($iconTrailing): ?>
     {{ $iconTrailing }}
     <?php endif; ?>
 </button>
+

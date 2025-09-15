@@ -12,7 +12,7 @@ class DashboardController extends Controller
         try {
             $totalCarousels = Carousel::count();
             $totalNews = News::count();
-            $activeCarousels = Carousel::where('active', true)->count();
+            $activeCarousels = Carousel::where('is_active', true)->count();
             $activeNews = News::where('is_active', true)->count();
         } catch (\Exception $e) {
             // Handle case when tables don't exist or are empty

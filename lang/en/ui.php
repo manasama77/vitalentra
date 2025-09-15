@@ -16,6 +16,7 @@ return [
     // Navigation
     'Dashboard' => 'Dashboard',
     'News' => 'News',
+    'Carousel' => 'Carousel',
     'Repository' => 'Repository',
     'Documentation' => 'Documentation',
 
