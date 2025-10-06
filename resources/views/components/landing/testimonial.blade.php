@@ -28,12 +28,7 @@
                              <div class="z-2 relative">
                                  <p class="text-base-content text-balance text-2xl leading-relaxed">
                                      <em>
-                                         Sejak saya mengganti gula dengan pemanis alami Steffi, tubuh terasa jauh lebih ringan dan segar, terutama di
-                                         pagi hari. Rasanya seperti punya energi baru tanpa harus takut kelebihan gula. Buat saya, ini bukan soal
-                                         tren, tapi pilihan hidup
-                                         yang lebih sehat — dan lewat Vitalentra Group International, saya ingin menginspirasi lebih banyak orang
-                                         untuk mulai
-                                         langkah kecil menuju hidup sehat tanpa gula.
+                                         {!! __('testimony.highlight') !!}
                                      </em>
                                  </p>
                              </div>

@@ -3,6 +3,7 @@
 return [
     'title' => 'Client Reviews',
     'sub_title' => 'What they say about our products?',
+    'highlight' => "Since I replaced sugar with the natural sweetener Steffi, my body feels much lighter and fresher, especially in the morning. It feels like having new energy without worrying about excess sugar. For me, this isn’t about following a trend, but about choosing a healthier lifestyle — and through Vitalentra Group International, I want to inspire more people to start taking small steps toward a sugar-free, healthier life.",
     'user' => [
         '1' => [
             'job' => 'Artist',
