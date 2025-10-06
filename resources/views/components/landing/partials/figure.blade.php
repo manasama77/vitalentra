@@ -6,7 +6,7 @@
     'contentKey' => null,
 ])
 <figure id="{{ $triggerId }}"
-    class="bg-body-light-1 dark:bg-body-dark-12/10 shadow-card-2 group flex w-full cursor-pointer flex-col justify-between rounded-xl px-5 pb-10 pt-12 hover:-translate-y-1 hover:shadow-lg"
+    class="shadow-card-2 bg-base-100 group flex w-full cursor-pointer flex-col justify-between rounded-xl px-5 pt-5 hover:-translate-y-1 hover:shadow-lg"
     onclick="openModal('{{ $triggerId }}')">
     <div class="md:max-size-[150px] relative z-10 mx-auto size-[50vw] md:size-[100px] lg:size-[150px]">
         @php

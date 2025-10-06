@@ -89,7 +89,7 @@
         </div>
     </div>
 
-    <div class="accordion-item" id="british-propolis-british-propolis-green">
+    {{-- <div class="accordion-item" id="british-propolis-british-propolis-green">
         <button class="accordion-toggle inline-flex items-center gap-x-4 pl-0 text-start"
             aria-controls="british-propolis-british-propolis-green-collapse" aria-expanded="false">
             <span
@@ -367,6 +367,6 @@
 
             </div>
         </div>
-    </div>
+    </div> --}}
 
 </div>

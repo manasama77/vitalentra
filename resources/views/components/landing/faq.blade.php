@@ -1,5 +1,5 @@
 <!-- FAQ section -->
-<div id="faq" class="bg-base-100 py-12 lg:py-24">
+<div id="faq" class="bg-base-100 py-12">
     <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         <!-- FAQ Header -->
         <div class="mb-8 text-center sm:mb-16 lg:mb-16">
@@ -14,3 +14,4 @@
         <x-landing.partials.faq_accordion />
     </div>
 </div>
+

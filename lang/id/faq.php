@@ -2,7 +2,7 @@
 
 return [
     'title' => 'FAQ',
-    'sub_title' => 'Pertanyaan umum untuk masing-masing produk.',
+    'sub_title' => 'Pertanyaan umum produk.',
     'detail' => [
         'product_1' => [
             'name' => 'Steffi',

@@ -34,6 +34,8 @@ export default defineConfig({
 				'resources/images/logo_white.png',
 				'resources/images/BP Group Logo.png',
 
+				'resources/images/Single Testimonials - Mario Irwinsyah.jpg',
+				'resources/images/Single Testimonials - Mario Irwinsyah.png',
 				'resources/images/Testimonials - Teuku Wisnu.jpg',
 				'resources/images/Testimonials - Irwansyah.jpg',
 				'resources/images/Testimonials - Mario Irwinsyah.jpg',
@@ -83,6 +85,12 @@ export default defineConfig({
 				'resources/images/products/steffi/1.webp',
 				'resources/images/products/steffi/2.webp',
 				'resources/images/products/steffi/3.webp',
+
+				'resources/images/Logo Citilink.png',
+				'resources/images/Logo Garuda Indonesia.png',
+				'resources/images/Logo Grid.png',
+				'resources/images/Logo Hello Kitty.png',
+				'resources/images/Logo PCN.png',
 			],
 			refresh: true,
 		}),

@@ -17,20 +17,23 @@
     <!-- Product section -->
     <x-landing.product :carousels="$carousels" loading="lazy" />
 
-    <!-- Team section -->
-    <x-landing.team loading="lazy" />
-
     <!-- Testimonials section -->
     <x-landing.testimonial loading="lazy" />
 
     <!-- FAQ section -->
     <x-landing.faq loading="lazy" />
 
+    <!-- Team section -->
+    <x-landing.team loading="lazy" />
+
     <!-- Blog section -->
     <x-landing.blog :news="$news" loading="lazy" />
 
     <!-- Contact section -->
     <x-landing.contact loading="lazy" />
+
+    {{-- Collaboration section --}}
+    <x-landing.collaboration loading="lazy" />
 
     <!-- Team Member Modals -->
     <x-landing.partials.modal_figure modalId="{{ Str::slug('Marida') }}" name="Marida" position="Chairman of the Board"

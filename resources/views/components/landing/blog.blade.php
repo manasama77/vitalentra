@@ -1,5 +1,5 @@
 @props(['news'])
-<section id="blog" class="bg-base-300 mx-auto w-full px-4 py-16 md:px-6 md:py-24 lg:px-8">
+<section id="blog" class="bg-base-100 mx-auto w-full px-4 py-12">
     <!-- Section Header -->
     <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         {{-- <div class="mb-12 space-y-4 text-center sm:mb-16 lg:mb-24"> --}}

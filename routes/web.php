@@ -19,7 +19,7 @@ Route::get('language/{locale}', [LanguageController::class, 'switch'])
     ->name('language.switch');
 
 // Test route for multilanguage (development only)
-Route::get('test-multilanguage', [TestController::class, 'multilanguage'])->name('test.multilanguage');
+// Route::get('test-multilanguage', [TestController::class, 'multilanguage'])->name('test.multilanguage');
 
 Route::get('/', [BerandaController::class, 'index'])->name('home');
 // Route::get('/phpinfo', [TestController::class, 'phpinfo']);

@@ -1,8 +1,8 @@
 @props(['name', 'job', 'description', 'photo'])
 
 <div class="swiper-slide">
-    <div class="bg-body-light-1 shadow-card-2 min-h-70 flex flex-col items-start justify-between rounded-xl px-5 py-8 sm:px-8">
-        <p class="text-body-light-11 mb-6 text-base">
+    <div class="bg-body-light-1 shadow-card-2 min-h-73 flex flex-col items-start justify-between rounded-xl px-5 py-8 sm:px-8">
+        <p class="text-body-light-11 mb-6 text-lg leading-relaxed">
             {{ $description }}
         </p>
         <figure class="flex items-center gap-4">
@@ -20,3 +20,4 @@
         </figure>
     </div>
 </div>
+

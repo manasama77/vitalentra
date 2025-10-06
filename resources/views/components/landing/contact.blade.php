@@ -1,4 +1,4 @@
-<div id="contact" class="bg-base-100 py-8 md:py-16 lg:py-24">
+<div id="contact" class="section-area">
     <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         <!-- Header -->
         <div class="scroll-revealed relative mx-auto mb-12 w-fit sm:mb-16 lg:mb-24">
@@ -74,3 +74,4 @@
         </div>
     </div>
 </div>
+

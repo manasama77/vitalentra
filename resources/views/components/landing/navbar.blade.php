@@ -73,7 +73,7 @@
                                     $link = $is_home ? '#blog' : route('news.list');
                                     $is_news = request()->routeIs('news.*') ? 'active' : '';
                                 @endphp
-                                <a href="{{ $link }}"
+                                <a href="{{ route('news.list') }}"
                                     class="{{ $is_home ? 'ic-page-scroll' : '!text-base-content' }} group-hover:text-base-content lg:text-primary {{ $is_news }} mx-8 flex py-2 text-base font-medium lg:mr-0 lg:inline-flex lg:px-0 lg:py-6 lg:group-hover:opacity-70"
                                     role="menuitem">
                                     {{ __('menu.news_and_blog') }}
@@ -103,3 +103,4 @@
         </div>
     </div>
 </header>
+

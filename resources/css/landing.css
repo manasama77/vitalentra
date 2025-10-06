@@ -416,13 +416,12 @@ layer(base); */
 }
 
 @utility section-area {
-	@apply relative py-24 bg-base-100;
+	@apply relative py-12 bg-base-100;
 	&#featured,
-	&#testimonials {
+	&#testimonials,
+	&#team,
+	&#contact {
 		@apply bg-base-300;
-	}
-	&#product {
-		@apply bg-base-200;
 	}
 }
 
@@ -1018,4 +1017,8 @@ layer(base); */
 
 html {
 	scroll-padding-top: 85px !important;
+}
+
+.collaboration-image {
+	@apply w-auto h-[200px] object-contain;
 }

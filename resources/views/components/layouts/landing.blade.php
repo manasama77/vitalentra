@@ -7,9 +7,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta http-equiv="Copyright" content="Vitalentra" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="author" content="Ranyeh" />
+    <meta name="author" content="Adam PM" />
     <meta name="rating" content="general" />
-    <meta name="language" content="English" />
+    <meta name="language" content="Indonesia,English" />
     <meta name="application-name" content="Vitalentra" />
     <meta name="description" content="@yield('description', 'Mulai Hidup Sehat Bersama Vitalentra')" />
     <meta name="keywords" content="company" />
@@ -31,7 +31,7 @@
 
     <meta name="msapplication-TileColor" content="#fff" />
     <meta name="msapplication-TileImage" content="{{ asset('web-app-manifest-192x192.png') }}" />
-    <meta name="theme-color" content="#fff" />
+    <meta name="theme-color" content="#004D9A" />
 
     <!-- Page title -->
     <title>@yield('title', 'Vitalentra')</title>
@@ -128,7 +128,7 @@
 
 <body class="bg-base-200 transition-all duration-500 ease-in-out">
     <!-- Page loading -->
-    <x-landing.loading />
+    {{-- <x-landing.loading /> --}}
 
     <!-- Navbar -->
     <x-landing.navbar />

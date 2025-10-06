@@ -2,7 +2,7 @@
 
 return [
     'title' => 'FAQ',
-    'sub_title' => 'Common questions for each product.',
+    'sub_title' => 'Common questions product.',
     'detail' => [
         'product_1' => [
             'name' => 'Steffi',
