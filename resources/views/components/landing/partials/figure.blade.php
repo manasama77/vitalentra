@@ -17,9 +17,9 @@
         <x-optimized-image :webpSrc="$webpSrc" :fallbackSrc="$photo" alt="Team picture" class="size-auto rounded-full object-cover" loading="lazy" />
 
         <span
-            class="bg-info absolute bottom-1 left-12 -z-10 h-10 w-10 rounded-full opacity-100 transition-all duration-500 ease-in-out group-hover:left-0 group-hover:opacity-100"></span>
+            class="bg-info absolute bottom-1.5 left-12 -z-10 h-10 w-10 rounded-full opacity-100 transition-all duration-500 ease-in-out group-hover:bottom-0 group-hover:left-[8px] group-hover:opacity-100"></span>
         <span
-            class="bg-primary absolute right-12 top-1 -z-10 h-10 w-10 rounded-full opacity-100 transition-all duration-500 ease-in-out group-hover:right-0 group-hover:opacity-100"></span>
+            class="bg-primary absolute right-12 top-1.5 -z-10 h-10 w-10 rounded-full opacity-100 transition-all duration-500 ease-in-out group-hover:right-[8px] group-hover:top-0 group-hover:opacity-100"></span>
     </div>
     <figcaption class="block text-center">
         <h4 class="text-base-content mb-1 text-lg font-semibold">
