@@ -1,12 +1,12 @@
 <section id="collaboration" class="bg-base-100 mx-auto w-full px-4 py-12">
     <div class="mx-auto max-w-7xl">
-        <div class="mb-8 text-center">
+        <div class="text-center">
             <h2 class="text-base-content scroll-revealed text-2xl md:text-4xl">
                 {{ __('collaboration.title') }}
             </h2>
         </div>
         <div id="collaboration-carousel"
-            data-carousel='{ "loadingClasses": "opacity-0", "dotsItemClasses": "carousel-dot carousel-active:bg-primary", "slidesQty": { "xs": 1, "md": 3, "lg": 3 }, "isDraggable": true, "isAutoPlay": true, "speed": 5000 }'
+            data-carousel='{ "loadingClasses": "opacity-0", "dotsItemClasses": "carousel-dot", "slidesQty": { "xs": 1, "md": 3, "lg": 3 }, "isDraggable": true, "isAutoPlay": true, "speed": 5000 }'
             class="scroll-revealed relative w-full">
             <div class="carousel h-80">
                 <div class="carousel-body h-full opacity-0">

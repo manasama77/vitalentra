@@ -1022,3 +1022,9 @@ html {
 .collaboration-image {
 	@apply w-auto h-[200px] object-contain;
 }
+
+.carousel-dot {
+	&.active {
+		@apply bg-primary;
+	}
+}
