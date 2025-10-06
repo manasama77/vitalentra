@@ -46,14 +46,6 @@
     <link rel="preconnect" href="https://cdn.jsdelivr.net" crossorigin>
     <link rel="preconnect" href="https://cdnjs.cloudflare.com" crossorigin>
 
-    <!-- perbaikan -->
-    {{-- <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect"
-          href="https://fonts.gstatic.com"
-          crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
-          rel="stylesheet"> --}}
-
     <!-- Favicon -->
     <link rel="icon" type="image/x-icon" href="{{ asset('favicon.ico') }}" />
     <link rel="shortcut icon" href="{{ asset('favicon.ico') }}" />
@@ -62,42 +54,17 @@
     <link rel="manifest" href="{{ asset('site.webmanifest') }}" />
 
     <!-- CSS Plugins -->
-    {{-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" /> --}}
     <link rel="preload" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" as="style"
         onload="this.onload=null;this.rel='stylesheet'">
     <noscript>
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
     </noscript>
 
-    {{-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/glightbox/dist/css/glightbox.min.css" /> --}}
     <link rel="preload" href="https://cdn.jsdelivr.net/npm/glightbox/dist/css/glightbox.min.css" as="style"
         onload="this.onload=null;this.rel='stylesheet'">
     <noscript>
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/glightbox/dist/css/glightbox.min.css">
     </noscript>
-
-    {{-- <link rel="stylesheet" href="{{ asset('fonts/regular-icon-font-free/lineicons.css') }}" /> --}}
-    {{-- <link rel="preload"
-          href="https://cdn.lineicons.com/5.0/lineicons.css"
-          as="style"
-          onload="this.onload=null;this.rel='stylesheet'">
-    <noscript>
-        <link rel="stylesheet" href="https://cdn.lineicons.com/5.0/lineicons.css">
-    </noscript> --}}
-
-    {{-- <link rel="stylesheet"
-          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css"
-          integrity="sha512-DxV+EoADOkOygM4IR9yXP8Sb2qwgidEmeqAEmDKIOfPRQZOWbXCzLC6vjbZyy0vPisbH2SyW27+ddLVCN+OMzQ=="
-          crossorigin="anonymous"
-          referrerpolicy="no-referrer" /> --}}
-    {{-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css"> --}}
-    {{-- <link rel="preload"
-          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css"
-          as="style"
-          onload="this.onload=null;this.rel='stylesheet'">
-    <noscript>
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css">
-    </noscript> --}}
 
     <style>
         /* Critical CSS - inline above-the-fold styles */
@@ -128,7 +95,7 @@
 
 <body class="bg-base-200 transition-all duration-500 ease-in-out">
     <!-- Page loading -->
-    {{-- <x-landing.loading /> --}}
+    <x-landing.loading />
 
     <!-- Navbar -->
     <x-landing.navbar />
@@ -155,11 +122,6 @@
         </a>
     </div>
 
-    {{-- <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/gh/mcstudios/glightbox/dist/js/glightbox.min.js"></script>
-    <script src="https://unpkg.com/scrollreveal@4.0.0/dist/scrollreveal.min.js"></script> --}}
-
-    {{-- <script defer src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script> --}}
     <script defer src="{{ asset('assets/js/swiper-bundle.min.js') }}"></script>
     <script defer src="https://cdn.jsdelivr.net/gh/mcstudios/glightbox/dist/js/glightbox.min.js"></script>
     <script defer src="https://unpkg.com/scrollreveal@4.0.0/dist/scrollreveal.min.js"></script>
