@@ -17,11 +17,14 @@
     <!-- Product section -->
     <x-landing.product :carousels="$carousels" loading="lazy" />
 
-    <!-- Testimonials section -->
-    <x-landing.testimonial loading="lazy" />
+    {{-- HIGHLIGHT TESTIMONY --}}
+    <x-landing.highlight-testimonial loading="lazy" />
 
     <!-- FAQ section -->
     <x-landing.faq loading="lazy" />
+
+    <!-- Testimonials section -->
+    <x-landing.testimonial loading="lazy" />
 
     <!-- Team section -->
     <x-landing.team loading="lazy" />
