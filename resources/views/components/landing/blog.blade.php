@@ -1,5 +1,5 @@
 @props(['news'])
-<section id="blog" class="bg-base-100 mx-auto w-full px-4 py-12">
+<section id="blog" class="section-area">
     <!-- Section Header -->
     <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         {{-- <div class="mb-12 space-y-4 text-center sm:mb-16 lg:mb-24"> --}}
@@ -16,11 +16,11 @@
     <!-- Blog Cards Grid -->
     <div class="mb-12 grid grid-cols-1 gap-8 px-4 md:grid-cols-2 md:px-14 lg:grid-cols-3">
         @foreach ($news as $n)
-            <div class="card scroll-revealed group bg-white shadow-lg transition-all duration-300 hover:shadow-xl">
+            <div class="card scroll-revealed group rounded-2xl bg-white shadow-lg transition-all duration-300 hover:shadow-xl">
                 <figure class="overflow-hidden">
                     <a href="{{ route('news.show', $n->slug) }}">
                         <img src="{{ asset($n->image) }}" alt="{{ $n->title }}"
-                            class="group-hover:scale-102 max-h-[218px] w-full object-cover transition-transform duration-300 ease-in-out">
+                            class="group-hover:scale-102 w-full object-contain transition-transform duration-300">
                     </a>
                 </figure>
                 <div class="card-body p-6">

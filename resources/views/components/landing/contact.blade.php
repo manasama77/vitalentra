@@ -1,7 +1,7 @@
 <div id="contact" class="section-area">
     <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         <!-- Header -->
-        <div class="scroll-revealed relative mx-auto mb-12 w-fit sm:mb-16 lg:mb-24">
+        <div class="scroll-revealed relative mx-auto mb-8 w-fit">
             <h2 class="text-base-content text-2xl font-bold md:text-3xl lg:text-4xl">
                 {{ __('contact.title') }}
             </h2>

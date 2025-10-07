@@ -419,8 +419,8 @@ layer(base); */
 	@apply relative py-12 bg-base-100;
 	&#featured,
 	&#testimonials,
-	&#team,
-	&#contact {
+	&#blog,
+	&#collaboration {
 		@apply bg-base-300;
 	}
 }

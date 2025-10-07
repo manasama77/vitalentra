@@ -1,4 +1,4 @@
-<section id="collaboration" class="bg-base-100 mx-auto w-full px-4 py-12">
+<section id="collaboration" class="section-area">
     <div class="mx-auto max-w-7xl">
         <div class="text-center">
             <h2 class="text-base-content scroll-revealed text-2xl md:text-4xl">
