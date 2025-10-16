@@ -29,7 +29,7 @@
                                 {{ __('contact.address_title') }}
                             </h4>
                             <address class="text-success-content text-center not-italic">
-                                Pondok Indah Office Tower 5, Lantai 8 - Unit 1202<br />Jl. Sultan Iskandar Muda Kav.
+                                Pondok Indah Office Tower 5, Lantai 12 - Unit 1202<br />Jl. Sultan Iskandar Muda Kav.
                                 V-TA, Pondok Indah<br />Jakarta 12310 &mdash; Indonesia
                             </address>
                         </div>

@@ -1,6 +1,5 @@
  <section id="testimonials" class="section-area parallax bg-blend-multiply"
      style="background-image: url('{{ Vite::asset('resources/images/Single Testimonials - Mario Irwinsyah.png') }}');">
-     {{-- <div class="absolute inset-0 bg-black/20"></div> --}}
      <div class="container">
          <div class="grid grid-cols-1 md:grid-cols-[20%_80%]">
              <div class="hidden md:block"></div>

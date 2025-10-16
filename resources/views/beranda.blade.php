@@ -18,7 +18,7 @@
     <x-landing.product :carousels="$carousels" loading="lazy" />
 
     {{-- HIGHLIGHT TESTIMONY --}}
-    <x-landing.highlight-testimonial loading="lazy" />
+    <x-landing.highlight-testimonial />
 
     <!-- FAQ section -->
     <x-landing.faq loading="lazy" />
