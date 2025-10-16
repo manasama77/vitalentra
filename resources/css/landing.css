@@ -1030,6 +1030,6 @@ html {
 }
 
 .parallax {
-	@apply relative bg-fixed bg-[right_-20vw_top_220px] md:bg-[left_0px_top_280px] bg-no-repeat bg-size-[300px];
+	@apply relative bg-fixed bg-[right_-20vw_top_50vw] md:bg-[left_0px_top_280px] bg-no-repeat bg-size-[300px];
 	/* background-position-y: 250px; */
 }
