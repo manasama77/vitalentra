@@ -38,6 +38,12 @@
                     <!-- Slide 5 -->
                     <div class="carousel-slide">
                         <div class="flex h-full items-center justify-center p-6">
+                            <img src="{{ Vite::asset('resources/images/Logo Baby Shark.webp') }}" alt="Baby Shark" class="collaboration-image" />
+                        </div>
+                    </div>
+                    <!-- Slide 6 -->
+                    <div class="carousel-slide">
+                        <div class="flex h-full items-center justify-center p-6">
                             <img src="{{ Vite::asset('resources/images/Logo PCN.png') }}" alt="PCN" class="collaboration-image" />
                         </div>
                     </div>

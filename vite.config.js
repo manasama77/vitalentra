@@ -91,6 +91,7 @@ export default defineConfig({
 				'resources/images/Logo Grid.png',
 				'resources/images/Logo Hello Kitty.png',
 				'resources/images/Logo PCN.png',
+				'resources/images/Logo Baby Shark.webp',
 			],
 			refresh: true,
 		}),
