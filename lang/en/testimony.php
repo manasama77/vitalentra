@@ -3,7 +3,7 @@
 return [
     'title' => 'Client Reviews',
     'sub_title' => 'What they say about our products?',
-    'highlight' => "I’m proud to be part of Vitalentra’s journey in promoting natural wellness through innovation and integrity. What the company stands for — making healthy, nature-based living accessible to everyone — truly reflects my own values and passion for sustainable well-being.",
+    'highlight' => "I'm truly proud to be part of VGI's journey in promoting natural wellness through innovation and integrity. The company's values, which is bringing nature-inspired healthy living to everyone, deeply resonate with my own passion for a sustainable and balanced lifestyle.",
     'user' => [
         '1' => [
             'job' => 'Artist',

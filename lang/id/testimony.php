@@ -3,7 +3,7 @@
 return [
     'title' => 'Ulasan Klien',
     'sub_title' => 'Apa kata mereka tentang produk kami?',
-    'highlight' => "Saya bangga menjadi bagian dari perjalanan Vitalentra dalam mempromosikan natural wellness melalui inovasi dan integritas. Nilai-nilai yang diusung perusahaan — menghadirkan gaya hidup sehat berbasis alam untuk semua orang — sangat sejalan dengan prinsip dan semangat saya terhadap kesejahteraan yang berkelanjutan.",
+    'highlight' => "Merupakan kebanggaan bagi saya bisa menjadi bagian dari perjalanan VGI dalam menginspirasi gaya hidup sehat alami melalui inovasi dan integritas. Nilai-nilai yang diusung perusahaan, yang menghadirkan kesehatan dan keseimbangan berbasis alam untuk semua orang, sejalan dengan semangat dan prinsip hidup saya tentang hidup yang berkelanjutan.",
     'user' => [
         '1' => [
             'job' => 'Artis',
