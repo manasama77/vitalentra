@@ -20,8 +20,8 @@ class SetLocale
         // Supported locales
         $supportedLocales = ['id', 'en'];
 
-        // ALWAYS default to Indonesian for first-time visitors
-        $locale = 'id';
+        // ALWAYS default to English for first-time visitors
+        $locale = 'en';
 
         // 1. Check URL parameter first (highest priority)
         if ($request->has('lang') && in_array($request->lang, $supportedLocales)) {
@@ -31,8 +31,8 @@ class SetLocale
         elseif (Session::has('locale') && in_array(Session::get('locale'), $supportedLocales)) {
             $locale = Session::get('locale');
         }
-        // 3. For first-time visitors: ALWAYS use Indonesian ('id')
-        // No browser language detection - Indonesian is the primary language
+        // 3. For first-time visitors: ALWAYS use English ('en')
+        // No browser language detection - English is the primary language
 
         // Set locale
         App::setLocale($locale);
