@@ -2,6 +2,6 @@
 
 return [
     'description' => 'VGI berkomitmen untuk mempromosikan gaya hidup sehat melalui solusi inovatif di bidang suplemen kesehatan untuk makanan dan minuman.',
-    'info' => 'VGI merupakan Mitra Bisnis BP Group.',
+    'info' => 'VGI is the Strategic Distribution Partner of BP Group.',
     'product' => 'Produk',
 ];

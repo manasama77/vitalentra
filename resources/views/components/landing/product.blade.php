@@ -10,11 +10,12 @@
         <!-- Products Grid -->
         <div class="flex flex-col items-center justify-center gap-16">
             <x-landing.partials.product-steffi />
-            {{-- <x-landing.partials.product-bp-reguler />
+            <x-landing.partials.product-bp-reguler />
             <x-landing.partials.product-bp-green />
             <x-landing.partials.product-bp-norway />
-            <x-landing.partials.product-belgie /> --}}
+            {{-- <x-landing.partials.product-belgie /> --}}
         </div>
 
     </div>
 </section>
+

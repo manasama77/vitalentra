@@ -89,7 +89,7 @@
         </div>
     </div>
 
-    {{-- <div class="accordion-item" id="british-propolis-british-propolis-green">
+    <div class="accordion-item" id="british-propolis-british-propolis-green">
         <button class="accordion-toggle inline-flex items-center gap-x-4 pl-0 text-start"
             aria-controls="british-propolis-british-propolis-green-collapse" aria-expanded="false">
             <span
@@ -280,7 +280,7 @@
         </div>
     </div>
 
-    <div class="accordion-item" id="belgie">
+    {{-- <div class="accordion-item" id="belgie">
         <button class="accordion-toggle inline-flex items-center gap-x-4 pl-0 text-start" aria-controls="belgie-collapse" aria-expanded="false">
             <span
                 class="icon-[tabler--chevron-right] accordion-item-active:rotate-90 size-5 shrink-0 transition-transform duration-300 rtl:rotate-180"></span>
@@ -370,3 +370,4 @@
     </div> --}}
 
 </div>
+

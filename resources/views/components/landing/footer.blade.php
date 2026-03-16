@@ -10,9 +10,9 @@
                             <img src="{{ Vite::asset('resources/images/logo_white.png') }}" alt="Vitalentra Group International (VGI) Logo"
                                 class="w-full" />
                         </div>
-                        <div class="size-18 md:size-24">
+                        {{-- <div class="size-18 md:size-24">
                             <img src="{{ Vite::asset('resources/images/BP Group Logo.png') }}" alt="BP Group Logo" class="w-full" />
-                        </div>
+                        </div> --}}
                     </div>
                     <span class="text-xl font-bold">Vitalentra Group International (VGI)</span>
                 </div>
