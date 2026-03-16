@@ -47,6 +47,11 @@
                             <img src="{{ Vite::asset('resources/images/Logo PCN.png') }}" alt="PCN" class="collaboration-image" />
                         </div>
                     </div>
+                    <div class="carousel-slide">
+                        <div class="flex h-full items-center justify-center p-6">
+                            <img src="{{ Vite::asset('resources/images/BP Group Logo.png') }}" alt="BP Group" class="collaboration-image" />
+                        </div>
+                    </div>
                 </div>
             </div>
             <div class="carousel-pagination absolute bottom-3 end-0 start-0 flex justify-center gap-3"></div>
