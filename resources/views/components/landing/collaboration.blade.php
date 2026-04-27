@@ -55,19 +55,19 @@
                     <!-- Slide 8 -->
                     <div class="carousel-slide">
                         <div class="flex h-full items-center justify-center p-6">
-                            <img src="{{ Vite::asset('resources/images/LOGO-JAKPRO.jpeg') }}" alt="JAKPRO" class="collaboration-image" />
+                            <img src="{{ Vite::asset('resources/images/LOGO-JAKPRO.png') }}" alt="JAKPRO" class="collaboration-image" />
                         </div>
                     </div>
                     <!-- Slide 9 -->
                     <div class="carousel-slide">
                         <div class="flex h-full items-center justify-center p-6">
-                            <img src="{{ Vite::asset('resources/images/LOGO-VELODROME.jpeg') }}" alt="VELODROME" class="collaboration-image" />
+                            <img src="{{ Vite::asset('resources/images/LOGO-VELODROME.png') }}" alt="VELODROME" class="collaboration-image" />
                         </div>
                     </div>
                     <!-- Slide 10 -->
                     <div class="carousel-slide">
                         <div class="flex h-full items-center justify-center p-6">
-                            <img src="{{ Vite::asset('resources/images/LOGO-DAF-SPORTS-CENTER.jpeg') }}" alt="DAF SPORTS CENTER" class="collaboration-image" />
+                            <img src="{{ Vite::asset('resources/images/LOGO-DAF-SPORTS-CENTER.png') }}" alt="DAF SPORTS CENTER" class="collaboration-image" />
                         </div>
                     </div>
                 </div>
