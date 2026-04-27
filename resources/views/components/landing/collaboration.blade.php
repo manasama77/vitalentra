@@ -52,6 +52,24 @@
                             <img src="{{ Vite::asset('resources/images/BP Group Logo.png') }}" alt="BP Group" class="collaboration-image" />
                         </div>
                     </div>
+                    <!-- Slide 8 -->
+                    <div class="carousel-slide">
+                        <div class="flex h-full items-center justify-center p-6">
+                            <img src="{{ Vite::asset('resources/images/LOGO-JAKPRO.jpeg') }}" alt="JAKPRO" class="collaboration-image" />
+                        </div>
+                    </div>
+                    <!-- Slide 9 -->
+                    <div class="carousel-slide">
+                        <div class="flex h-full items-center justify-center p-6">
+                            <img src="{{ Vite::asset('resources/images/LOGO-VELODROME.jpeg') }}" alt="VELODROME" class="collaboration-image" />
+                        </div>
+                    </div>
+                    <!-- Slide 10 -->
+                    <div class="carousel-slide">
+                        <div class="flex h-full items-center justify-center p-6">
+                            <img src="{{ Vite::asset('resources/images/LOGO-DAF-SPORTS-CENTER.jpeg') }}" alt="DAF SPORTS CENTER" class="collaboration-image" />
+                        </div>
+                    </div>
                 </div>
             </div>
             <div class="carousel-pagination absolute bottom-3 end-0 start-0 flex justify-center gap-3"></div>
